@@ -1,0 +1,224 @@
+fileFormatVersion: 2
+guid: eba47613dfd08ad41ae6b3ce9a427b92
+timeCreated: 1493139146
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boole
+    100002: Boole_2
+    100004: //RootNode
+    100006: Null
+    100008: Null_1
+    100010: Null_2
+    100012: Null_3
+    100014: Subdivision_Surface
+    100016: Subdivision_Surface_2
+    100018: Subdivision_Surface_3
+    100020: Subdivision_Surface_4
+    100022: Subdivision_Surface_5
+    100024: Subdivision_Surface_6
+    100026: Subdivision_Surface_7
+    100028: "W\xFCrfel"
+    100030: "W\xFCrfel_1"
+    100032: "W\xFCrfel_1_2"
+    100034: "W\xFCrfel_1_3"
+    100036: "W\xFCrfel_1_4"
+    100038: "W\xFCrfel_1_5"
+    100040: "W\xFCrfel_2"
+    100042: "W\xFCrfel_3"
+    100044: "W\xFCrfel_4"
+    100046: "W\xFCrfel_5"
+    100048: Zylinder
+    100050: Zylinder_1
+    100052: ablage1
+    100054: ablage2
+    100056: ablage3
+    100058: griff
+    100060: koerper
+    100062: koerper_2
+    100064: scharnier1
+    100066: scharnier2
+    100068: schrift
+    100070: schriftplatte
+    100072: tuere
+    100074: "W\xFCrfel_2_2"
+    100076: "W\xFCrfel_2_3"
+    100078: CINEMA_4D_Editor
+    400000: Boole
+    400002: Boole_2
+    400004: //RootNode
+    400006: Null
+    400008: Null_1
+    400010: Null_2
+    400012: Null_3
+    400014: Subdivision_Surface
+    400016: Subdivision_Surface_2
+    400018: Subdivision_Surface_3
+    400020: Subdivision_Surface_4
+    400022: Subdivision_Surface_5
+    400024: Subdivision_Surface_6
+    400026: Subdivision_Surface_7
+    400028: "W\xFCrfel"
+    400030: "W\xFCrfel_1"
+    400032: "W\xFCrfel_1_2"
+    400034: "W\xFCrfel_1_3"
+    400036: "W\xFCrfel_1_4"
+    400038: "W\xFCrfel_1_5"
+    400040: "W\xFCrfel_2"
+    400042: "W\xFCrfel_3"
+    400044: "W\xFCrfel_4"
+    400046: "W\xFCrfel_5"
+    400048: Zylinder
+    400050: Zylinder_1
+    400052: ablage1
+    400054: ablage2
+    400056: ablage3
+    400058: griff
+    400060: koerper
+    400062: koerper_2
+    400064: scharnier1
+    400066: scharnier2
+    400068: schrift
+    400070: schriftplatte
+    400072: tuere
+    400074: "W\xFCrfel_2_2"
+    400076: "W\xFCrfel_2_3"
+    400078: CINEMA_4D_Editor
+    2300000: "W\xFCrfel"
+    2300002: "W\xFCrfel_1"
+    2300004: "W\xFCrfel_1_2"
+    2300006: "W\xFCrfel_1_3"
+    2300008: "W\xFCrfel_1_4"
+    2300010: "W\xFCrfel_1_5"
+    2300012: "W\xFCrfel_2"
+    2300014: "W\xFCrfel_3"
+    2300016: "W\xFCrfel_4"
+    2300018: "W\xFCrfel_5"
+    2300020: Zylinder
+    2300022: Zylinder_1
+    2300024: ablage1
+    2300026: ablage2
+    2300028: ablage3
+    2300030: koerper_2
+    2300032: scharnier1
+    2300034: scharnier2
+    2300036: schrift
+    2300038: schriftplatte
+    2300040: "W\xFCrfel_2_2"
+    2300042: "W\xFCrfel_2_3"
+    3300000: "W\xFCrfel"
+    3300002: "W\xFCrfel_1"
+    3300004: "W\xFCrfel_1_2"
+    3300006: "W\xFCrfel_1_3"
+    3300008: "W\xFCrfel_1_4"
+    3300010: "W\xFCrfel_1_5"
+    3300012: "W\xFCrfel_2"
+    3300014: "W\xFCrfel_3"
+    3300016: "W\xFCrfel_4"
+    3300018: "W\xFCrfel_5"
+    3300020: Zylinder
+    3300022: Zylinder_1
+    3300024: ablage1
+    3300026: ablage2
+    3300028: ablage3
+    3300030: koerper_2
+    3300032: scharnier1
+    3300034: scharnier2
+    3300036: schrift
+    3300038: schriftplatte
+    3300040: "W\xFCrfel_2_2"
+    3300042: "W\xFCrfel_2_3"
+    4300000: Zylinder_1
+    4300002: Zylinder
+    4300004: "W\xFCrfel_1"
+    4300006: "W\xFCrfel_1_2"
+    4300008: "W\xFCrfel"
+    4300010: "W\xFCrfel_2"
+    4300012: "W\xFCrfel_1_3"
+    4300014: "W\xFCrfel_3"
+    4300016: "W\xFCrfel_1_4"
+    4300018: "W\xFCrfel_4"
+    4300020: "W\xFCrfel_1_5"
+    4300022: "W\xFCrfel_5"
+    4300024: scharnier1
+    4300026: scharnier2
+    4300028: schriftplatte
+    4300030: schrift
+    4300032: "W\xFCrfel_2_2"
+    4300034: "W\xFCrfel_2_3"
+    4300036: ablage1
+    4300038: ablage2
+    4300040: ablage3
+    4300042: koerper_2
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

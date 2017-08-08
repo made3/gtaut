@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: c17c4ccf4fe329e48bf97620719bf2f5
+timeCreated: 1493240648
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: grosser_zeiger
+    100002: hintergrund
+    100004: kleiner_zeiger
+    100006: Klon
+    100008: koerper
+    100010: linke_seite
+    100012: recht_seite
+    100014: schraube
+    100016: //RootNode
+    100018: "W\xFCrfel_0"
+    100020: "W\xFCrfel_1"
+    100022: "W\xFCrfel_10"
+    100024: "W\xFCrfel_11"
+    100026: "W\xFCrfel_2"
+    100028: "W\xFCrfel_3"
+    100030: "W\xFCrfel_4"
+    100032: "W\xFCrfel_5"
+    100034: "W\xFCrfel_6"
+    100036: "W\xFCrfel_7"
+    100038: "W\xFCrfel_8"
+    100040: "W\xFCrfel_9"
+    100042: Uhr
+    100044: Zylinder
+    100046: Zylinder_1
+    100048: hintergrund_rand
+    100050: groesserer_zeiger
+    400000: grosser_zeiger
+    400002: hintergrund
+    400004: kleiner_zeiger
+    400006: Klon
+    400008: koerper
+    400010: linke_seite
+    400012: recht_seite
+    400014: schraube
+    400016: //RootNode
+    400018: "W\xFCrfel_0"
+    400020: "W\xFCrfel_1"
+    400022: "W\xFCrfel_10"
+    400024: "W\xFCrfel_11"
+    400026: "W\xFCrfel_2"
+    400028: "W\xFCrfel_3"
+    400030: "W\xFCrfel_4"
+    400032: "W\xFCrfel_5"
+    400034: "W\xFCrfel_6"
+    400036: "W\xFCrfel_7"
+    400038: "W\xFCrfel_8"
+    400040: "W\xFCrfel_9"
+    400042: Uhr
+    400044: Zylinder
+    400046: Zylinder_1
+    400048: hintergrund_rand
+    400050: groesserer_zeiger
+    2300000: grosser_zeiger
+    2300002: hintergrund
+    2300004: kleiner_zeiger
+    2300006: koerper
+    2300008: linke_seite
+    2300010: recht_seite
+    2300012: schraube
+    2300014: "W\xFCrfel_0"
+    2300016: "W\xFCrfel_1"
+    2300018: "W\xFCrfel_10"
+    2300020: "W\xFCrfel_11"
+    2300022: "W\xFCrfel_2"
+    2300024: "W\xFCrfel_3"
+    2300026: "W\xFCrfel_4"
+    2300028: "W\xFCrfel_5"
+    2300030: "W\xFCrfel_6"
+    2300032: "W\xFCrfel_7"
+    2300034: "W\xFCrfel_8"
+    2300036: "W\xFCrfel_9"
+    2300038: Zylinder
+    2300040: Zylinder_1
+    2300042: hintergrund_rand
+    2300044: groesserer_zeiger
+    3300000: grosser_zeiger
+    3300002: hintergrund
+    3300004: kleiner_zeiger
+    3300006: koerper
+    3300008: linke_seite
+    3300010: recht_seite
+    3300012: schraube
+    3300014: "W\xFCrfel_0"
+    3300016: "W\xFCrfel_1"
+    3300018: "W\xFCrfel_10"
+    3300020: "W\xFCrfel_11"
+    3300022: "W\xFCrfel_2"
+    3300024: "W\xFCrfel_3"
+    3300026: "W\xFCrfel_4"
+    3300028: "W\xFCrfel_5"
+    3300030: "W\xFCrfel_6"
+    3300032: "W\xFCrfel_7"
+    3300034: "W\xFCrfel_8"
+    3300036: "W\xFCrfel_9"
+    3300038: Zylinder
+    3300040: Zylinder_1
+    3300042: hintergrund_rand
+    3300044: groesserer_zeiger
+    4300000: recht_seite
+    4300002: linke_seite
+    4300004: "W\xFCrfel_0"
+    4300006: "W\xFCrfel_1"
+    4300008: "W\xFCrfel_2"
+    4300010: "W\xFCrfel_3"
+    4300012: "W\xFCrfel_4"
+    4300014: "W\xFCrfel_5"
+    4300016: "W\xFCrfel_6"
+    4300018: "W\xFCrfel_7"
+    4300020: "W\xFCrfel_8"
+    4300022: "W\xFCrfel_9"
+    4300024: "W\xFCrfel_10"
+    4300026: "W\xFCrfel_11"
+    4300028: schraube
+    4300030: grosser_zeiger
+    4300032: kleiner_zeiger
+    4300034: hintergrund
+    4300036: koerper
+    4300038: Zylinder_1
+    4300040: Zylinder
+    4300042: hintergrund_rand
+    4300044: groesserer_zeiger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

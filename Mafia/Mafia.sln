@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mafia.Plugins", "Mafia.Plugins.csproj", "{E558802A-9055-F5DB-6780-9E48D852C6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mafia", "Mafia.csproj", "{91767231-A57D-8D11-45D3-60BAA9D01704}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mafia.Editor", "Mafia.Editor.csproj", "{8657F607-3089-0784-B2B3-A5AE3180DA69}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E558802A-9055-F5DB-6780-9E48D852C6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E558802A-9055-F5DB-6780-9E48D852C6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E558802A-9055-F5DB-6780-9E48D852C6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E558802A-9055-F5DB-6780-9E48D852C6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91767231-A57D-8D11-45D3-60BAA9D01704}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91767231-A57D-8D11-45D3-60BAA9D01704}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91767231-A57D-8D11-45D3-60BAA9D01704}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91767231-A57D-8D11-45D3-60BAA9D01704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8657F607-3089-0784-B2B3-A5AE3180DA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8657F607-3089-0784-B2B3-A5AE3180DA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8657F607-3089-0784-B2B3-A5AE3180DA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8657F607-3089-0784-B2B3-A5AE3180DA69}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

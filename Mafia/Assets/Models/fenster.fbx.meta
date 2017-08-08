@@ -1,0 +1,189 @@
+fileFormatVersion: 2
+guid: 060d29c402d844e43b06bf1f56481f00
+timeCreated: 1498143398
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Boole_1
+    100002: Boole_1_2
+    100004: Boole_3
+    100006: Boole_3_2
+    100008: Boole_4
+    100010: Boole_4_2
+    100012: //RootNode
+    100014: fenster_unten
+    100016: fenster_unten_2
+    100018: Fensterrahmen
+    100020: Fensterrahmen_1
+    100022: "W\xFCrfel_1"
+    100024: "W\xFCrfel_10"
+    100026: "W\xFCrfel_10_2"
+    100028: "W\xFCrfel_13"
+    100030: "W\xFCrfel_13_2"
+    100032: "W\xFCrfel_14"
+    100034: "W\xFCrfel_14_2"
+    100036: "W\xFCrfel_15"
+    100038: "W\xFCrfel_15_2"
+    100040: "W\xFCrfel_1_2"
+    100042: "W\xFCrfel_2"
+    100044: "W\xFCrfel_2_2"
+    100046: "W\xFCrfel_8"
+    100048: "W\xFCrfel_8_2"
+    100050: "W\xFCrfel_8_3"
+    100052: "W\xFCrfel_8_4"
+    100054: Kugel
+    100056: Kugel_2
+    400000: Boole_1
+    400002: Boole_1_2
+    400004: Boole_3
+    400006: Boole_3_2
+    400008: Boole_4
+    400010: Boole_4_2
+    400012: //RootNode
+    400014: fenster_unten
+    400016: fenster_unten_2
+    400018: Fensterrahmen
+    400020: Fensterrahmen_1
+    400022: "W\xFCrfel_1"
+    400024: "W\xFCrfel_10"
+    400026: "W\xFCrfel_10_2"
+    400028: "W\xFCrfel_13"
+    400030: "W\xFCrfel_13_2"
+    400032: "W\xFCrfel_14"
+    400034: "W\xFCrfel_14_2"
+    400036: "W\xFCrfel_15"
+    400038: "W\xFCrfel_15_2"
+    400040: "W\xFCrfel_1_2"
+    400042: "W\xFCrfel_2"
+    400044: "W\xFCrfel_2_2"
+    400046: "W\xFCrfel_8"
+    400048: "W\xFCrfel_8_2"
+    400050: "W\xFCrfel_8_3"
+    400052: "W\xFCrfel_8_4"
+    400054: Kugel
+    400056: Kugel_2
+    2300000: "W\xFCrfel_1"
+    2300002: "W\xFCrfel_10"
+    2300004: "W\xFCrfel_10_2"
+    2300006: "W\xFCrfel_13"
+    2300008: "W\xFCrfel_13_2"
+    2300010: "W\xFCrfel_14"
+    2300012: "W\xFCrfel_14_2"
+    2300014: "W\xFCrfel_15"
+    2300016: "W\xFCrfel_15_2"
+    2300018: "W\xFCrfel_1_2"
+    2300020: "W\xFCrfel_2"
+    2300022: "W\xFCrfel_2_2"
+    2300024: "W\xFCrfel_8"
+    2300026: "W\xFCrfel_8_2"
+    2300028: "W\xFCrfel_8_3"
+    2300030: "W\xFCrfel_8_4"
+    2300032: Kugel
+    2300034: Kugel_2
+    3300000: "W\xFCrfel_1"
+    3300002: "W\xFCrfel_10"
+    3300004: "W\xFCrfel_10_2"
+    3300006: "W\xFCrfel_13"
+    3300008: "W\xFCrfel_13_2"
+    3300010: "W\xFCrfel_14"
+    3300012: "W\xFCrfel_14_2"
+    3300014: "W\xFCrfel_15"
+    3300016: "W\xFCrfel_15_2"
+    3300018: "W\xFCrfel_1_2"
+    3300020: "W\xFCrfel_2"
+    3300022: "W\xFCrfel_2_2"
+    3300024: "W\xFCrfel_8"
+    3300026: "W\xFCrfel_8_2"
+    3300028: "W\xFCrfel_8_3"
+    3300030: "W\xFCrfel_8_4"
+    3300032: Kugel
+    3300034: Kugel_2
+    4300000: "W\xFCrfel_1"
+    4300002: "W\xFCrfel_2"
+    4300004: "W\xFCrfel_8"
+    4300006: "W\xFCrfel_14"
+    4300008: "W\xFCrfel_10"
+    4300010: "W\xFCrfel_13"
+    4300012: "W\xFCrfel_8_2"
+    4300014: "W\xFCrfel_15"
+    4300016: "W\xFCrfel_1_2"
+    4300018: "W\xFCrfel_2_2"
+    4300020: "W\xFCrfel_8_3"
+    4300022: "W\xFCrfel_14_2"
+    4300024: "W\xFCrfel_10_2"
+    4300026: "W\xFCrfel_13_2"
+    4300028: "W\xFCrfel_8_4"
+    4300030: "W\xFCrfel_15_2"
+    4300032: Kugel
+    4300034: Kugel_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
