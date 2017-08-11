@@ -1,0 +1,129 @@
+fileFormatVersion: 2
+guid: 5efec0e2387126b4db91219ed274a2a8
+timeCreated: 1502285426
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: fuss_links
+    100002: fuss_rechts
+    100004: //RootNode
+    100006: "W\xFCrfel"
+    100008: "W\xFCrfel_1"
+    100010: "W\xFCrfel_2"
+    100012: Zylinder
+    100014: Zylinder_1
+    100016: Zylinder_2
+    100018: Zylinder_3
+    100020: Zylinder_4
+    400000: fuss_links
+    400002: fuss_rechts
+    400004: //RootNode
+    400006: "W\xFCrfel"
+    400008: "W\xFCrfel_1"
+    400010: "W\xFCrfel_2"
+    400012: Zylinder
+    400014: Zylinder_1
+    400016: Zylinder_2
+    400018: Zylinder_3
+    400020: Zylinder_4
+    2300000: fuss_links
+    2300002: fuss_rechts
+    2300004: "W\xFCrfel"
+    2300006: "W\xFCrfel_1"
+    2300008: "W\xFCrfel_2"
+    2300010: Zylinder
+    2300012: Zylinder_1
+    2300014: Zylinder_2
+    2300016: Zylinder_3
+    2300018: Zylinder_4
+    3300000: fuss_links
+    3300002: fuss_rechts
+    3300004: "W\xFCrfel"
+    3300006: "W\xFCrfel_1"
+    3300008: "W\xFCrfel_2"
+    3300010: Zylinder
+    3300012: Zylinder_1
+    3300014: Zylinder_2
+    3300016: Zylinder_3
+    3300018: Zylinder_4
+    4300000: Zylinder_4
+    4300002: Zylinder_3
+    4300004: Zylinder_2
+    4300006: Zylinder_1
+    4300008: Zylinder
+    4300010: "W\xFCrfel_2"
+    4300012: "W\xFCrfel_1"
+    4300014: fuss_links
+    4300016: fuss_rechts
+    4300018: "W\xFCrfel"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
