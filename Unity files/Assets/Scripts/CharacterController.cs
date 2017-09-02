@@ -3,27 +3,39 @@ using System.Collections;
 
 public class CharacterController : MonoBehaviour {
 
-    public float speed = 10.0F;
+    public float walkingSpeed = 3f;
+    public float runningSpeed = 4f;
+    public float crouchingSpeed = 1f;
+    private float speed;
     public bool isCrouched;
 
 	// Use this for initialization
 	void Start () {
         Cursor.lockState = CursorLockMode.Locked;
         isCrouched = false;
+        speed = walkingSpeed;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (isCrouched)
         {
-            speed += 5;
+            speed = crouchingSpeed;
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
-            speed -= 5;
+            speed = walkingSpeed;
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                speed = runningSpeed;
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = walkingSpeed;
+            }
         }
-
+        
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
 

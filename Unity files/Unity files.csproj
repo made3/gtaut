@@ -92,6 +92,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CharacterController.cs" />
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\UIOpenDoor.cs" />
     <Compile Include="Assets\Scripts\UIOpenFenster.cs" />
     <Compile Include="Assets\Scripts\UIOpenKuehlschrank.cs" />
