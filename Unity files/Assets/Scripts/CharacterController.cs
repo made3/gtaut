@@ -1,68 +1,163 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterController : MonoBehaviour {
+public class CharacterController : MonoBehaviour
+{
 
-    public float walkingSpeed = 3f;
-    public float runningSpeed = 4f;
-    public float crouchingSpeed = 1f;
-    private float speed;
-    public bool isCrouched;
+    public float speed = 10.0F;
+    public float speedRunning;
+    public float speedCrouching;
 
-	// Use this for initialization
-	void Start () {
+
+    // Statemachine Booleans
+
+    // Movement
+    public bool isMoving;
+    public bool isWalking;
+    public bool isCrouching;
+    public bool isRunning;
+
+    public bool inCrouchTransition;
+    public bool insRunTransition;
+
+    public static bool isInMenu;
+
+
+
+    // Use this for initialization
+    void Start()
+    {
+        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        isCrouched = false;
-        speed = walkingSpeed;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
 
-        if (isCrouched)
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (!isInMenu)
         {
-            speed = crouchingSpeed;
+            float translation = Input.GetAxis("Vertical") * speed;
+            float straffe = Input.GetAxis("Horizontal") * speed;
+
+            translation *= Time.deltaTime;
+            straffe *= Time.deltaTime;
+
+            transform.Translate(straffe, 0, translation);
         }
-        else
+        checkState();
+    }
+
+
+    public void checkState()
+    {
+        if (!isInMenu)
         {
-            speed = walkingSpeed;
+            if (Input.GetButtonDown("Crouch"))
+            {
+                //switcher(inCrouchTransition);
+                inCrouchTransition = true;
+                crouchTransition();
+                //switcher(inCrouchTransition);
+                inCrouchTransition = false;
+                //switcher(isCrouching);
+                if (isCrouching)
+                {
+                    isCrouching = false;
+                }
+                else
+                {
+                    isCrouching = true;
+                }
+
+            }
+
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                speed = runningSpeed;
+                //switcher(isRunning);
+                isRunning = true;
+                runTransition();
             }
-            if (Input.GetKeyUp(KeyCode.LeftShift))
+            else if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                speed = walkingSpeed;
+                //switcher(isRunning);
+                isRunning = false;
+                runTransition();
             }
         }
-        
-        float translation = Input.GetAxis("Vertical") * speed;
-        float straffe = Input.GetAxis("Horizontal") * speed;
-
-        translation *= Time.deltaTime;
-        straffe *= Time.deltaTime;
-        
-
-        transform.Translate(straffe, 0, translation);
-
-        if (Input.GetButtonDown("Crouch"))
+        if (Input.GetButtonDown("Cancel"))
         {
-            if (isCrouched)
+            //switcher(isInMenu);
+            if (isInMenu)
             {
-                transform.position = transform.position + new Vector3(0, 1, 0);
-                isCrouched = false;
+                isInMenu = false;
             }
             else
             {
-                transform.position = transform.position - new Vector3(0, 1, 0);
-                isCrouched = true;
+                isInMenu = true;
             }
+            menuTransition();
         }
 
-        if (Input.GetButtonDown("Cancel"))
+    }
+
+    public void runTransition()
+    {
+        if (isRunning)
         {
+            speed += speedRunning;
+        }
+        else
+        {
+            speed -= speedRunning;
+        }
+    }
+
+    public void crouchTransition()
+    {
+        if (isCrouching)
+        {
+            // TODO: Bewegungsanimation einfügen
+            transform.position = transform.position + new Vector3(0, 1, 0);
+            speed += speedCrouching;
+        }
+        else
+        {
+            // TODO: Bewegungsanimation einfügen
+            transform.position = transform.position - new Vector3(0, 1, 0);
+            speed -= speedCrouching;
+        }
+    }
+
+
+
+    // Evtl auslagern
+    public void menuTransition()
+    {
+        if (isInMenu)
+        {
+            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
         }
+        else
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+    }
 
-	}
+    public void switcher(bool toSwitch)
+    {
+
+        Debug.Log(toSwitch);
+        if (toSwitch)
+        {
+            toSwitch = false;
+        }
+        else
+        {
+            toSwitch = true;
+        }
+    }
+
 }
