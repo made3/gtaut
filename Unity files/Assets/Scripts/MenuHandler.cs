@@ -12,7 +12,6 @@ public class MenuHandler : MonoBehaviour {
 	void Start () {
         crosshair = GetComponentInChildren<Image>();
         exitButton.SetActive(false);
-        //GetComponentInChildren<Button>().onClick.AddListener(ExitGame);
     }
 
     // Update is called once per frame
@@ -40,10 +39,5 @@ public class MenuHandler : MonoBehaviour {
             }
         }
 	}
-
-    void ExitGame()
-    {
-        Debug.Log("You have clicked the button!");
-    }
-
+    
 }

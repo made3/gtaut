@@ -8,6 +8,9 @@ public class CharacterController : MonoBehaviour
     public float speedRunning;
     public float speedCrouching;
 
+    public float crouchSmoothing = 10.0f;
+    private Vector3 crouchEndpoint;
+    private float tmpLerpVariable;
 
     // Statemachine Booleans
 
@@ -44,7 +47,13 @@ public class CharacterController : MonoBehaviour
             straffe *= Time.deltaTime;
 
             transform.Translate(straffe, 0, translation);
+
+            if (inCrouchTransition)
+            {
+                crouchTransition();
+            }
         }
+        
         checkState();
     }
 
@@ -55,21 +64,13 @@ public class CharacterController : MonoBehaviour
         {
             if (Input.GetButtonDown("Crouch"))
             {
-                //switcher(inCrouchTransition);
-                inCrouchTransition = true;
-                crouchTransition();
-                //switcher(inCrouchTransition);
-                inCrouchTransition = false;
-                //switcher(isCrouching);
-                if (isCrouching)
+                if (!inCrouchTransition)
                 {
-                    isCrouching = false;
+                    //switcher(inCrouchTransition);
+                    inCrouchTransition = true;
+                    crouchEndpoint = transform.position;
+                    crouchTransition();
                 }
-                else
-                {
-                    isCrouching = true;
-                }
-
             }
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -117,15 +118,31 @@ public class CharacterController : MonoBehaviour
     {
         if (isCrouching)
         {
-            // TODO: Bewegungsanimation einfügen
-            transform.position = transform.position + new Vector3(0, 1, 0);
-            speed += speedCrouching;
+            tmpLerpVariable = Mathf.Lerp(0, (crouchEndpoint + new Vector3(0,1,0)).y, 1f / crouchSmoothing);
+            transform.position += new Vector3(0, tmpLerpVariable, 0);
+            //transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y + 1, 1f / crouchSmoothing), transform.position.z);
+            if (transform.position.y >= (crouchEndpoint + new Vector3(0, 1, 0)).y)
+            {
+                transform.position = new Vector3(transform.position.x, (crouchEndpoint + new Vector3(0, 1, 0)).y, transform.position.z);
+                //switcher(inCrouchTransition);
+                inCrouchTransition = false;
+                isCrouching = false;
+                speed += speedCrouching;
+            }
         }
         else
         {
-            // TODO: Bewegungsanimation einfügen
-            transform.position = transform.position - new Vector3(0, 1, 0);
-            speed -= speedCrouching;
+            tmpLerpVariable = Mathf.Lerp(0, (crouchEndpoint - new Vector3(0, 1, 0)).y, 1f / crouchSmoothing);
+            transform.position -= new Vector3(0, tmpLerpVariable, 0);
+            //transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y - 1, 1f / crouchSmoothing), transform.position.z);
+            if (transform.position.y <= (crouchEndpoint - new Vector3(0, 1, 0)).y)
+            {
+                transform.position = new Vector3 (transform.position.x, (crouchEndpoint - new Vector3(0, 1, 0)).y, transform.position.z);
+                //switcher(inCrouchTransition);
+                inCrouchTransition = false;
+                isCrouching = true;
+                speed -= speedCrouching;
+            }
         }
     }
 

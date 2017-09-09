@@ -112,7 +112,6 @@ public class radio : MonoBehaviour {
             _rauschen.volume = _rauschen.volume + Time.deltaTime * rauschenFadingSpeed;
             if (_rauschen.volume >= 0.2 && !isOn)
             {
-                Debug.Log("NUMMER 1");
                 startSong = true;
             }
         }
@@ -121,7 +120,6 @@ public class radio : MonoBehaviour {
             _rauschen.volume = _rauschen.volume - Time.deltaTime * rauschenFadingSpeed;
             if(_rauschen.volume <= 0.5 && isOn)
             {
-                Debug.Log("NUMMER 2");
                 startSong = true;
             }
         }
