@@ -8,6 +8,8 @@ public class FadeAndInteract : MonoBehaviour
 
     private Text myText1;
     private Text myText2;
+    public string firstText = "Press E to open";
+    public string secondText = "Press E to close";
     public float fadeTime = 10;
     private bool displayInfo;
     private Animator _animator;
@@ -17,15 +19,14 @@ public class FadeAndInteract : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
         myText1 = GetComponentsInChildren<Text>()[0];
         if (GetComponentsInChildren<Text>().Length > 1)
         {
             moreTexts = true;
             myText2 = GetComponentsInChildren<Text>()[1];
+            myText2.color = Color.clear;
         }
         myText1.color = Color.clear;
-        myText2.color = Color.clear;
         _animator = GetComponent<Animator>();
         isOpen = false;
     }
@@ -78,21 +79,21 @@ public class FadeAndInteract : MonoBehaviour
         {
             if (isOpen)
             {
-                myText1.text = "Press E to close";
+                myText1.text = secondText;
                 myText1.color = Color.Lerp(myText1.color, Color.white, fadeTime * Time.deltaTime);
                 if (moreTexts)
                 {
                     myText2.color = Color.Lerp(myText2.color, Color.white, fadeTime * Time.deltaTime);
-                    myText2.text = "Press E to close";
+                    myText2.text = secondText;
                 }
             }
             else
             {
-                myText1.text = "Press E to open";
+                myText1.text = firstText;
                 myText1.color = Color.Lerp(myText1.color, Color.white, fadeTime * Time.deltaTime);
                 if (moreTexts)
                 {
-                    myText2.text = "Press E to open";
+                    myText2.text = firstText;
                     myText2.color = Color.Lerp(myText2.color, Color.white, fadeTime * Time.deltaTime);
                 }
             }

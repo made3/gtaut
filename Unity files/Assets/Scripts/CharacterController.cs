@@ -37,7 +37,6 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (!isInMenu)
         {
             float translation = Input.GetAxis("Vertical") * speed;
@@ -86,8 +85,9 @@ public class CharacterController : MonoBehaviour
                 runTransition();
             }
         }
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && !TelefonWählscheibe.isCalling)
         {
+            
             //switcher(isInMenu);
             if (isInMenu)
             {
@@ -99,7 +99,6 @@ public class CharacterController : MonoBehaviour
             }
             menuTransition();
         }
-
     }
 
     public void runTransition()
