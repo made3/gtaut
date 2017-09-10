@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 47fc5d531e25e7b4cbc69de6651518f4
+timeCreated: 1505053524
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: "h\xF6rer"
+    100002: Klon
+    100004: pfeil
+    100006: schnur
+    100008: //RootNode
+    100010: telefonblock
+    100012: "w\xE4hlscheibe"
+    100014: "w\xE4hlscheibe_2"
+    100016: "w\xE4hlscheibe_3"
+    100018: zahlenscheibe
+    100020: Zylinder_0
+    100022: Zylinder_1
+    100024: Zylinder_2
+    100026: Zylinder_3
+    100028: Zylinder_4
+    100030: Zylinder_5
+    100032: Zylinder_6
+    100034: Zylinder_7
+    100036: Zylinder_8
+    100038: Zylinder_9
+    400000: "h\xF6rer"
+    400002: Klon
+    400004: pfeil
+    400006: schnur
+    400008: //RootNode
+    400010: telefonblock
+    400012: "w\xE4hlscheibe"
+    400014: "w\xE4hlscheibe_2"
+    400016: "w\xE4hlscheibe_3"
+    400018: zahlenscheibe
+    400020: Zylinder_0
+    400022: Zylinder_1
+    400024: Zylinder_2
+    400026: Zylinder_3
+    400028: Zylinder_4
+    400030: Zylinder_5
+    400032: Zylinder_6
+    400034: Zylinder_7
+    400036: Zylinder_8
+    400038: Zylinder_9
+    2300000: "h\xF6rer"
+    2300002: pfeil
+    2300004: schnur
+    2300006: telefonblock
+    2300008: "w\xE4hlscheibe_3"
+    2300010: zahlenscheibe
+    2300012: Zylinder_0
+    2300014: Zylinder_1
+    2300016: Zylinder_2
+    2300018: Zylinder_3
+    2300020: Zylinder_4
+    2300022: Zylinder_5
+    2300024: Zylinder_6
+    2300026: Zylinder_7
+    2300028: Zylinder_8
+    2300030: Zylinder_9
+    3300000: "h\xF6rer"
+    3300002: pfeil
+    3300004: schnur
+    3300006: telefonblock
+    3300008: "w\xE4hlscheibe_3"
+    3300010: zahlenscheibe
+    3300012: Zylinder_0
+    3300014: Zylinder_1
+    3300016: Zylinder_2
+    3300018: Zylinder_3
+    3300020: Zylinder_4
+    3300022: Zylinder_5
+    3300024: Zylinder_6
+    3300026: Zylinder_7
+    3300028: Zylinder_8
+    3300030: Zylinder_9
+    4300000: pfeil
+    4300002: "w\xE4hlscheibe_3"
+    4300004: Zylinder_0
+    4300006: Zylinder_1
+    4300008: Zylinder_2
+    4300010: Zylinder_3
+    4300012: Zylinder_4
+    4300014: Zylinder_5
+    4300016: Zylinder_6
+    4300018: Zylinder_7
+    4300020: Zylinder_8
+    4300022: Zylinder_9
+    4300024: zahlenscheibe
+    4300026: schnur
+    4300028: "h\xF6rer"
+    4300030: telefonblock
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
