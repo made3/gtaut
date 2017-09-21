@@ -24,6 +24,7 @@ public class CharacterController : MonoBehaviour
     public bool insRunTransition;
 
     public static bool isInMenu;
+    public static bool isCalling;
 
 
 
@@ -37,7 +38,7 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isInMenu)
+        if (!isInMenu && !isCalling)
         {
             float translation = Input.GetAxis("Vertical") * speed;
             float straffe = Input.GetAxis("Horizontal") * speed;
@@ -59,8 +60,9 @@ public class CharacterController : MonoBehaviour
 
     public void checkState()
     {
-        if (!isInMenu)
+        if (!isInMenu && !isCalling)
         {
+
             if (Input.GetButtonDown("Crouch"))
             {
                 if (!inCrouchTransition)
@@ -85,19 +87,27 @@ public class CharacterController : MonoBehaviour
                 runTransition();
             }
         }
-        if (Input.GetButtonDown("Cancel") && !TelefonWählscheibe.isCalling)
+        if (Input.GetButtonDown("Cancel"))
         {
-            
-            //switcher(isInMenu);
-            if (isInMenu)
+
+
+            if (!isCalling)
             {
-                isInMenu = false;
+                //switcher(isInMenu);
+                if (isInMenu)
+                {
+                    isInMenu = false;
+                }
+                else
+                {
+                    isInMenu = true;
+                }
+                menuTransition();
             }
             else
             {
-                isInMenu = true;
+                isCalling = false;
             }
-            menuTransition();
         }
     }
 

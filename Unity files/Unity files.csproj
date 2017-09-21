@@ -97,6 +97,7 @@
     <Compile Include="Assets\Scripts\UIOpenOfen.cs" />
     <Compile Include="Assets\Scripts\UIOpenSchranktuer.cs" />
     <Compile Include="Assets\Scripts\UIOpenSchublade.cs" />
+    <Compile Include="Assets\Scripts\UITelefon.cs" />
     <Compile Include="Assets\Scripts\camMouseLook.cs" />
     <Compile Include="Assets\Scripts\radio.cs" />
     <Compile Include="Assets\Scripts\uhr.cs" />
