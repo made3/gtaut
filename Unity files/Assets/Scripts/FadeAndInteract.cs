@@ -6,52 +6,32 @@ using UnityEngine.UI;
 public class FadeAndInteract : MonoBehaviour
 {
 
-    private Text myText1;
-    private Text myText2;
-    public string firstText = "Press E to open";
-    public string secondText = "Press E to close";
-    public float fadeTime = 10;
     private bool displayInfo;
     private Animator _animator;
-    private bool isOpen;
-    private bool moreTexts;
+    private GameObject crosshair;
 
     // Use this for initialization
     void Start()
     {
-        myText1 = GetComponentsInChildren<Text>()[0];
-        if (GetComponentsInChildren<Text>().Length > 1)
-        {
-            moreTexts = true;
-            myText2 = GetComponentsInChildren<Text>()[1];
-            myText2.color = Color.clear;
-        }
-        myText1.color = Color.clear;
+        crosshair = GameObject.Find("crosshair");
         _animator = GetComponent<Animator>();
-        isOpen = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!CharacterController.isInMenu)
-        {
-            FadeText();
-        }
         if (displayInfo && !CharacterController.isInMenu)
         {
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (isOpen)
+                if (_animator.GetBool("open"))
                 {
                     _animator.SetBool("open", false);
-                    isOpen = false;
                 }
                 else
                 {
                     _animator.SetBool("open", true);
-                    isOpen = true;
                 }
 
             }
@@ -59,52 +39,20 @@ public class FadeAndInteract : MonoBehaviour
         if (CharacterController.isInMenu)
         {
             displayInfo = false;
-            FadeText();
+            crosshair.SetActive(false);
         }
     }
 
     void OnMouseOver()
     {
+        crosshair.GetComponent<Animator>().SetBool("isActivated", true);
         displayInfo = true;
     }
 
     void OnMouseExit()
     {
+        crosshair.GetComponent<Animator>().SetBool("isActivated", false);
         displayInfo = false;
     }
 
-    void FadeText()
-    {
-        if (displayInfo)
-        {
-            if (isOpen)
-            {
-                myText1.text = secondText;
-                myText1.color = Color.Lerp(myText1.color, Color.white, fadeTime * Time.deltaTime);
-                if (moreTexts)
-                {
-                    myText2.color = Color.Lerp(myText2.color, Color.white, fadeTime * Time.deltaTime);
-                    myText2.text = secondText;
-                }
-            }
-            else
-            {
-                myText1.text = firstText;
-                myText1.color = Color.Lerp(myText1.color, Color.white, fadeTime * Time.deltaTime);
-                if (moreTexts)
-                {
-                    myText2.text = firstText;
-                    myText2.color = Color.Lerp(myText2.color, Color.white, fadeTime * Time.deltaTime);
-                }
-            }
-        }
-        else
-        {
-            myText1.color = Color.Lerp(myText1.color, Color.clear, fadeTime * Time.deltaTime);
-            if (moreTexts)
-            {
-                myText2.color = Color.Lerp(myText2.color, Color.clear, fadeTime * Time.deltaTime);
-            }
-        }
-    }
 }

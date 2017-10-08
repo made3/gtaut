@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class MenuHandler : MonoBehaviour {
 
-    private Image crosshair;
+    private GameObject crosshair;
     public GameObject exitButton;
 
 	// Use this for initialization
 	void Start () {
-        crosshair = GetComponentInChildren<Image>();
+        crosshair = GameObject.Find("crosshair");
         exitButton.SetActive(false);
     }
 
@@ -22,9 +22,9 @@ public class MenuHandler : MonoBehaviour {
             {
                 exitButton.SetActive(true);
             }
-            if (crosshair.enabled)
+            if (crosshair.activeSelf)
             {
-                crosshair.enabled = false;
+                crosshair.SetActive(false);
             }
         }
         else
@@ -33,11 +33,11 @@ public class MenuHandler : MonoBehaviour {
             {
                 exitButton.SetActive(false);
             }
-            if (!crosshair.enabled)
+            if (!crosshair.activeSelf)
             {
-                crosshair.enabled = true;
+                crosshair.SetActive(true);
             }
         }
-	}
+    }
     
 }

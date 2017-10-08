@@ -37,6 +37,7 @@ public class TelefonWählscheibe : MonoBehaviour {
                 escToExit.SetActive(false);
                 _animator.SetBool("open", false);
             }
+
             // Tasten wählen
         }
 	}
