@@ -11,6 +11,8 @@ public class TelefonWählscheibe : MonoBehaviour {
     public float smoothness;
     public GameObject escToExit;
 
+    public int currentNumber;
+
     // Use this for initialization
     void Start () {
         _animator = GetComponent<Animator>();
@@ -22,6 +24,7 @@ public class TelefonWählscheibe : MonoBehaviour {
         {
             if (!CharacterController.isCalling)
             {
+                GetComponent<BoxCollider>().enabled = false;
                 CharacterController.isCalling = true;
             }
             if (!escToExit.activeSelf)
@@ -34,11 +37,12 @@ public class TelefonWählscheibe : MonoBehaviour {
 
             if (Input.GetButtonDown("Cancel"))
             {
+                GetComponent<BoxCollider>().enabled = false;
+                CharacterController.isCalling = true;
                 escToExit.SetActive(false);
                 _animator.SetBool("open", false);
             }
 
-            // Tasten wählen
         }
 	}
 }

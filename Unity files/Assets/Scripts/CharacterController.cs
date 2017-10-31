@@ -26,8 +26,6 @@ public class CharacterController : MonoBehaviour
     public static bool isInMenu;
     public static bool isCalling;
 
-
-
     // Use this for initialization
     void Start()
     {
