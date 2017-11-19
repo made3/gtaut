@@ -16,14 +16,13 @@ public class NumberRecognition : MonoBehaviour {
 
     void OnMouseEnter()
     {
-        Debug.Log(gameObject.name);
-        _telefonWählscheibe.currentNumber = Int16.Parse(gameObject.name);
+        _telefonWählscheibe.currentHoverNumber = Int16.Parse(gameObject.name);
         _animator.SetInteger("whichKringel", UnityEngine.Random.Range(1, 4));
     }
 
     private void OnMouseExit()
     {
-        _telefonWählscheibe.currentNumber = 0;
+        _telefonWählscheibe.currentHoverNumber = -1;
         _animator.SetInteger("whichKringel", 0);
     }
 
