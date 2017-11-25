@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,10 +12,17 @@ public class TelefonWählscheibe : MonoBehaviour {
     public float smoothness;
     public GameObject escToExit;
 
-    public int currentNumber;
+    private int dialCounter = 0 ;
+    private int[] correctNumber = {0,1,7,6,6,8,9};
+    public int maxNumberLenght;
+    public int[] dialedNumbers;
+    public int currentHoverNumber;
 
     // Use this for initialization
     void Start () {
+        Array.Resize(ref dialedNumbers, maxNumberLenght);
+        resetDialedNumber();
+        currentHoverNumber = -1;
         _animator = GetComponent<Animator>();
     }
 
@@ -37,12 +45,53 @@ public class TelefonWählscheibe : MonoBehaviour {
 
             if (Input.GetButtonDown("Cancel"))
             {
-                GetComponent<BoxCollider>().enabled = false;
+                GetComponent<BoxCollider>().enabled = true;
                 CharacterController.isCalling = true;
                 escToExit.SetActive(false);
                 _animator.SetBool("open", false);
             }
 
+            if (Input.GetKeyDown(KeyCode.E) && currentHoverNumber != -1)
+            {
+                dialedNumbers[dialCounter] = currentHoverNumber;
+                dialCounter++;
+                if(dialCounter >= maxNumberLenght)
+                {
+                    if (arraysAreEqual(dialedNumbers, correctNumber))
+                    {
+                        Debug.Log("Correct number");
+                        resetDialedNumber();
+                        dialCounter = 0;
+                    }
+                    else
+                    {
+                        Debug.Log("Wrong number");
+                        resetDialedNumber();
+                        dialCounter = 0;
+                    }
+                }
+            }
+
         }
 	}
+
+    private void resetDialedNumber()
+    {
+        for(int i = 0; i < maxNumberLenght; i++)
+        {
+            dialedNumbers[i] = -1;
+        }
+    }
+
+    private bool arraysAreEqual(int[] x, int[] z)
+    {
+        for (int i = 0; i < maxNumberLenght; i++)
+        {
+            if (x[i] != z[i])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 }

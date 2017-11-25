@@ -4,7 +4,34 @@ timeCreated: 1505055594
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: "Deckfl\xE4che_1"
+    100002: "Deckfl\xE4che_1_2"
+    100004: "Deckfl\xE4che_2"
+    100006: schnur
+    100008: schnur_2
+    100010: //RootNode
+    100012: "W\xFCrfel"
+    400000: "Deckfl\xE4che_1"
+    400002: "Deckfl\xE4che_1_2"
+    400004: "Deckfl\xE4che_2"
+    400006: schnur
+    400008: schnur_2
+    400010: //RootNode
+    400012: "W\xFCrfel"
+    2300000: "Deckfl\xE4che_1_2"
+    2300002: "Deckfl\xE4che_2"
+    2300004: schnur_2
+    2300006: "W\xFCrfel"
+    3300000: "Deckfl\xE4che_1_2"
+    3300002: "Deckfl\xE4che_2"
+    3300004: schnur_2
+    3300006: "W\xFCrfel"
+    4300000: schnur_2
+    4300002: "Deckfl\xE4che_1_2"
+    4300004: "Deckfl\xE4che_2"
+    4300006: "W\xFCrfel"
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
