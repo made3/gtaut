@@ -1,57 +1,53 @@
 fileFormatVersion: 2
 guid: 364ddd45ac9f69f488fdf7cd01a20a88
-timeCreated: 1511618917
+timeCreated: 1511623236
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Klon
-    100002: scharnier
-    100004: scharnier_1
-    100006: Subdivision_Surface_0
-    100008: Subdivision_Surface_1
-    100010: //RootNode
-    100012: "W\xFCrfel"
+    100000: hochkantteile
+    100002: platte
+    100004: scharnier
+    100006: scharnier_1
+    100008: Subdivision_Surface_0
+    100010: Subdivision_Surface_1
+    100012: //RootNode
     100014: "W\xFCrfel_1"
     100016: "W\xFCrfel_1_2"
     100018: "W\xFCrfel_2"
     100020: "W\xFCrfel_2_2"
-    100022: "W\xFCrfel_2_3"
-    100024: "W\xFCrfel_3"
-    400000: Klon
-    400002: scharnier
-    400004: scharnier_1
-    400006: Subdivision_Surface_0
-    400008: Subdivision_Surface_1
-    400010: //RootNode
-    400012: "W\xFCrfel"
+    400000: hochkantteile
+    400002: platte
+    400004: scharnier
+    400006: scharnier_1
+    400008: Subdivision_Surface_0
+    400010: Subdivision_Surface_1
+    400012: //RootNode
     400014: "W\xFCrfel_1"
     400016: "W\xFCrfel_1_2"
     400018: "W\xFCrfel_2"
     400020: "W\xFCrfel_2_2"
-    400022: "W\xFCrfel_2_3"
-    400024: "W\xFCrfel_3"
-    2300000: "W\xFCrfel"
-    2300002: "W\xFCrfel_1"
-    2300004: "W\xFCrfel_1_2"
-    2300006: "W\xFCrfel_2"
-    2300008: "W\xFCrfel_2_2"
-    2300010: "W\xFCrfel_2_3"
-    2300012: "W\xFCrfel_3"
-    3300000: "W\xFCrfel"
-    3300002: "W\xFCrfel_1"
-    3300004: "W\xFCrfel_1_2"
-    3300006: "W\xFCrfel_2"
-    3300008: "W\xFCrfel_2_2"
-    3300010: "W\xFCrfel_2_3"
-    3300012: "W\xFCrfel_3"
+    2300000: platte
+    2300002: Subdivision_Surface_0
+    2300004: Subdivision_Surface_1
+    2300006: "W\xFCrfel_1"
+    2300008: "W\xFCrfel_1_2"
+    2300010: "W\xFCrfel_2"
+    2300012: "W\xFCrfel_2_2"
+    3300000: platte
+    3300002: Subdivision_Surface_0
+    3300004: Subdivision_Surface_1
+    3300006: "W\xFCrfel_1"
+    3300008: "W\xFCrfel_1_2"
+    3300010: "W\xFCrfel_2"
+    3300012: "W\xFCrfel_2_2"
     4300000: "W\xFCrfel_1"
     4300002: "W\xFCrfel_2"
     4300004: "W\xFCrfel_1_2"
     4300006: "W\xFCrfel_2_2"
-    4300008: "W\xFCrfel"
-    4300010: "W\xFCrfel_2_3"
-    4300012: "W\xFCrfel_3"
+    4300008: platte
+    4300010: Subdivision_Surface_0
+    4300012: Subdivision_Surface_1
   materials:
     importMaterials: 1
     materialName: 0
