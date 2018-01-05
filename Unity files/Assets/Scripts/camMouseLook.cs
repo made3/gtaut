@@ -20,13 +20,12 @@ public class camMouseLook : MonoBehaviour
     {
         character = this.transform.parent.gameObject;
         usedSensitivity = sensitivity;
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (CharacterController.isInMenu)
+        if (GameManager.currentState == GameManager.GameState.Menu)
         {
             usedSensitivity = sensitivityMenu;
         }

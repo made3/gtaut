@@ -36,7 +36,7 @@ public class CharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isInMenu && !isCalling)
+        if (GameManager.currentState == GameManager.GameState.Playing)
         {
             float translation = Input.GetAxis("Vertical") * speed;
             float straffe = Input.GetAxis("Horizontal") * speed;
@@ -50,62 +50,37 @@ public class CharacterController : MonoBehaviour
             {
                 crouchTransition();
             }
+
+            checkState();
         }
-        
-        checkState();
+
     }
 
 
     public void checkState()
     {
-        if (!isInMenu && !isCalling)
+        if (Input.GetButtonDown("Crouch"))
         {
-
-            if (Input.GetButtonDown("Crouch"))
+            if (!inCrouchTransition)
             {
-                if (!inCrouchTransition)
-                {
-                    //switcher(inCrouchTransition);
-                    inCrouchTransition = true;
-                    crouchEndpoint = transform.position;
-                    crouchTransition();
-                }
-            }
-
-            if (Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                //switcher(isRunning);
-                isRunning = true;
-                runTransition();
-            }
-            else if (Input.GetKeyUp(KeyCode.LeftShift))
-            {
-                //switcher(isRunning);
-                isRunning = false;
-                runTransition();
+                //switcher(inCrouchTransition);
+                inCrouchTransition = true;
+                crouchEndpoint = transform.position;
+                crouchTransition();
             }
         }
-        if (Input.GetButtonDown("Cancel"))
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-
-
-            if (!isCalling)
-            {
-                //switcher(isInMenu);
-                if (isInMenu)
-                {
-                    isInMenu = false;
-                }
-                else
-                {
-                    isInMenu = true;
-                }
-                menuTransition();
-            }
-            else
-            {
-                isCalling = false;
-            }
+            //switcher(isRunning);
+            isRunning = true;
+            runTransition();
+        }
+        else if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            //switcher(isRunning);
+            isRunning = false;
+            runTransition();
         }
     }
 
@@ -150,23 +125,6 @@ public class CharacterController : MonoBehaviour
                 isCrouching = true;
                 speed -= speedCrouching;
             }
-        }
-    }
-
-
-
-    // Evtl auslagern
-    public void menuTransition()
-    {
-        if (isInMenu)
-        {
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-        }
-        else
-        {
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
         }
     }
 

@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 29fd624fedb25ec42abc567866e5d83c
+timeCreated: 1515164705
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: alt
+    100002: "Deckfl\xE4che_1"
+    100004: "Deckfl\xE4che_2"
+    100006: "Kleiderb\xFCgel"
+    100008: Kleiderstange
+    100010: Kleidung1
+    100012: Kleidung1_2
+    100014: Kleidung2
+    100016: Kleidung2_2
+    100018: Lathe
+    100020: Lathe_2
+    100022: Lathe_2_2
+    100024: Oben
+    100026: Oben_2
+    100028: Schrank
+    100030: //RootNode
+    100032: Schrankteil
+    100034: Shirt
+    100036: Subdivision_Surface_1
+    100038: Subdivision_Surface_1_2
+    100040: Subdivision_Surface_2
+    100042: Subdivision_Surface_2_2
+    100044: Sweep
+    100046: "T\xFCr"
+    100048: "T\xFCr2"
+    100050: Unten
+    100052: Unten_2
+    100054: "W\xFCrfel"
+    100056: "W\xFCrfel_2"
+    100058: "W\xFCrfel_2_2"
+    100060: "W\xFCrfel_2_3"
+    100062: "W\xFCrfel_2_4"
+    400000: alt
+    400002: "Deckfl\xE4che_1"
+    400004: "Deckfl\xE4che_2"
+    400006: "Kleiderb\xFCgel"
+    400008: Kleiderstange
+    400010: Kleidung1
+    400012: Kleidung1_2
+    400014: Kleidung2
+    400016: Kleidung2_2
+    400018: Lathe
+    400020: Lathe_2
+    400022: Lathe_2_2
+    400024: Oben
+    400026: Oben_2
+    400028: Schrank
+    400030: //RootNode
+    400032: Schrankteil
+    400034: Shirt
+    400036: Subdivision_Surface_1
+    400038: Subdivision_Surface_1_2
+    400040: Subdivision_Surface_2
+    400042: Subdivision_Surface_2_2
+    400044: Sweep
+    400046: "T\xFCr"
+    400048: "T\xFCr2"
+    400050: Unten
+    400052: Unten_2
+    400054: "W\xFCrfel"
+    400056: "W\xFCrfel_2"
+    400058: "W\xFCrfel_2_2"
+    400060: "W\xFCrfel_2_3"
+    400062: "W\xFCrfel_2_4"
+    2300000: "Deckfl\xE4che_1"
+    2300002: "Deckfl\xE4che_2"
+    2300004: "Kleiderb\xFCgel"
+    2300006: Kleiderstange
+    2300008: Lathe
+    2300010: Lathe_2
+    2300012: Lathe_2_2
+    2300014: Oben
+    2300016: Oben_2
+    2300018: Schrank
+    2300020: Schrankteil
+    2300022: Shirt
+    2300024: Sweep
+    2300026: "T\xFCr"
+    2300028: "T\xFCr2"
+    2300030: Unten
+    2300032: Unten_2
+    2300034: "W\xFCrfel"
+    2300036: "W\xFCrfel_2"
+    2300038: "W\xFCrfel_2_2"
+    2300040: "W\xFCrfel_2_3"
+    2300042: "W\xFCrfel_2_4"
+    3300000: "Deckfl\xE4che_1"
+    3300002: "Deckfl\xE4che_2"
+    3300004: "Kleiderb\xFCgel"
+    3300006: Kleiderstange
+    3300008: Lathe
+    3300010: Lathe_2
+    3300012: Lathe_2_2
+    3300014: Oben
+    3300016: Oben_2
+    3300018: Schrank
+    3300020: Schrankteil
+    3300022: Shirt
+    3300024: Sweep
+    3300026: "T\xFCr"
+    3300028: "T\xFCr2"
+    3300030: Unten
+    3300032: Unten_2
+    3300034: "W\xFCrfel"
+    3300036: "W\xFCrfel_2"
+    3300038: "W\xFCrfel_2_2"
+    3300040: "W\xFCrfel_2_3"
+    3300042: "W\xFCrfel_2_4"
+    4300000: "T\xFCr2"
+    4300002: Lathe_2
+    4300004: "T\xFCr"
+    4300006: Lathe_2_2
+    4300008: Unten
+    4300010: Oben
+    4300012: Unten_2
+    4300014: Oben_2
+    4300016: Shirt
+    4300018: "Kleiderb\xFCgel"
+    4300020: Kleiderstange
+    4300022: Schrankteil
+    4300024: Schrank
+    4300026: "W\xFCrfel_2"
+    4300028: "W\xFCrfel_2_2"
+    4300030: "W\xFCrfel_2_3"
+    4300032: "W\xFCrfel_2_4"
+    4300034: Lathe
+    4300036: Sweep
+    4300038: "Deckfl\xE4che_1"
+    4300040: "Deckfl\xE4che_2"
+    4300042: "W\xFCrfel"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
