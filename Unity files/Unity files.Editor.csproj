@@ -300,13 +300,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity files.csproj">
-      <Project>{99A175A9-629C-9F60-B092-20DF7763DD6B}</Project>
-      <Name>Unity files</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity files.Plugins.csproj">
       <Project>{421F6202-04CA-ADC1-0740-9989BEF50459}</Project>
       <Name>Unity files.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity files.csproj">
+      <Project>{99A175A9-629C-9F60-B092-20DF7763DD6B}</Project>
+      <Name>Unity files</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
