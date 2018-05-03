@@ -308,24 +308,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\camMouseLook.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
-    <Compile Include="Assets\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\ExitButton.cs" />
-    <Compile Include="Assets\Scripts\FadeAndInteract.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\MenuHandler.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\NumberRecognition.cs" />
+    <Compile Include="Assets\Scripts\OpenRotation.cs" />
     <Compile Include="Assets\Scripts\radio.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
     <Compile Include="Assets\Scripts\TelefonWählscheibe.cs" />
     <Compile Include="Assets\Scripts\uhr.cs" />
-    <Compile Include="Assets\Scripts\UIOpenFenster.cs" />
-    <Compile Include="Assets\Scripts\UIOpenKuehlschrank.cs" />
-    <Compile Include="Assets\Scripts\UIOpenOfen.cs" />
-    <Compile Include="Assets\Scripts\UIOpenSchranktuer.cs" />
-    <Compile Include="Assets\Scripts\UIOpenSchublade.cs" />
-    <Compile Include="Assets\Scripts\UITelefon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
