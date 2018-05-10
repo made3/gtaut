@@ -13,9 +13,6 @@ public class OpenPosition : MonoBehaviour
     [SerializeField]
     private bool invertDirection;
 
-    [HideInInspector]
-    public bool isInFocus;
-
     private enum CurrentAction { open, close }
 
     private CurrentAction currentAction = CurrentAction.close;
@@ -53,6 +50,8 @@ public class OpenPosition : MonoBehaviour
     {
         startPosition = transform.position;
         DetermineMaxPosition();
+
+        // Layer is not used in code anyway, but might be used somewhen later
         this.gameObject.layer = LayerMask.NameToLayer("Interactable");
     }
 

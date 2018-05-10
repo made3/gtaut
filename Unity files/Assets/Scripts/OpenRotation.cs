@@ -9,9 +9,6 @@ public class OpenRotation : MonoBehaviour {
     [SerializeField]
     private PivotPosition pivotPosition;
 
-    [HideInInspector]
-    public bool isInFocus;
-
     private enum CurrentAction { open, close }
 
     private CurrentAction currentAction = CurrentAction.close;
@@ -63,6 +60,8 @@ public class OpenRotation : MonoBehaviour {
                 break;
         }
 
+
+        // Layer is not used in code anyway, but might be used somewhen later
         this.gameObject.layer = LayerMask.NameToLayer("Interactable");
     }
 
