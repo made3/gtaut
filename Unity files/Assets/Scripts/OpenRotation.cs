@@ -9,6 +9,9 @@ public class OpenRotation : MonoBehaviour {
     [SerializeField]
     private PivotPosition pivotPosition;
 
+    [HideInInspector]
+    public bool isInFocus;
+
     private enum CurrentAction { open, close }
 
     private CurrentAction currentAction = CurrentAction.close;
@@ -59,12 +62,14 @@ public class OpenRotation : MonoBehaviour {
                 maxRotation = Quaternion.Euler(-maxAngle, transform.eulerAngles.y, transform.eulerAngles.z);
                 break;
         }
+
+        this.gameObject.layer = LayerMask.NameToLayer("Interactable");
     }
 
     // Update is called once per frame
     void Update () {
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && isInFocus)
         {
             if(currentAction == CurrentAction.open)
             {/*
@@ -101,7 +106,6 @@ public class OpenRotation : MonoBehaviour {
         }
         if (!isIdling)
         {
-            Debug.Log(currentLerpTime);
             if (currentAction == CurrentAction.open)
             {
                 currentLerpTime += speed * Time.deltaTime;

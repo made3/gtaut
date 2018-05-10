@@ -5,22 +5,24 @@ using UnityEngine.UI;
 
 public class MenuHandler : MonoBehaviour {
 
+    [SerializeField]
     private GameObject crosshair;
-    public GameObject exitButton;
+
+    [SerializeField]
+    private GameObject menuParent;
 
 	// Use this for initialization
 	void Start () {
-        crosshair = GameObject.Find("crosshair");
-        exitButton.SetActive(false);
+        menuParent.SetActive(false);
     }
 
     // Update is called once per frame
     void Update () {
         if (CharacterController.isInMenu)
         {
-            if (!exitButton.activeSelf)
+            if (!menuParent.activeSelf)
             {
-                exitButton.SetActive(true);
+                menuParent.SetActive(true);
             }
             if (crosshair.activeSelf)
             {
@@ -29,9 +31,9 @@ public class MenuHandler : MonoBehaviour {
         }
         else
         {
-            if (exitButton.activeSelf)
+            if (menuParent.activeSelf)
             {
-                exitButton.SetActive(false);
+                menuParent.SetActive(false);
             }
             if (!crosshair.activeSelf)
             {
