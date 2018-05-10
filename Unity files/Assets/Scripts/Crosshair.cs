@@ -4,6 +4,7 @@ using UnityEngine;
 
 /// <summary>
 /// If in range of an interactable object the crosshair turns into an "e"
+/// If "e" is pressed it will start a function on the focused object
 /// </summary>
 
 public class Crosshair : MonoBehaviour {
@@ -37,15 +38,17 @@ public class Crosshair : MonoBehaviour {
                     anim.Play("Crosshair", 0, 0);
                 }
                 anim.SetFloat("speed", 1);
-                
 
-                if(hit.collider.gameObject.GetComponent<OpenPosition>() != null)
+                if (Input.GetButtonDown("Interact"))
                 {
-                    hit.collider.gameObject.GetComponent<OpenPosition>().isInFocus = true;
-                }
-                else if(hit.collider.gameObject.GetComponent<OpenRotation>() != null)
-                {
-                    hit.collider.gameObject.GetComponent<OpenRotation>().isInFocus = true;
+                    if(hit.collider.gameObject.GetComponent<OpenPosition>() != null)
+                    {
+                        hit.collider.gameObject.GetComponent<OpenPosition>().OnInteractionPressed();
+                    }
+                    else if(hit.collider.gameObject.GetComponent<OpenRotation>() != null)
+                    {
+                        hit.collider.gameObject.GetComponent<OpenRotation>().OnInteractionPressed();
+                    }
                 }
 
                 if(hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
@@ -56,23 +59,6 @@ public class Crosshair : MonoBehaviour {
         }
         else
         {
-            if (lastFocusedObject.GetComponent<OpenPosition>() != null)
-            {
-                if (lastFocusedObject.GetComponent<OpenPosition>().isInFocus)
-                {
-                    print("Changed for: " + lastFocusedObject.name);
-                    lastFocusedObject.GetComponent<OpenPosition>().isInFocus = false;
-                }
-            }
-            else if (lastFocusedObject.GetComponent<OpenRotation>() != null)
-            {
-                if (lastFocusedObject.GetComponent<OpenRotation>().isInFocus)
-                {
-                    print("Changed for: " + lastFocusedObject.name);
-                    lastFocusedObject.GetComponent<OpenRotation>().isInFocus = false;
-                }
-            }
-
             animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
             if (animStateInfo.normalizedTime > 1)
             {

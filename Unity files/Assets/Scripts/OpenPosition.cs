@@ -98,38 +98,39 @@ public class OpenPosition : MonoBehaviour
         }
     }
 
+    public void OnInteractionPressed()
+    {
+        if (currentAction == CurrentAction.open)
+        {
+            currentAction = CurrentAction.close;
+        }
+        else if (currentAction == CurrentAction.close)
+        {
+
+            // Set random value, which gets subtracted or added everytime the object opens
+
+            if (isRandomRangeActive)
+            {
+                randomVariation = Random.Range(0, maxLength / randomRangeFactor);
+
+                if (Random.value > 0.5f)
+                {
+                    randomVariation = -randomVariation;
+                }
+
+                DetermineMaxPosition();
+            }
+
+            currentAction = CurrentAction.open;
+        }
+
+        if (isIdling) isIdling = !isIdling;
+    }
+
     // Update is called once per frame
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.E) && isInFocus)
-        {
-            if (currentAction == CurrentAction.open)
-            {
-                currentAction = CurrentAction.close;
-            }
-            else if (currentAction == CurrentAction.close)
-            {
-
-                // Set random value, which gets subtracted or added everytime the object opens
-
-                if (isRandomRangeActive)
-                {
-                    randomVariation = Random.Range(0, maxLength / randomRangeFactor);
-
-                    if (Random.value > 0.5f)
-                    {
-                        randomVariation = -randomVariation;
-                    }
-
-                    DetermineMaxPosition();
-                }
-
-                currentAction = CurrentAction.open;
-            }
-
-            if (isIdling) isIdling = !isIdling;
-        }
         if (!isIdling)
         {
             if (currentAction == CurrentAction.open)

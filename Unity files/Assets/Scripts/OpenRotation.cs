@@ -66,13 +66,10 @@ public class OpenRotation : MonoBehaviour {
         this.gameObject.layer = LayerMask.NameToLayer("Interactable");
     }
 
-    // Update is called once per frame
-    void Update () {
-
-        if (Input.GetKeyDown(KeyCode.E) && isInFocus)
-        {
-            if(currentAction == CurrentAction.open)
-            {/*
+    public void OnInteractionPressed()
+    {
+        if (currentAction == CurrentAction.open)
+        {/*
                 if (randomAngleVariation)
                 {
                     if (Random.value > 0.5f)
@@ -84,10 +81,10 @@ public class OpenRotation : MonoBehaviour {
                         maxRotation = startRotation;
                     }
                 }*/
-                currentAction = CurrentAction.close;
-            }
-            else if(currentAction == CurrentAction.close)
-            {/*
+            currentAction = CurrentAction.close;
+        }
+        else if (currentAction == CurrentAction.close)
+        {/*
                 if (randomAngleVariation)
                 {
                     if (Random.value > 0.5f)
@@ -99,11 +96,15 @@ public class OpenRotation : MonoBehaviour {
                         maxRotation = Quaternion.Euler(transform.eulerAngles.x, maxAngle - randomPlusMinusSpeed, transform.eulerAngles.z);
                     }
                 }*/
-                currentAction = CurrentAction.open;
-            }
-
-            if (isIdling) isIdling = !isIdling;
+            currentAction = CurrentAction.open;
         }
+
+        if (isIdling) isIdling = !isIdling;
+    }
+
+    // Update is called once per frame
+    void Update () {
+
         if (!isIdling)
         {
             if (currentAction == CurrentAction.open)
