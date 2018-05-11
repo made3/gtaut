@@ -101,11 +101,12 @@ public class CharacterController : MonoBehaviour
         if (isCrouching)
         {
             tmpLerpVariable = Mathf.Lerp(0, (crouchEndpoint + new Vector3(0,1,0)).y, 1f / crouchSmoothing);
-            transform.position += new Vector3(0, tmpLerpVariable, 0);
+            Camera.main.transform.position += new Vector3(0, tmpLerpVariable, 0);
+
             //transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y + 1, 1f / crouchSmoothing), transform.position.z);
-            if (transform.position.y >= (crouchEndpoint + new Vector3(0, 1, 0)).y)
+            if (Camera.main.transform.position.y >= (crouchEndpoint + new Vector3(0, 1, 0)).y)
             {
-                transform.position = new Vector3(transform.position.x, (crouchEndpoint + new Vector3(0, 1, 0)).y, transform.position.z);
+                Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, (crouchEndpoint + new Vector3(0, 1, 0)).y, Camera.main.transform.position.z);
                 //switcher(inCrouchTransition);
                 inCrouchTransition = false;
                 isCrouching = false;
@@ -115,11 +116,11 @@ public class CharacterController : MonoBehaviour
         else
         {
             tmpLerpVariable = Mathf.Lerp(0, (crouchEndpoint - new Vector3(0, 1, 0)).y, 1f / crouchSmoothing);
-            transform.position -= new Vector3(0, tmpLerpVariable, 0);
+            Camera.main.transform.position -= new Vector3(0, tmpLerpVariable, 0);
             //transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y - 1, 1f / crouchSmoothing), transform.position.z);
-            if (transform.position.y <= (crouchEndpoint - new Vector3(0, 1, 0)).y)
+            if (Camera.main.transform.position.y <= (crouchEndpoint - new Vector3(0, 1, 0)).y)
             {
-                transform.position = new Vector3 (transform.position.x, (crouchEndpoint - new Vector3(0, 1, 0)).y, transform.position.z);
+                Camera.main.transform.position = new Vector3 (Camera.main.transform.position.x, (crouchEndpoint - new Vector3(0, 1, 0)).y, Camera.main.transform.position.z);
                 //switcher(inCrouchTransition);
                 inCrouchTransition = false;
                 isCrouching = true;

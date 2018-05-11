@@ -306,6 +306,7 @@
     <Compile Include="Assets\Scripts\Crosshair.cs" />
     <Compile Include="Assets\Scripts\ExitButton.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Scripts\MenuHandler.cs" />
     <Compile Include="Assets\Scripts\NumberRecognition.cs" />
     <Compile Include="Assets\Scripts\OpenPosition.cs" />

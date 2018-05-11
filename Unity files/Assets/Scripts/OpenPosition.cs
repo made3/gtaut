@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenPosition : MonoBehaviour
+public class OpenPosition : MonoBehaviour, IInteractable
 {
 
     private enum Direction { horizontalX, horizontalZ, vertical }

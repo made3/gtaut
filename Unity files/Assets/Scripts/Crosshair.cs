@@ -41,20 +41,22 @@ public class Crosshair : MonoBehaviour {
 
                 if (Input.GetButtonDown("Interact"))
                 {
-                    if(hit.collider.gameObject.GetComponent<OpenPosition>() != null)
-                    {
-                        hit.collider.gameObject.GetComponent<OpenPosition>().OnInteractionPressed();
-                    }
-                    else if(hit.collider.gameObject.GetComponent<OpenRotation>() != null)
-                    {
-                        hit.collider.gameObject.GetComponent<OpenRotation>().OnInteractionPressed();
-                    }
+                    hit.collider.gameObject.GetComponent<IInteractable>().OnInteractionPressed();
                 }
 
                 if(hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
                 {
                     lastFocusedObject = hit.collider.gameObject;
                 }
+            }
+            else
+            {
+                animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
+                if (animStateInfo.normalizedTime > 1)
+                {
+                    anim.Play("Crosshair", 0, 1);
+                }
+                anim.SetFloat("speed", -1);
             }
         }
         else

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenRotation : MonoBehaviour {
+public class OpenRotation : MonoBehaviour, IInteractable
+{
 
     private enum PivotPosition { left, right, top, bottom }
 
@@ -14,6 +15,12 @@ public class OpenRotation : MonoBehaviour {
     private CurrentAction currentAction = CurrentAction.close;
 
     private bool isIdling = true;
+
+    [SerializeField]
+    private bool isDoor;
+
+    [SerializeField]
+    private bool isLocked;
 
     [Header("Speed")]
 
@@ -67,8 +74,18 @@ public class OpenRotation : MonoBehaviour {
 
     public void OnInteractionPressed()
     {
-        if (currentAction == CurrentAction.open)
-        {/*
+        if (!isLocked)
+        {
+            if (isDoor)
+            {
+                foreach(Animator anim in GetComponentsInChildren<Animator>())
+                {
+                    anim.SetTrigger("isOpened");
+                }
+            }
+
+            if (currentAction == CurrentAction.open)
+            {/*
                 if (randomAngleVariation)
                 {
                     if (Random.value > 0.5f)
@@ -80,10 +97,10 @@ public class OpenRotation : MonoBehaviour {
                         maxRotation = startRotation;
                     }
                 }*/
-            currentAction = CurrentAction.close;
-        }
-        else if (currentAction == CurrentAction.close)
-        {/*
+                currentAction = CurrentAction.close;
+            }
+            else if (currentAction == CurrentAction.close)
+            {/*
                 if (randomAngleVariation)
                 {
                     if (Random.value > 0.5f)
@@ -95,10 +112,22 @@ public class OpenRotation : MonoBehaviour {
                         maxRotation = Quaternion.Euler(transform.eulerAngles.x, maxAngle - randomPlusMinusSpeed, transform.eulerAngles.z);
                     }
                 }*/
-            currentAction = CurrentAction.open;
-        }
+                currentAction = CurrentAction.open;
+            }
 
-        if (isIdling) isIdling = !isIdling;
+            if (isIdling) isIdling = !isIdling;
+
+        }
+        else
+        {
+            if (isDoor)
+            {
+                foreach (Animator anim in GetComponentsInChildren<Animator>())
+                {
+                    anim.SetTrigger("isLocked");
+                }
+            }
+        }
     }
 
     // Update is called once per frame

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TelefonWählscheibe : MonoBehaviour {
+public class TelefonWählscheibe : MonoBehaviour, IInteractable {
 
     private Animator _animator;
     public GameObject _character;
@@ -50,30 +50,32 @@ public class TelefonWählscheibe : MonoBehaviour {
                 escToExit.SetActive(false);
                 _animator.SetBool("open", false);
             }
-
-            if (Input.GetKeyDown(KeyCode.E) && currentHoverNumber != -1)
-            {
-                dialedNumbers[dialCounter] = currentHoverNumber;
-                dialCounter++;
-                if(dialCounter >= maxNumberLenght)
-                {
-                    if (arraysAreEqual(dialedNumbers, correctNumber))
-                    {
-                        Debug.Log("Correct number");
-                        resetDialedNumber();
-                        dialCounter = 0;
-                    }
-                    else
-                    {
-                        Debug.Log("Wrong number");
-                        resetDialedNumber();
-                        dialCounter = 0;
-                    }
-                }
-            }
-
         }
 	}
+
+    public void OnInteractionPressed()
+    {
+        if(currentHoverNumber != -1)
+        {
+            dialedNumbers[dialCounter] = currentHoverNumber;
+            dialCounter++;
+            if (dialCounter >= maxNumberLenght)
+            {
+                if (arraysAreEqual(dialedNumbers, correctNumber))
+                {
+                    Debug.Log("Correct number");
+                    resetDialedNumber();
+                    dialCounter = 0;
+                }
+                else
+                {
+                    Debug.Log("Wrong number");
+                    resetDialedNumber();
+                    dialCounter = 0;
+                }
+            }
+        }
+    }
 
     private void resetDialedNumber()
     {
