@@ -41,7 +41,10 @@ public class Crosshair : MonoBehaviour {
 
                 if (Input.GetButtonDown("Interact"))
                 {
-                    hit.collider.gameObject.GetComponent<IInteractable>().OnInteractionPressed();
+                    foreach(IInteractable script in hit.collider.gameObject.GetComponents<IInteractable>())
+                    {
+                        script.OnInteractionPressed();
+                    }
                 }
 
                 if(hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())

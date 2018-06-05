@@ -4,6 +4,8 @@ using System.Collections;
 public class CharacterController : MonoBehaviour
 {
 
+    public static CharacterController instance = null;
+
     public float speed = 10.0F;
     public float speedRunning;
     public float speedCrouching;
@@ -29,8 +31,22 @@ public class CharacterController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public GameObject GetPlayer()
+    {
+        return gameObject;
     }
 
     // Update is called once per frame

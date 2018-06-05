@@ -20,7 +20,7 @@ public class OpenRotation : MonoBehaviour, IInteractable
     private bool isDoor;
 
     [SerializeField]
-    private bool isLocked;
+    public bool isLocked;
 
     [Header("Speed")]
 
@@ -68,7 +68,6 @@ public class OpenRotation : MonoBehaviour, IInteractable
         }
 
 
-        // Layer is not used in code anyway, but might be used somewhen later
         this.gameObject.layer = LayerMask.NameToLayer("Interactable");
     }
 
