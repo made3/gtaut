@@ -4,7 +4,4 @@ Desktop:
 - Internet Adventurer
 - Shutdown und Reset Desktop Button bzw Restart
 - Old Exam mit Datum von aktuell-1 und aktuell-2 im Papierkorb
-- Fehlermeldung zu wenig Rechte bei Storage Icons
-- JPGs aus Trash als Desktophintergrund
-- JPGs anzeigen
 - Scene Wechsel bei PP Games
