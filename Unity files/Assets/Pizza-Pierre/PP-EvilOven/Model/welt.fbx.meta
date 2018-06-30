@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: ef80e875dad273747836bbcbc26be3fa
+timeCreated: 1511297529
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Kugel
+    100002: Kugel_1
+    100004: Oschachtel
+    100006: pizza
+    100008: "so\xDFenbeh\xE4lter"
+    100010: Uschachtel
+    100012: //RootNode
+    100014: "W\xFCrfel"
+    100016: Zylinder
+    100018: Zylinder_2
+    100020: walkableArea
+    100022: "so\xDFe"
+    100024: "so\xDFe_2"
+    400000: Kugel
+    400002: Kugel_1
+    400004: Oschachtel
+    400006: pizza
+    400008: "so\xDFenbeh\xE4lter"
+    400010: Uschachtel
+    400012: //RootNode
+    400014: "W\xFCrfel"
+    400016: Zylinder
+    400018: Zylinder_2
+    400020: walkableArea
+    400022: "so\xDFe"
+    400024: "so\xDFe_2"
+    2300000: Kugel
+    2300002: Kugel_1
+    2300004: Oschachtel
+    2300006: Uschachtel
+    2300008: "W\xFCrfel"
+    2300010: Zylinder
+    2300012: Zylinder_2
+    2300014: walkableArea
+    2300016: "so\xDFe"
+    2300018: pizza
+    2300020: "so\xDFe_2"
+    3300000: Kugel
+    3300002: Kugel_1
+    3300004: Oschachtel
+    3300006: Uschachtel
+    3300008: "W\xFCrfel"
+    3300010: Zylinder
+    3300012: Zylinder_2
+    3300014: walkableArea
+    3300016: "so\xDFe"
+    3300018: pizza
+    3300020: "so\xDFe_2"
+    4300000: "W\xFCrfel"
+    4300002: Kugel_1
+    4300004: Zylinder
+    4300006: Kugel
+    4300008: Zylinder_2
+    4300010: Oschachtel
+    4300012: Uschachtel
+    4300014: walkableArea
+    4300016: "so\xDFe"
+    4300018: pizza
+    4300020: "so\xDFe_2"
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

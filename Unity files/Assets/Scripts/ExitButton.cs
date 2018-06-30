@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class ExitButton : MonoBehaviour {
+public class ExitButton : MonoBehaviour, IPointerClickHandler {
 
     public Button exitButton;
 
 	// Use this for initialization
 	void Start () {
-        exitButton.onClick.AddListener(ExitGame);
-	}
+
+   }
 	
 	// Update is called once per frame
 	void Update () {
@@ -18,6 +19,11 @@ public class ExitButton : MonoBehaviour {
 	}
 
     void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
     {
         Application.Quit();
     }

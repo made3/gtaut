@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f7236d929c518db4781df5a60dc98672
+timeCreated: 1508442987
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: DK Display Patrol
+  fontNames:
+  - DK Display Patrol
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

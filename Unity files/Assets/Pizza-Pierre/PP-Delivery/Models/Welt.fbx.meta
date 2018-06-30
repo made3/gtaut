@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 3faa840aaf07ffc4182731b9a66ee423
+timeCreated: 1514812104
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: "W\xFCrfel"
+    100004: "W\xFCrfel_1"
+    100006: "W\xFCrfel_10"
+    100008: "W\xFCrfel_11"
+    100010: "W\xFCrfel_12"
+    100012: "W\xFCrfel_2"
+    100014: "W\xFCrfel_3"
+    100016: "W\xFCrfel_4"
+    100018: "W\xFCrfel_5"
+    100020: "W\xFCrfel_6"
+    100022: "W\xFCrfel_7"
+    100024: "W\xFCrfel_8"
+    100026: "W\xFCrfel_9"
+    400000: //RootNode
+    400002: "W\xFCrfel"
+    400004: "W\xFCrfel_1"
+    400006: "W\xFCrfel_10"
+    400008: "W\xFCrfel_11"
+    400010: "W\xFCrfel_12"
+    400012: "W\xFCrfel_2"
+    400014: "W\xFCrfel_3"
+    400016: "W\xFCrfel_4"
+    400018: "W\xFCrfel_5"
+    400020: "W\xFCrfel_6"
+    400022: "W\xFCrfel_7"
+    400024: "W\xFCrfel_8"
+    400026: "W\xFCrfel_9"
+    2100000: tisch_holz
+    2100002: tisch_holz.2
+    2100004: tisch_holz.4
+    2100006: tisch_holz.6
+    2100008: tisch_holz.8
+    2100010: tisch_holz.10
+    2100012: tisch_holz.12
+    2100014: tisch_holz.14
+    2100016: tisch_holz.16
+    2100018: tisch_holz.18
+    2100020: tisch_holz.20
+    2100022: tisch_holz.22
+    2100024: tisch_holz.24
+    2300000: "W\xFCrfel"
+    2300002: "W\xFCrfel_1"
+    2300004: "W\xFCrfel_10"
+    2300006: "W\xFCrfel_11"
+    2300008: "W\xFCrfel_12"
+    2300010: "W\xFCrfel_2"
+    2300012: "W\xFCrfel_3"
+    2300014: "W\xFCrfel_4"
+    2300016: "W\xFCrfel_5"
+    2300018: "W\xFCrfel_6"
+    2300020: "W\xFCrfel_7"
+    2300022: "W\xFCrfel_8"
+    2300024: "W\xFCrfel_9"
+    3300000: "W\xFCrfel"
+    3300002: "W\xFCrfel_1"
+    3300004: "W\xFCrfel_10"
+    3300006: "W\xFCrfel_11"
+    3300008: "W\xFCrfel_12"
+    3300010: "W\xFCrfel_2"
+    3300012: "W\xFCrfel_3"
+    3300014: "W\xFCrfel_4"
+    3300016: "W\xFCrfel_5"
+    3300018: "W\xFCrfel_6"
+    3300020: "W\xFCrfel_7"
+    3300022: "W\xFCrfel_8"
+    3300024: "W\xFCrfel_9"
+    4300000: "W\xFCrfel_12"
+    4300002: "W\xFCrfel_11"
+    4300004: "W\xFCrfel_10"
+    4300006: "W\xFCrfel_9"
+    4300008: "W\xFCrfel_8"
+    4300010: "W\xFCrfel_7"
+    4300012: "W\xFCrfel_6"
+    4300014: "W\xFCrfel_5"
+    4300016: "W\xFCrfel_4"
+    4300018: "W\xFCrfel_3"
+    4300020: "W\xFCrfel_2"
+    4300022: "W\xFCrfel_1"
+    4300024: "W\xFCrfel"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

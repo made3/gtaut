@@ -1,0 +1,877 @@
+fileFormatVersion: 2
+guid: 7b6c112c3b924244b814fb97b21fe495
+timeCreated: 1512057717
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: alt
+    100002: arm
+    100004: "Deckfl\xE4che_1"
+    100006: "Deckfl\xE4che_1_2"
+    100008: "Deckfl\xE4che_2"
+    100010: "Deckfl\xE4che_2_2"
+    100012: Haare
+    100014: haare
+    100016: haare_2
+    100018: Jetpack
+    100020: Joint_1
+    100022: Joint_2
+    100024: Joint_2_2
+    100026: Joint_2_3
+    100028: Joint_3
+    100030: Joint_3_2
+    100032: Joint_3_3
+    100034: Joint_4
+    100036: Kugel
+    100038: Kugel_2
+    100040: LArm
+    100042: "LFu\xDF"
+    100044: "LFu\xDF_2"
+    100046: "LH\xFCfte"
+    100048: LKnie
+    100050: LSchulter
+    100052: RArm
+    100054: "RFu\xDF"
+    100056: "RFu\xDF_2"
+    100058: "RH\xFCfte"
+    100060: RKnie
+    100062: RSchulter
+    100064: Spline
+    100066: Subdivision_Surface
+    100068: Sweep
+    100070: Sweep_2
+    100072: //RootNode
+    100074: "W\xFCrfel"
+    100076: "W\xFCrfel_1"
+    100078: Zylinder
+    100080: Zylinder_1
+    100082: Zylinder_2
+    100084: Zylinder_3
+    100086: Zylinder_3_2
+    100088: Zylinder_4
+    100090: Zylinder_5
+    400000: alt
+    400002: arm
+    400004: "Deckfl\xE4che_1"
+    400006: "Deckfl\xE4che_1_2"
+    400008: "Deckfl\xE4che_2"
+    400010: "Deckfl\xE4che_2_2"
+    400012: Haare
+    400014: haare
+    400016: haare_2
+    400018: Jetpack
+    400020: Joint_1
+    400022: Joint_2
+    400024: Joint_2_2
+    400026: Joint_2_3
+    400028: Joint_3
+    400030: Joint_3_2
+    400032: Joint_3_3
+    400034: Joint_4
+    400036: Kugel
+    400038: Kugel_2
+    400040: LArm
+    400042: "LFu\xDF"
+    400044: "LFu\xDF_2"
+    400046: "LH\xFCfte"
+    400048: LKnie
+    400050: LSchulter
+    400052: RArm
+    400054: "RFu\xDF"
+    400056: "RFu\xDF_2"
+    400058: "RH\xFCfte"
+    400060: RKnie
+    400062: RSchulter
+    400064: Spline
+    400066: Subdivision_Surface
+    400068: Sweep
+    400070: Sweep_2
+    400072: //RootNode
+    400074: "W\xFCrfel"
+    400076: "W\xFCrfel_1"
+    400078: Zylinder
+    400080: Zylinder_1
+    400082: Zylinder_2
+    400084: Zylinder_3
+    400086: Zylinder_3_2
+    400088: Zylinder_4
+    400090: Zylinder_5
+    2300000: "Deckfl\xE4che_1"
+    2300002: "Deckfl\xE4che_1_2"
+    2300004: "Deckfl\xE4che_2"
+    2300006: "Deckfl\xE4che_2_2"
+    2300008: haare_2
+    2300010: Kugel
+    2300012: Sweep
+    2300014: Sweep_2
+    2300016: "W\xFCrfel"
+    2300018: "W\xFCrfel_1"
+    2300020: Zylinder
+    2300022: Zylinder_1
+    2300024: Zylinder_2
+    2300026: Zylinder_3
+    2300028: Zylinder_3_2
+    2300030: Zylinder_4
+    2300032: Zylinder_5
+    3300000: "Deckfl\xE4che_1"
+    3300002: "Deckfl\xE4che_1_2"
+    3300004: "Deckfl\xE4che_2"
+    3300006: "Deckfl\xE4che_2_2"
+    3300008: haare_2
+    3300010: Kugel
+    3300012: Sweep
+    3300014: Sweep_2
+    3300016: "W\xFCrfel"
+    3300018: "W\xFCrfel_1"
+    3300020: Zylinder
+    3300022: Zylinder_1
+    3300024: Zylinder_2
+    3300026: Zylinder_3
+    3300028: Zylinder_3_2
+    3300030: Zylinder_4
+    3300032: Zylinder_5
+    4300000: Sweep
+    4300002: "Deckfl\xE4che_1"
+    4300004: "Deckfl\xE4che_2"
+    4300006: Sweep_2
+    4300008: "Deckfl\xE4che_1_2"
+    4300010: "Deckfl\xE4che_2_2"
+    4300012: Zylinder_5
+    4300014: Zylinder_4
+    4300016: Zylinder_3
+    4300018: Zylinder_2
+    4300020: "W\xFCrfel_1"
+    4300022: Zylinder_1
+    4300024: Zylinder
+    4300026: "W\xFCrfel"
+    4300028: Kugel_2
+    4300030: haare_2
+    4300032: Kugel
+    4300034: Zylinder_3_2
+    7400000: Idle
+    7400002: Fly
+    7400004: Attack
+    7400006: Hit
+    7400008: Die
+    7400010: Swim
+    9500000: //RootNode
+    13700000: Kugel_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Kugel_2
+        weight: 1
+      - path: LArm
+        weight: 1
+      - path: "LFu\xDF"
+        weight: 1
+      - path: RArm
+        weight: 1
+      - path: "RFu\xDF"
+        weight: 1
+      - path: Spline
+        weight: 1
+      - path: Spline/Haare
+        weight: 1
+      - path: Spline/Haare/Joint_2_3
+        weight: 1
+      - path: Spline/Haare/Joint_2_3/Joint_3_3
+        weight: 1
+      - path: Spline/Jetpack
+        weight: 1
+      - path: Spline/Jetpack/Subdivision_Surface
+        weight: 1
+      - path: "Spline/Jetpack/Subdivision_Surface/W\xFCrfel_1"
+        weight: 1
+      - path: Spline/Jetpack/Sweep
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_1"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_2"
+        weight: 1
+      - path: Spline/Jetpack/Sweep_2
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_1_2"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_2_2"
+        weight: 1
+      - path: "Spline/Jetpack/W\xFCrfel"
+        weight: 1
+      - path: Spline/Jetpack/Zylinder
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_1
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_2
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_3
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_4
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_5
+        weight: 1
+      - path: "Spline/LH\xFCfte"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie/LFu\xDF_2"
+        weight: 1
+      - path: Spline/LSchulter
+        weight: 1
+      - path: Spline/LSchulter/Joint_1
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2/Joint_3
+        weight: 1
+      - path: "Spline/RH\xFCfte"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie/RFu\xDF_2"
+        weight: 1
+      - path: Spline/RSchulter
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2/Joint_4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Fly
+      takeName: C4D Animation Take
+      firstFrame: 21
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Kugel_2
+        weight: 1
+      - path: LArm
+        weight: 1
+      - path: "LFu\xDF"
+        weight: 1
+      - path: RArm
+        weight: 1
+      - path: "RFu\xDF"
+        weight: 1
+      - path: Spline
+        weight: 1
+      - path: Spline/Haare
+        weight: 1
+      - path: Spline/Haare/Joint_2_3
+        weight: 1
+      - path: Spline/Haare/Joint_2_3/Joint_3_3
+        weight: 1
+      - path: Spline/Jetpack
+        weight: 1
+      - path: Spline/Jetpack/Subdivision_Surface
+        weight: 1
+      - path: "Spline/Jetpack/Subdivision_Surface/W\xFCrfel_1"
+        weight: 1
+      - path: Spline/Jetpack/Sweep
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_1"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_2"
+        weight: 1
+      - path: Spline/Jetpack/Sweep_2
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_1_2"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_2_2"
+        weight: 1
+      - path: "Spline/Jetpack/W\xFCrfel"
+        weight: 1
+      - path: Spline/Jetpack/Zylinder
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_1
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_2
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_3
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_4
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_5
+        weight: 1
+      - path: "Spline/LH\xFCfte"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie/LFu\xDF_2"
+        weight: 1
+      - path: Spline/LSchulter
+        weight: 1
+      - path: Spline/LSchulter/Joint_1
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2/Joint_3
+        weight: 1
+      - path: "Spline/RH\xFCfte"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie/RFu\xDF_2"
+        weight: 1
+      - path: Spline/RSchulter
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2/Joint_4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: C4D Animation Take
+      firstFrame: 41
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Kugel_2
+        weight: 1
+      - path: LArm
+        weight: 1
+      - path: "LFu\xDF"
+        weight: 1
+      - path: RArm
+        weight: 1
+      - path: "RFu\xDF"
+        weight: 1
+      - path: Spline
+        weight: 1
+      - path: Spline/Haare
+        weight: 1
+      - path: Spline/Haare/Joint_2_3
+        weight: 1
+      - path: Spline/Haare/Joint_2_3/Joint_3_3
+        weight: 1
+      - path: Spline/Jetpack
+        weight: 1
+      - path: Spline/Jetpack/Subdivision_Surface
+        weight: 1
+      - path: "Spline/Jetpack/Subdivision_Surface/W\xFCrfel_1"
+        weight: 1
+      - path: Spline/Jetpack/Sweep
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_1"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_2"
+        weight: 1
+      - path: Spline/Jetpack/Sweep_2
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_1_2"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_2_2"
+        weight: 1
+      - path: "Spline/Jetpack/W\xFCrfel"
+        weight: 1
+      - path: Spline/Jetpack/Zylinder
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_1
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_2
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_3
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_4
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_5
+        weight: 1
+      - path: "Spline/LH\xFCfte"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie/LFu\xDF_2"
+        weight: 1
+      - path: Spline/LSchulter
+        weight: 1
+      - path: Spline/LSchulter/Joint_1
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2/Joint_3
+        weight: 1
+      - path: "Spline/RH\xFCfte"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie/RFu\xDF_2"
+        weight: 1
+      - path: Spline/RSchulter
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2/Joint_4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit
+      takeName: C4D Animation Take
+      firstFrame: 55
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Kugel_2
+        weight: 1
+      - path: LArm
+        weight: 1
+      - path: "LFu\xDF"
+        weight: 1
+      - path: RArm
+        weight: 1
+      - path: "RFu\xDF"
+        weight: 1
+      - path: Spline
+        weight: 1
+      - path: Spline/Haare
+        weight: 1
+      - path: Spline/Haare/Joint_2_3
+        weight: 1
+      - path: Spline/Haare/Joint_2_3/Joint_3_3
+        weight: 1
+      - path: Spline/Jetpack
+        weight: 1
+      - path: Spline/Jetpack/Subdivision_Surface
+        weight: 1
+      - path: "Spline/Jetpack/Subdivision_Surface/W\xFCrfel_1"
+        weight: 1
+      - path: Spline/Jetpack/Sweep
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_1"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_2"
+        weight: 1
+      - path: Spline/Jetpack/Sweep_2
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_1_2"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_2_2"
+        weight: 1
+      - path: "Spline/Jetpack/W\xFCrfel"
+        weight: 1
+      - path: Spline/Jetpack/Zylinder
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_1
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_2
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_3
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_4
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_5
+        weight: 1
+      - path: "Spline/LH\xFCfte"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie/LFu\xDF_2"
+        weight: 1
+      - path: Spline/LSchulter
+        weight: 1
+      - path: Spline/LSchulter/Joint_1
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2/Joint_3
+        weight: 1
+      - path: "Spline/RH\xFCfte"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie/RFu\xDF_2"
+        weight: 1
+      - path: Spline/RSchulter
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2/Joint_4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die
+      takeName: C4D Animation Take
+      firstFrame: 60
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Kugel_2
+        weight: 1
+      - path: LArm
+        weight: 1
+      - path: "LFu\xDF"
+        weight: 1
+      - path: RArm
+        weight: 1
+      - path: "RFu\xDF"
+        weight: 1
+      - path: Spline
+        weight: 1
+      - path: Spline/Haare
+        weight: 1
+      - path: Spline/Haare/Joint_2_3
+        weight: 1
+      - path: Spline/Haare/Joint_2_3/Joint_3_3
+        weight: 1
+      - path: Spline/Jetpack
+        weight: 1
+      - path: Spline/Jetpack/Subdivision_Surface
+        weight: 1
+      - path: "Spline/Jetpack/Subdivision_Surface/W\xFCrfel_1"
+        weight: 1
+      - path: Spline/Jetpack/Sweep
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_1"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_2"
+        weight: 1
+      - path: Spline/Jetpack/Sweep_2
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_1_2"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_2_2"
+        weight: 1
+      - path: "Spline/Jetpack/W\xFCrfel"
+        weight: 1
+      - path: Spline/Jetpack/Zylinder
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_1
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_2
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_3
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_4
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_5
+        weight: 1
+      - path: "Spline/LH\xFCfte"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie/LFu\xDF_2"
+        weight: 1
+      - path: Spline/LSchulter
+        weight: 1
+      - path: Spline/LSchulter/Joint_1
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2/Joint_3
+        weight: 1
+      - path: "Spline/RH\xFCfte"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie/RFu\xDF_2"
+        weight: 1
+      - path: Spline/RSchulter
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2/Joint_4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Swim
+      takeName: C4D Animation Take
+      firstFrame: 81
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Kugel_2
+        weight: 1
+      - path: LArm
+        weight: 1
+      - path: "LFu\xDF"
+        weight: 1
+      - path: RArm
+        weight: 1
+      - path: "RFu\xDF"
+        weight: 1
+      - path: Spline
+        weight: 1
+      - path: Spline/Haare
+        weight: 1
+      - path: Spline/Haare/Joint_2_3
+        weight: 1
+      - path: Spline/Haare/Joint_2_3/Joint_3_3
+        weight: 1
+      - path: Spline/Jetpack
+        weight: 1
+      - path: Spline/Jetpack/Subdivision_Surface
+        weight: 1
+      - path: "Spline/Jetpack/Subdivision_Surface/W\xFCrfel_1"
+        weight: 1
+      - path: Spline/Jetpack/Sweep
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_1"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep/Deckfl\xE4che_2"
+        weight: 1
+      - path: Spline/Jetpack/Sweep_2
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_1_2"
+        weight: 1
+      - path: "Spline/Jetpack/Sweep_2/Deckfl\xE4che_2_2"
+        weight: 1
+      - path: "Spline/Jetpack/W\xFCrfel"
+        weight: 1
+      - path: Spline/Jetpack/Zylinder
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_1
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_2
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_3
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_4
+        weight: 1
+      - path: Spline/Jetpack/Zylinder_5
+        weight: 1
+      - path: "Spline/LH\xFCfte"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie"
+        weight: 1
+      - path: "Spline/LH\xFCfte/LKnie/LFu\xDF_2"
+        weight: 1
+      - path: Spline/LSchulter
+        weight: 1
+      - path: Spline/LSchulter/Joint_1
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2
+        weight: 1
+      - path: Spline/LSchulter/Joint_1/Joint_2/Joint_3
+        weight: 1
+      - path: "Spline/RH\xFCfte"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie"
+        weight: 1
+      - path: "Spline/RH\xFCfte/RKnie/RFu\xDF_2"
+        weight: 1
+      - path: Spline/RSchulter
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2
+        weight: 1
+      - path: Spline/RSchulter/Joint_2_2/Joint_3_2/Joint_4
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

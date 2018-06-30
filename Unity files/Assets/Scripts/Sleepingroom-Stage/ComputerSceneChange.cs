@@ -68,6 +68,7 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
             Camera.main.fieldOfView = Mathf.MoveTowards(Camera.main.fieldOfView, endingCameraFOV, fovSpeed);
             if(Camera.main.fieldOfView - endingCameraFOV <= 0.2f)
             {
+                Cursor.visible = true;
                 SceneManager.LoadScene("Desktop");
             }
         }

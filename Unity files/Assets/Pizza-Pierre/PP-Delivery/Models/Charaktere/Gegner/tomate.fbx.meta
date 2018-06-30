@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: 04ef730167a02394f91681602ffaa130
+timeCreated: 1515958921
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: "Deckfl\xE4che_1"
+    100002: "Deckfl\xE4che_1_2"
+    100004: "Deckfl\xE4che_2"
+    100006: "Deckfl\xE4che_2_2"
+    100008: Haare
+    100010: Jetpack
+    100012: Joint_1
+    100014: Joint_2
+    100016: Joint_2_2
+    100018: Joint_2_3
+    100020: Joint_3
+    100022: Joint_3_2
+    100024: Joint_3_3
+    100026: Joint_4
+    100028: Kugel_2
+    100030: LArm
+    100032: "LFu\xDF"
+    100034: "LFu\xDF_2"
+    100036: "LH\xFCfte"
+    100038: LKnie
+    100040: LSchulter
+    100042: RArm
+    100044: "RFu\xDF"
+    100046: "RFu\xDF_2"
+    100048: "RH\xFCfte"
+    100050: RKnie
+    100052: RSchulter
+    100054: Spline
+    100056: Subdivision_Surface
+    100058: Sweep
+    100060: Sweep_2
+    100062: //RootNode
+    100064: "W\xFCrfel"
+    100066: "W\xFCrfel_1"
+    100068: Zylinder
+    100070: Zylinder_1
+    100072: Zylinder_2
+    100074: Zylinder_3
+    100076: Zylinder_4
+    100078: Zylinder_5
+    400000: "Deckfl\xE4che_1"
+    400002: "Deckfl\xE4che_1_2"
+    400004: "Deckfl\xE4che_2"
+    400006: "Deckfl\xE4che_2_2"
+    400008: Haare
+    400010: Jetpack
+    400012: Joint_1
+    400014: Joint_2
+    400016: Joint_2_2
+    400018: Joint_2_3
+    400020: Joint_3
+    400022: Joint_3_2
+    400024: Joint_3_3
+    400026: Joint_4
+    400028: Kugel_2
+    400030: LArm
+    400032: "LFu\xDF"
+    400034: "LFu\xDF_2"
+    400036: "LH\xFCfte"
+    400038: LKnie
+    400040: LSchulter
+    400042: RArm
+    400044: "RFu\xDF"
+    400046: "RFu\xDF_2"
+    400048: "RH\xFCfte"
+    400050: RKnie
+    400052: RSchulter
+    400054: Spline
+    400056: Subdivision_Surface
+    400058: Sweep
+    400060: Sweep_2
+    400062: //RootNode
+    400064: "W\xFCrfel"
+    400066: "W\xFCrfel_1"
+    400068: Zylinder
+    400070: Zylinder_1
+    400072: Zylinder_2
+    400074: Zylinder_3
+    400076: Zylinder_4
+    400078: Zylinder_5
+    2100000: jetpack_gurt
+    2100002: jetpack_pupille
+    2100004: jetpack_augen
+    2100006: jetpack_rakete1
+    2100008: jetpack_rakete2
+    2100010: jetpack_koffer
+    2100012: tomate_handschuh
+    2100014: tomate_glieder
+    2100016: tomate_haar
+    2100018: tomate_skin
+    2300000: "Deckfl\xE4che_1"
+    2300002: "Deckfl\xE4che_1_2"
+    2300004: "Deckfl\xE4che_2"
+    2300006: "Deckfl\xE4che_2_2"
+    2300008: Sweep
+    2300010: Sweep_2
+    2300012: "W\xFCrfel"
+    2300014: "W\xFCrfel_1"
+    2300016: Zylinder
+    2300018: Zylinder_1
+    2300020: Zylinder_2
+    2300022: Zylinder_3
+    2300024: Zylinder_4
+    2300026: Zylinder_5
+    3300000: "Deckfl\xE4che_1"
+    3300002: "Deckfl\xE4che_1_2"
+    3300004: "Deckfl\xE4che_2"
+    3300006: "Deckfl\xE4che_2_2"
+    3300008: Sweep
+    3300010: Sweep_2
+    3300012: "W\xFCrfel"
+    3300014: "W\xFCrfel_1"
+    3300016: Zylinder
+    3300018: Zylinder_1
+    3300020: Zylinder_2
+    3300022: Zylinder_3
+    3300024: Zylinder_4
+    3300026: Zylinder_5
+    4300000: Sweep
+    4300002: "Deckfl\xE4che_1"
+    4300004: "Deckfl\xE4che_2"
+    4300006: Sweep_2
+    4300008: "Deckfl\xE4che_1_2"
+    4300010: "Deckfl\xE4che_2_2"
+    4300012: Zylinder_5
+    4300014: Zylinder_4
+    4300016: Zylinder_3
+    4300018: Zylinder_2
+    4300020: "W\xFCrfel_1"
+    4300022: Zylinder_1
+    4300024: Zylinder
+    4300026: "W\xFCrfel"
+    4300028: Kugel_2
+    7400000: Die
+    7400002: Idle
+    7400004: Walk
+    7400006: Hit
+    9500000: //RootNode
+    13700000: Kugel_2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jetpack_augen
+    second: {fileID: 2100000, guid: 3fac0b2d1a930094193db781f4435c72, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jetpack_gurt
+    second: {fileID: 2100000, guid: b51ad09affdacde48917c8b4281540e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jetpack_koffer
+    second: {fileID: 2100000, guid: 4486d32b6bc7be2448526978a8a7a412, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jetpack_pupille
+    second: {fileID: 2100000, guid: 7e1ac5b154ca9cc4ba61986b76c2af3e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jetpack_rakete1
+    second: {fileID: 2100000, guid: 705632acb79446540b6c446183b0f77f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jetpack_rakete2
+    second: {fileID: 2100000, guid: f9ca4dd63e31aa94ba4dceb7cac0b776, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tomate_glieder
+    second: {fileID: 2100000, guid: b35e5a0dea07d1949ab59342cd2c6fe2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tomate_haar
+    second: {fileID: 2100000, guid: 3bde63fb4337da54ab076a341698249b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tomate_handschuh
+    second: {fileID: 2100000, guid: 27645ce2fdb80c344a5e7a91491dd37f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tomate_skin
+    second: {fileID: 2100000, guid: 0a32405f889897340bdbda8e0f96ab9a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk
+      takeName: C4D Animation Take
+      firstFrame: 21
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Hit
+      takeName: C4D Animation Take
+      firstFrame: 55
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die
+      takeName: C4D Animation Take
+      firstFrame: 60
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

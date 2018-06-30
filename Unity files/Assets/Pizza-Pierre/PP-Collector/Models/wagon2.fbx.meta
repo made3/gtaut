@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 710767b951d0c134b9ca11f52c4ebaaa
+timeCreated: 1513964010
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Boole_1
+    100002: kennzeichen
+    100004: "Lr\xE4der"
+    100006: "Rr\xE4der"
+    100008: //RootNode
+    100010: "W\xFCrfel_10"
+    100012: "W\xFCrfel_7"
+    100014: Zylinder_10
+    100016: Zylinder_12
+    100018: Zylinder_17
+    100020: Zylinder_19
+    400000: Boole_1
+    400002: kennzeichen
+    400004: "Lr\xE4der"
+    400006: "Rr\xE4der"
+    400008: //RootNode
+    400010: "W\xFCrfel_10"
+    400012: "W\xFCrfel_7"
+    400014: Zylinder_10
+    400016: Zylinder_12
+    400018: Zylinder_17
+    400020: Zylinder_19
+    2100000: zug_kennzeichen
+    2100002: zug_stangen
+    2100004: zug_radklein
+    2100006: zug_wagon
+    2100008: zug_wagon_innen
+    2300000: Boole_1
+    2300002: kennzeichen
+    2300004: "W\xFCrfel_10"
+    2300006: "W\xFCrfel_7"
+    2300008: Zylinder_10
+    2300010: Zylinder_12
+    2300012: Zylinder_17
+    2300014: Zylinder_19
+    3300000: Boole_1
+    3300002: kennzeichen
+    3300004: "W\xFCrfel_10"
+    3300006: "W\xFCrfel_7"
+    3300008: Zylinder_10
+    3300010: Zylinder_12
+    3300012: Zylinder_17
+    3300014: Zylinder_19
+    4300000: kennzeichen
+    4300002: "W\xFCrfel_10"
+    4300004: Zylinder_19
+    4300006: Zylinder_17
+    4300008: "W\xFCrfel_7"
+    4300010: Zylinder_12
+    4300012: Zylinder_10
+    4300014: Boole_1
+    7400000: Ride
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_kennzeichen
+    second: {fileID: 2100000, guid: 6e19dbeaa992fe744a60f058687def73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_radklein
+    second: {fileID: 2100000, guid: 000c14606676a0a4bbbb81d0a13b2e85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_stangen
+    second: {fileID: 2100000, guid: b2e059b16a69639469cc85bf3506ec20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_wagon
+    second: {fileID: 2100000, guid: a2b3b7ca2bdf5b349a108620ad75a6a5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_wagon_innen
+    second: {fileID: 2100000, guid: 0e9b4bb439d586d429144cd547489c88, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Ride
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

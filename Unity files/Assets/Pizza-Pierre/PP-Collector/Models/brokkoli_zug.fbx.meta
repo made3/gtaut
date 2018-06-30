@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: cfab40ad25a0bce419d800cf6046deb9
+timeCreated: 1514035622
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Boole
+    100002: Boole_1
+    100004: brokkoli
+    100006: //RootNode
+    100008: gatlinggun
+    100010: Haare
+    100012: Joint_5
+    100014: Joint_6
+    100016: Joint_7
+    100018: L_Elle
+    100020: "L_Fu\xDF"
+    100022: L_Hand
+    100024: L_Handgelenk
+    100026: "L_H\xFCfte"
+    100028: L_Knie
+    100030: L_Schulter
+    100032: Lbein
+    100034: Lhand
+    100036: Null
+    100038: R_Elle
+    100040: "R_Fu\xDF"
+    100042: R_Hand
+    100044: R_Handgelenk
+    100046: "R_H\xFCfte"
+    100048: R_Knie
+    100050: R_Schulter
+    100052: Rbein
+    100054: Rhand
+    100056: Spline
+    100058: streben
+    100060: "t\xFCrmchen"
+    100062: "W\xFCrfel"
+    100064: "W\xFCrfel_1"
+    100066: "W\xFCrfel_2"
+    100068: Zylinder
+    100070: Zylinder_1
+    100072: Zylinder_1_2
+    100074: Zylinder_2
+    100076: Zylinder_2_2
+    100078: Zylinder_3
+    100080: Zylinder_4
+    100082: Zylinder_4_0
+    100084: Zylinder_4_1
+    100086: Zylinder_4_2
+    100088: Zylinder_4_2_2
+    100090: Zylinder_4_3
+    100092: Zylinder_4_4
+    100094: Zylinder_4_5
+    100096: Zylinder_5
+    100098: Zylinder_6
+    400000: Boole
+    400002: Boole_1
+    400004: brokkoli
+    400006: //RootNode
+    400008: gatlinggun
+    400010: Haare
+    400012: Joint_5
+    400014: Joint_6
+    400016: Joint_7
+    400018: L_Elle
+    400020: "L_Fu\xDF"
+    400022: L_Hand
+    400024: L_Handgelenk
+    400026: "L_H\xFCfte"
+    400028: L_Knie
+    400030: L_Schulter
+    400032: Lbein
+    400034: Lhand
+    400036: Null
+    400038: R_Elle
+    400040: "R_Fu\xDF"
+    400042: R_Hand
+    400044: R_Handgelenk
+    400046: "R_H\xFCfte"
+    400048: R_Knie
+    400050: R_Schulter
+    400052: Rbein
+    400054: Rhand
+    400056: Spline
+    400058: streben
+    400060: "t\xFCrmchen"
+    400062: "W\xFCrfel"
+    400064: "W\xFCrfel_1"
+    400066: "W\xFCrfel_2"
+    400068: Zylinder
+    400070: Zylinder_1
+    400072: Zylinder_1_2
+    400074: Zylinder_2
+    400076: Zylinder_2_2
+    400078: Zylinder_3
+    400080: Zylinder_4
+    400082: Zylinder_4_0
+    400084: Zylinder_4_1
+    400086: Zylinder_4_2
+    400088: Zylinder_4_2_2
+    400090: Zylinder_4_3
+    400092: Zylinder_4_4
+    400094: Zylinder_4_5
+    400096: Zylinder_5
+    400098: Zylinder_6
+    2100000: brokkoli_handschuh
+    2100002: "brokkoli_gliedma\xDFen"
+    2100004: "brokkoli_k\xF6rper"
+    2100006: brokkoli_haare
+    2100008: gatling1
+    2100010: "t\xFCrmchen"
+    2300000: "W\xFCrfel"
+    2300002: "W\xFCrfel_1"
+    2300004: "W\xFCrfel_2"
+    2300006: Zylinder
+    2300008: Zylinder_1
+    2300010: Zylinder_1_2
+    2300012: Zylinder_2
+    2300014: Zylinder_2_2
+    2300016: Zylinder_3
+    2300018: Zylinder_4
+    2300020: Zylinder_4_0
+    2300022: Zylinder_4_1
+    2300024: Zylinder_4_2
+    2300026: Zylinder_4_2_2
+    2300028: Zylinder_4_3
+    2300030: Zylinder_4_4
+    2300032: Zylinder_4_5
+    2300034: Zylinder_5
+    2300036: Zylinder_6
+    3300000: "W\xFCrfel"
+    3300002: "W\xFCrfel_1"
+    3300004: "W\xFCrfel_2"
+    3300006: Zylinder
+    3300008: Zylinder_1
+    3300010: Zylinder_1_2
+    3300012: Zylinder_2
+    3300014: Zylinder_2_2
+    3300016: Zylinder_3
+    3300018: Zylinder_4
+    3300020: Zylinder_4_0
+    3300022: Zylinder_4_1
+    3300024: Zylinder_4_2
+    3300026: Zylinder_4_2_2
+    3300028: Zylinder_4_3
+    3300030: Zylinder_4_4
+    3300032: Zylinder_4_5
+    3300034: Zylinder_5
+    3300036: Zylinder_6
+    4300000: brokkoli
+    4300002: Zylinder_4_0
+    4300004: Zylinder_4_1
+    4300006: Zylinder_4_2
+    4300008: Zylinder_4_3
+    4300010: Zylinder_4_4
+    4300012: Zylinder_4_5
+    4300014: Zylinder_5
+    4300016: Zylinder_4
+    4300018: Zylinder_1
+    4300020: Zylinder_4_2_2
+    4300022: "W\xFCrfel"
+    4300024: Zylinder_6
+    4300026: Zylinder_3
+    4300028: "W\xFCrfel_2"
+    4300030: "W\xFCrfel_1"
+    4300032: Zylinder_2
+    4300034: Zylinder
+    4300036: Zylinder_2_2
+    4300038: Zylinder_1_2
+    7400000: Idle
+    7400002: Attack
+    7400004: Win
+    9500000: //RootNode
+    13700000: brokkoli
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "brokkoli_gliedma\xDFen"
+    second: {fileID: 2100000, guid: 3f8309c5ba85af44abf84f7a650238a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brokkoli_haare
+    second: {fileID: 2100000, guid: 7a2c9566f1382e544b885fe92a7f3e99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: brokkoli_handschuh
+    second: {fileID: 2100000, guid: 3f2d10aa87ee5f14f9d30c15cdad3579, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "brokkoli_k\xF6rper"
+    second: {fileID: 2100000, guid: fc5e6651e3a0b2747a3a8e9a19924880, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gatling1
+    second: {fileID: 2100000, guid: 9993448f9d25649489cc6722434b07bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "t\xFCrmchen"
+    second: {fileID: 2100000, guid: 32832539e549e274ba48763db445f80f, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack
+      takeName: C4D Animation Take
+      firstFrame: 20
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Win
+      takeName: C4D Animation Take
+      firstFrame: 50
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

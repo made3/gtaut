@@ -1,0 +1,279 @@
+fileFormatVersion: 2
+guid: 6369ea5380d66534ea8d4801fbd8b16c
+timeCreated: 1514043973
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: alt
+    100002: //RootNode
+    100004: haar1
+    100006: haar2
+    100008: haar3
+    100010: haaransatz
+    100012: Klon
+    100014: Lelle
+    100016: "Lfu\xDF"
+    100018: "Lfu\xDF_Ziel"
+    100020: Lhand
+    100022: Lhand_Ziel
+    100024: Lhandgelenk
+    100026: "Lh\xFCfte"
+    100028: Lknie
+    100030: Lschulter
+    100032: Relle
+    100034: "Rfu\xDF"
+    100036: "Rfu\xDF_Ziel"
+    100038: Rhand
+    100040: Rhand_Ziel
+    100042: Rhandgelenk
+    100044: "Rh\xFCfte"
+    100046: Rknie
+    100048: Rschulter
+    100050: spline
+    100052: Subdivision_Surface_0
+    100054: Subdivision_Surface_1
+    100056: Subdivision_Surface_2
+    100058: Subdivision_Surface_3
+    100060: Subdivision_Surface_4
+    100062: Subdivision_Surface_5
+    100064: Subdivision_Surface_6
+    100066: Subdivision_Surface_7
+    100068: "W\xFCrfel"
+    100070: "W\xFCrfel_10"
+    100072: "W\xFCrfel_11"
+    100074: "W\xFCrfel_12"
+    100076: "W\xFCrfel_13"
+    100078: "W\xFCrfel_14"
+    100080: "W\xFCrfel_15"
+    100082: "W\xFCrfel_16"
+    100084: "W\xFCrfel_2"
+    100086: "W\xFCrfel_3"
+    100088: "W\xFCrfel_4"
+    100090: "W\xFCrfel_5"
+    100092: "W\xFCrfel_6"
+    100094: "W\xFCrfel_7"
+    100096: "W\xFCrfel_8"
+    100098: "W\xFCrfel_9"
+    100100: Zylinder
+    100102: Zylinder_1
+    100104: Zylinder_4
+    400000: alt
+    400002: //RootNode
+    400004: haar1
+    400006: haar2
+    400008: haar3
+    400010: haaransatz
+    400012: Klon
+    400014: Lelle
+    400016: "Lfu\xDF"
+    400018: "Lfu\xDF_Ziel"
+    400020: Lhand
+    400022: Lhand_Ziel
+    400024: Lhandgelenk
+    400026: "Lh\xFCfte"
+    400028: Lknie
+    400030: Lschulter
+    400032: Relle
+    400034: "Rfu\xDF"
+    400036: "Rfu\xDF_Ziel"
+    400038: Rhand
+    400040: Rhand_Ziel
+    400042: Rhandgelenk
+    400044: "Rh\xFCfte"
+    400046: Rknie
+    400048: Rschulter
+    400050: spline
+    400052: Subdivision_Surface_0
+    400054: Subdivision_Surface_1
+    400056: Subdivision_Surface_2
+    400058: Subdivision_Surface_3
+    400060: Subdivision_Surface_4
+    400062: Subdivision_Surface_5
+    400064: Subdivision_Surface_6
+    400066: Subdivision_Surface_7
+    400068: "W\xFCrfel"
+    400070: "W\xFCrfel_10"
+    400072: "W\xFCrfel_11"
+    400074: "W\xFCrfel_12"
+    400076: "W\xFCrfel_13"
+    400078: "W\xFCrfel_14"
+    400080: "W\xFCrfel_15"
+    400082: "W\xFCrfel_16"
+    400084: "W\xFCrfel_2"
+    400086: "W\xFCrfel_3"
+    400088: "W\xFCrfel_4"
+    400090: "W\xFCrfel_5"
+    400092: "W\xFCrfel_6"
+    400094: "W\xFCrfel_7"
+    400096: "W\xFCrfel_8"
+    400098: "W\xFCrfel_9"
+    400100: Zylinder
+    400102: Zylinder_1
+    400104: Zylinder_4
+    2100000: "ananas_k\xF6rper"
+    2100002: ananas_handschuhe
+    2100004: ananas_strauch
+    2100006: ananas_torso
+    2100008: No Name
+    2300000: "W\xFCrfel_10"
+    2300002: "W\xFCrfel_12"
+    2300004: "W\xFCrfel_14"
+    2300006: "W\xFCrfel_16"
+    2300008: "W\xFCrfel_2"
+    2300010: "W\xFCrfel_4"
+    2300012: "W\xFCrfel_6"
+    2300014: "W\xFCrfel_8"
+    3300000: "W\xFCrfel_10"
+    3300002: "W\xFCrfel_12"
+    3300004: "W\xFCrfel_14"
+    3300006: "W\xFCrfel_16"
+    3300008: "W\xFCrfel_2"
+    3300010: "W\xFCrfel_4"
+    3300012: "W\xFCrfel_6"
+    3300014: "W\xFCrfel_8"
+    4300000: Zylinder_4
+    4300002: "W\xFCrfel_2"
+    4300004: "W\xFCrfel_4"
+    4300006: "W\xFCrfel_6"
+    4300008: "W\xFCrfel_8"
+    4300010: "W\xFCrfel_10"
+    4300012: "W\xFCrfel_12"
+    4300014: "W\xFCrfel_14"
+    4300016: "W\xFCrfel_16"
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: Zylinder_4
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 9a400744cd5d20f40894c25263c0a89c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ananas_handschuhe
+    second: {fileID: 2100000, guid: bd0b611172bb394478a6e8e37fe923ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "ananas_k\xF6rper"
+    second: {fileID: 2100000, guid: 224c9a5dbc594f14193578e6b3dc9a23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ananas_strauch
+    second: {fileID: 2100000, guid: b8fc3c4d82847444d92d265911ae9994, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ananas_torso
+    second: {fileID: 2100000, guid: f2dfd9fb13de2f248b7e1298a388d23a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

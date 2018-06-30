@@ -1,0 +1,250 @@
+fileFormatVersion: 2
+guid: 80ca2c5f5cbb10747b003f717f79b5c8
+timeCreated: 1513964011
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: auge1
+    100002: auge2
+    100004: //RootNode
+    100006: "Lr\xE4der"
+    100008: "Rr\xE4der"
+    100010: "W\xFCrfel"
+    100012: "W\xFCrfel_6"
+    100014: "W\xFCrfel_6_2"
+    100016: "W\xFCrfel_9"
+    100018: Zylinder
+    100020: Zylinder_1
+    100022: Zylinder_11
+    100024: Zylinder_15
+    100026: Zylinder_16
+    100028: Zylinder_18
+    100030: Zylinder_1_2
+    100032: Zylinder_2
+    100034: Zylinder_3
+    100036: Zylinder_8
+    100038: Zylinder_9
+    400000: auge1
+    400002: auge2
+    400004: //RootNode
+    400006: "Lr\xE4der"
+    400008: "Rr\xE4der"
+    400010: "W\xFCrfel"
+    400012: "W\xFCrfel_6"
+    400014: "W\xFCrfel_6_2"
+    400016: "W\xFCrfel_9"
+    400018: Zylinder
+    400020: Zylinder_1
+    400022: Zylinder_11
+    400024: Zylinder_15
+    400026: Zylinder_16
+    400028: Zylinder_18
+    400030: Zylinder_1_2
+    400032: Zylinder_2
+    400034: Zylinder_3
+    400036: Zylinder_8
+    400038: Zylinder_9
+    2100000: pupille
+    2100002: "augenwei\xDF"
+    2100004: zug_stangen
+    2100006: zug_radklein
+    2100008: "zug_radgro\xDF"
+    2100010: zug_frontzylinderunten
+    2100012: zug_frontzylinder
+    2100014: zug_fahrerkabine
+    2300000: "W\xFCrfel"
+    2300002: "W\xFCrfel_6"
+    2300004: "W\xFCrfel_6_2"
+    2300006: "W\xFCrfel_9"
+    2300008: Zylinder
+    2300010: Zylinder_1
+    2300012: Zylinder_11
+    2300014: Zylinder_15
+    2300016: Zylinder_16
+    2300018: Zylinder_18
+    2300020: Zylinder_1_2
+    2300022: Zylinder_2
+    2300024: Zylinder_3
+    2300026: Zylinder_8
+    2300028: Zylinder_9
+    3300000: "W\xFCrfel"
+    3300002: "W\xFCrfel_6"
+    3300004: "W\xFCrfel_6_2"
+    3300006: "W\xFCrfel_9"
+    3300008: Zylinder
+    3300010: Zylinder_1
+    3300012: Zylinder_11
+    3300014: Zylinder_15
+    3300016: Zylinder_16
+    3300018: Zylinder_18
+    3300020: Zylinder_1_2
+    3300022: Zylinder_2
+    3300024: Zylinder_3
+    3300026: Zylinder_8
+    3300028: Zylinder_9
+    4300000: Zylinder_1
+    4300002: Zylinder
+    4300004: Zylinder_1_2
+    4300006: Zylinder_2
+    4300008: "W\xFCrfel_9"
+    4300010: Zylinder_18
+    4300012: Zylinder_16
+    4300014: Zylinder_15
+    4300016: "W\xFCrfel_6"
+    4300018: Zylinder_11
+    4300020: Zylinder_9
+    4300022: Zylinder_8
+    4300024: "W\xFCrfel_6_2"
+    4300026: Zylinder_3
+    4300028: "W\xFCrfel"
+    7400000: Ride
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "augenwei\xDF"
+    second: {fileID: 2100000, guid: e4394584851891645b8df33a3c11f439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pupille
+    second: {fileID: 2100000, guid: 7a5053892a353864aadcc94010ec5b5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_fahrerkabine
+    second: {fileID: 2100000, guid: 1999c667c99910242984f0abec389064, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_frontzylinder
+    second: {fileID: 2100000, guid: 19e427af8eadd8b44b34692a07cd4eae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_frontzylinderunten
+    second: {fileID: 2100000, guid: e19a6b25bfcf78844b79c332bcbc6b98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "zug_radgro\xDF"
+    second: {fileID: 2100000, guid: aa3aed502ceb29849866aa7ee15cd3ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_radklein
+    second: {fileID: 2100000, guid: 000c14606676a0a4bbbb81d0a13b2e85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zug_stangen
+    second: {fileID: 2100000, guid: b2e059b16a69639469cc85bf3506ec20, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Ride
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
