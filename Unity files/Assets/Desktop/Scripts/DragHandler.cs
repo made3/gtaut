@@ -17,14 +17,16 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
             GetComponent<DesktopIcon>().ToggleIconMarked(true);
         }
         selectedGameObject = gameObject;
-        startPosition = transform.position;
+        startPosition = transform.localPosition;
 
         GetComponent<CanvasGroup>().blocksRaycasts = false;
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = Input.mousePosition;
+        var screenPoint = (Input.mousePosition);
+        screenPoint.z = 1; //distance of the plane from the camera
+        transform.position = Camera.main.ScreenToWorldPoint(screenPoint);
     }
 
     public void OnEndDrag(PointerEventData eventData)
@@ -33,7 +35,7 @@ public class DragHandler : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         GetComponent<CanvasGroup>().blocksRaycasts = true;
         if (transform.parent == null)
         {
-            transform.position = startPosition;
+            transform.localPosition = startPosition;
         }
     }
 }

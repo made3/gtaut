@@ -12,12 +12,17 @@ public class DragFolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        offset = Input.mousePosition - folderToDrag.transform.position;
+        var screenPoint = (Input.mousePosition);
+        screenPoint.z = 1; //distance of the plane from the camera
+        offset = Camera.main.ScreenToWorldPoint(screenPoint) - folderToDrag.transform.position;
+        offset = new Vector3(offset.x, offset.y, 0);
     }
-
     public void OnDrag(PointerEventData eventData)
     {
-        folderToDrag.transform.position = Input.mousePosition - offset;
+
+        var screenPoint = (Input.mousePosition);
+        screenPoint.z = 1; //distance of the plane from the camera
+        folderToDrag.transform.position = Camera.main.ScreenToWorldPoint(screenPoint) - offset;
     }
 
     public void OnEndDrag(PointerEventData eventData)

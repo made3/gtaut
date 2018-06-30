@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MafiaRoom.unity
+- path: Assets/Desktop/Scenes/Desktop.unity
   isLoaded: 1
   isActive: 1
