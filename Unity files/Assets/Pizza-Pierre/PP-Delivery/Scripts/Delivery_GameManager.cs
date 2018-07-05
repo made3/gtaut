@@ -15,6 +15,9 @@ public class Delivery_GameManager : MonoBehaviour {
     public Text timer;
     public Stopwatch timerStopwatch;
 
+    [SerializeField]
+    private bool isTutorial;
+
 	// Use this for initialization
 	void Start () {
         timerStopwatch = new Stopwatch();
@@ -36,6 +39,13 @@ public class Delivery_GameManager : MonoBehaviour {
                 timer.text = "Timer: " + (float)timerStopwatch.ElapsedMilliseconds / 1000;
                 break;
             case GameState.won:
+                if (!isTutorial)
+                {
+                    if (!GameManager.PCState[2])
+                    {
+                        GameManager.ChangePCState(3);
+                    }
+                }
                 timerStopwatch.Stop();
                 Endbuttons.SetActive(true);
                 wonUI.SetActive(true);
@@ -45,7 +55,6 @@ public class Delivery_GameManager : MonoBehaviour {
                 Endbuttons.SetActive(true);
                 lostUI.SetActive(true);
                 break;
-
         }
 
     }
@@ -56,11 +65,11 @@ public class Delivery_GameManager : MonoBehaviour {
     }
     private void onMenuPressed()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("PPDelivery");
     }
     private void onExitPressed()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Desktop");
     }
 
 }

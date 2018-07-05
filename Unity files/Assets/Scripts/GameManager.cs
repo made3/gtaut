@@ -5,6 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public static GameManager instance = null;
+    
+    // To determine which games are completed already and which are not.
+    public static bool[] PCState = new bool[4];
 
     public enum GameState { Menu, Playing, Calling, OnPC}
     public static GameState currentState;
@@ -64,5 +67,12 @@ public class GameManager : MonoBehaviour {
             Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
         }
+    }
+
+    public static void ChangePCState(int gameIndex)
+    {
+        PCState[gameIndex - 1] = true;
+        // Play sound
+        // Change lock on desk from red to green
     }
 }

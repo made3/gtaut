@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-
+using UnityEngine.SceneManagement;
 
 public class StartMenuIcon : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
@@ -17,6 +17,8 @@ public class StartMenuIcon : MonoBehaviour, IPointerClickHandler, IPointerEnterH
 
     [SerializeField]
     private GameObject appToOpen;
+    [SerializeField]
+    private string sceneToOpen;
     [SerializeField]
     private Transform canvas;
 
@@ -67,7 +69,7 @@ public class StartMenuIcon : MonoBehaviour, IPointerClickHandler, IPointerEnterH
         }
         else
         {
-            //StartScene
+            SceneManager.LoadScene(sceneToOpen);
         }
     }
 

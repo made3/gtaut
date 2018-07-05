@@ -73,6 +73,10 @@ public class Collector_GameManager : MonoBehaviour {
                 if (justSwitched)
                 {
                     endUI[2].GetComponent<Text>().text = "YOU WON!";
+                    if (!GameManager.PCState[3])
+                    {
+                        GameManager.ChangePCState(4);
+                    }
                     foreach (GameObject g in playingUI)
                     {
                         g.SetActive(false);

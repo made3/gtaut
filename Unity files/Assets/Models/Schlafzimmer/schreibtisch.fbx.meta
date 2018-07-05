@@ -3,7 +3,7 @@ guid: 81d6f31fc0c599e4f967fbfdbb211928
 timeCreated: 1511618919
 licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Boole
     100002: Boole_2
@@ -28,6 +28,16 @@ ModelImporter:
     100040: Zylinder_2
     100042: Zylinder_3
     100044: Zylinder_4
+    100046: "Deckfl\xE4che_1"
+    100048: "Deckfl\xE4che_2"
+    100050: Lock1
+    100052: Lock2
+    100054: Lock3
+    100056: Lock4
+    100058: LockerDrawer
+    100060: LockerDrawerLogo
+    100062: Sweep
+    100064: Tisch
     400000: Boole
     400002: Boole_2
     400004: Oschublade
@@ -51,6 +61,16 @@ ModelImporter:
     400040: Zylinder_2
     400042: Zylinder_3
     400044: Zylinder_4
+    400046: "Deckfl\xE4che_1"
+    400048: "Deckfl\xE4che_2"
+    400050: Lock1
+    400052: Lock2
+    400054: Lock3
+    400056: Lock4
+    400058: LockerDrawer
+    400060: LockerDrawerLogo
+    400062: Sweep
+    400064: Tisch
     2300000: "W\xFCrfel"
     2300002: "W\xFCrfel_1"
     2300004: "W\xFCrfel_2"
@@ -65,6 +85,15 @@ ModelImporter:
     2300022: "W\xFCrfel_6_4"
     2300024: Zylinder_2
     2300026: Zylinder_4
+    2300028: "Deckfl\xE4che_1"
+    2300030: "Deckfl\xE4che_2"
+    2300032: Lock1
+    2300034: Lock2
+    2300036: Lock3
+    2300038: Lock4
+    2300040: LockerDrawer
+    2300042: LockerDrawerLogo
+    2300044: Sweep
     3300000: "W\xFCrfel"
     3300002: "W\xFCrfel_1"
     3300004: "W\xFCrfel_2"
@@ -79,6 +108,15 @@ ModelImporter:
     3300022: "W\xFCrfel_6_4"
     3300024: Zylinder_2
     3300026: Zylinder_4
+    3300028: "Deckfl\xE4che_1"
+    3300030: "Deckfl\xE4che_2"
+    3300032: Lock1
+    3300034: Lock2
+    3300036: Lock3
+    3300038: Lock4
+    3300040: LockerDrawer
+    3300042: LockerDrawerLogo
+    3300044: Sweep
     4300000: Zylinder_2
     4300002: "W\xFCrfel_6"
     4300004: "W\xFCrfel_6_2"
@@ -93,10 +131,51 @@ ModelImporter:
     4300022: "W\xFCrfel_2"
     4300024: "W\xFCrfel_1"
     4300026: "W\xFCrfel"
+    4300028: Sweep
+    4300030: "Deckfl\xE4che_1"
+    4300032: "Deckfl\xE4che_2"
+    4300034: LockerDrawer
+    4300036: Lock1
+    4300038: Lock2
+    4300040: Lock3
+    4300042: Lock4
+    4300044: LockerDrawerLogo
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Locksafe
+    second: {fileID: 2100000, guid: 96dcbe69011738c4a9523853f2e5c045, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Locksafe1
+    second: {fileID: 2100000, guid: 72f40b07a616db2498f58fe714ac3b52, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LocksafeLogo
+    second: {fileID: 2100000, guid: 3b125ad47a865494f9f33974f1eb0829, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: e44e1c3337df7f5459c454dc5375e2a4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schreibtisch_klinken
+    second: {fileID: 2100000, guid: 24d43b187f6bb2643bcd33c879f8057f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "schreibtischk\xF6rpus"
+    second: {fileID: 2100000, guid: 461bd6c6e20eb8143a6a8a35ba57b89d, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -109,12 +188,14 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -122,13 +203,18 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -138,6 +224,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:

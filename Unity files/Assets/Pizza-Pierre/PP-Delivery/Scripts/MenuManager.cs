@@ -46,15 +46,15 @@ public class MenuManager : MonoBehaviour {
 
     private void onTutorialPressed()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("PPDelivery_Tutorial");
     }
     private void onLevelPressed()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("PPDelivery_Game");
     }
     private void onExitPressed()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Desktop");
     }
 
     private void changeNextColor()

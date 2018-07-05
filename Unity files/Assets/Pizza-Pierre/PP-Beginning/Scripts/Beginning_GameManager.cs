@@ -116,7 +116,14 @@ public class Beginning_GameManager : MonoBehaviour {
                     wonUI.GetComponent<Text>().text = "YOU WON!";
                     wonUI.SetActive(true);
                     submitUI.text = "Enter to restart";
-                }else if(currentState == State.Lost)
+
+                    // GAME WON
+                    if (!GameManager.PCState[0])
+                    {
+                        GameManager.ChangePCState(1);
+                    }
+                }
+                else if(currentState == State.Lost)
                 {
                     wonUI.GetComponent<Text>().text = "YOU LOST!";
                     wonUI.SetActive(true);
