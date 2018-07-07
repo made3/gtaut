@@ -38,6 +38,7 @@ ModelImporter:
     100060: LockerDrawerLogo
     100062: Sweep
     100064: Tisch
+    100066: LockerDrawerKabel
     400000: Boole
     400002: Boole_2
     400004: Oschublade
@@ -71,6 +72,7 @@ ModelImporter:
     400060: LockerDrawerLogo
     400062: Sweep
     400064: Tisch
+    400066: LockerDrawerKabel
     2300000: "W\xFCrfel"
     2300002: "W\xFCrfel_1"
     2300004: "W\xFCrfel_2"
@@ -94,6 +96,7 @@ ModelImporter:
     2300040: LockerDrawer
     2300042: LockerDrawerLogo
     2300044: Sweep
+    2300046: LockerDrawerKabel
     3300000: "W\xFCrfel"
     3300002: "W\xFCrfel_1"
     3300004: "W\xFCrfel_2"
@@ -117,6 +120,7 @@ ModelImporter:
     3300040: LockerDrawer
     3300042: LockerDrawerLogo
     3300044: Sweep
+    3300046: LockerDrawerKabel
     4300000: Zylinder_2
     4300002: "W\xFCrfel_6"
     4300004: "W\xFCrfel_6_2"
@@ -140,6 +144,7 @@ ModelImporter:
     4300040: Lock3
     4300042: Lock4
     4300044: LockerDrawerLogo
+    4300046: LockerDrawerKabel
   externalObjects:
   - first:
       type: UnityEngine:Material

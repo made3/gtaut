@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class Beginning_GameManager : MonoBehaviour {
@@ -62,7 +63,7 @@ public class Beginning_GameManager : MonoBehaviour {
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            Application.Quit();
+            SceneManager.LoadScene("Desktop");
         }
         if(currentState == State.Playing)
         {

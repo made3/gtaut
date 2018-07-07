@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour {
     
     // To determine which games are completed already and which are not.
     public static bool[] PCState = new bool[4];
+    [SerializeField]
+    private static GameObject LockerDrawerParent;
 
     public enum GameState { Menu, Playing, Calling, OnPC}
     public static GameState currentState;
@@ -72,6 +74,7 @@ public class GameManager : MonoBehaviour {
     public static void ChangePCState(int gameIndex)
     {
         PCState[gameIndex - 1] = true;
+        LockerDrawerParent.GetComponentsInChildren<Transform>()[gameIndex - 1].gameObject.GetComponent<Renderer>().material.color = Color.green;
         // Play sound
         // Change lock on desk from red to green
     }
