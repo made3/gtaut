@@ -39,6 +39,9 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
     [SerializeField]
     private float movementSpeedFov;
 
+    [SerializeField]
+    private GameObject bathroomKey;
+
     // Use this for initialization
     void Start () {
         
@@ -87,5 +90,13 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
         {
             hasStartedScene = true;
         }
+    }
+
+    public void UpdateSavedValues()
+    {
+        bathroomKey.GetComponent<BathroomKey>().bathroomDoorOpenRotation.isLocked = false;
+        bathroomKey.SetActive(false);
+        chair.transform.SetPositionAndRotation(chairPosition.position, chairPosition.rotation);
+        player.transform.position = pointInFrontOfPC.position;
     }
 }

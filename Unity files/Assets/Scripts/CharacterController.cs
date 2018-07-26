@@ -41,7 +41,6 @@ public class CharacterController : MonoBehaviour
         }
 
         Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
     }
 
     public GameObject GetPlayer()

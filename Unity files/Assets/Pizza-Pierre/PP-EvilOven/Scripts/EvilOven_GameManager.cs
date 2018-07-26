@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class EvilOven_GameManager : MonoBehaviour {
-
-
+    
     public ParticleSystem knusper;
 
     public int enemyCounter;
@@ -169,6 +168,10 @@ public class EvilOven_GameManager : MonoBehaviour {
             wonLostText.gameObject.SetActive(true);
             endingButtons.SetActive(true);
             endingButtons.GetComponent<Animator>().SetBool("scale", true);
+            if (!GameManager.PCState[1])
+            {
+                GameManager.ChangePCState(2);
+            }
             justSwitched = false;
         }
         endingOverlay.color = Color.Lerp(startColor, won, lerpTmp += Time.deltaTime * fadingSpeed);
@@ -195,11 +198,11 @@ public class EvilOven_GameManager : MonoBehaviour {
 
     void onRestartClick()
     {
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("PPEvilOven");
     }
     void onExitClick()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Desktop");
     }
 
 }

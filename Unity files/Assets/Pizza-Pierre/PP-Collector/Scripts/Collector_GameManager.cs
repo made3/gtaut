@@ -99,12 +99,12 @@ public class Collector_GameManager : MonoBehaviour {
 
     void onClickRestart()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("PPCollector");
     }
 
     void onClickExit()
     {
-        Application.Quit();
+        SceneManager.LoadScene("Desktop");
     }
 
 }

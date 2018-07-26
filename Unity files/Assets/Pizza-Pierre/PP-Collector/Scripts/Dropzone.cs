@@ -28,9 +28,12 @@ public class Dropzone : MonoBehaviour {
     void Update () {
 
         pickupsInZone = 0;
-        foreach(Collider c in Physics.OverlapSphere(new Vector3(0, 0, 0), 10f, LayerMask.GetMask("Pickup")))
+        foreach(Collider c in Physics.OverlapSphere(new Vector3(0, 0, 0), 10f))
         {
-            pickupsInZone++;
+            if (c.gameObject.CompareTag("Pickup"))
+            {
+                pickupsInZone++;
+            }
         }
         if (pickupsInZone == pickups.Length)
         {

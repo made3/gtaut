@@ -5,7 +5,7 @@ using UnityEngine;
 public class BathroomKey : MonoBehaviour, IInteractable {
 
     [SerializeField]
-    private OpenRotation bathroomDoorOpenRotation;
+    public OpenRotation bathroomDoorOpenRotation;
 
     private void Start()
     {
@@ -18,5 +18,6 @@ public class BathroomKey : MonoBehaviour, IInteractable {
     {
         bathroomDoorOpenRotation.isLocked = false;
         gameObject.SetActive(false);
+        GameManager.currentStage = GameManager.GameStage.Sleepingroom;
     }
 }

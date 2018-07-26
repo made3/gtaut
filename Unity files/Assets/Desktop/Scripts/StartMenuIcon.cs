@@ -24,6 +24,12 @@ public class StartMenuIcon : MonoBehaviour, IPointerClickHandler, IPointerEnterH
 
     private Image imageComponent;
 
+    private void Awake()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        
+    }
     private void Start()
     {
         imageComponent = GetComponent<Image>();

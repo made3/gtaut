@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -8,8 +9,6 @@ public class GameManager : MonoBehaviour {
     
     // To determine which games are completed already and which are not.
     public static bool[] PCState = new bool[4];
-    [SerializeField]
-    private static GameObject LockerDrawerParent;
 
     public enum GameState { Menu, Playing, Calling, OnPC}
     public static GameState currentState;
@@ -29,6 +28,29 @@ public class GameManager : MonoBehaviour {
         DontDestroyOnLoad(gameObject);
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(scene == SceneManager.GetSceneByName("MafiaRoom"))
+        {
+            if(currentStage == GameStage.Sleepingroom)
+            {
+                ComputerSceneChange computerScript = GameObject.Find("computer").GetComponent<ComputerSceneChange>();
+                //ComputerSceneChange[] computerScript = FindObjectsOfType(typeof(ScriptableObject)) as ComputerSceneChange[];
+                computerScript.UpdateSavedValues();
+            }
+        }
+    }
+
     // Use this for initialization
     void Start () {
         currentState = GameState.Playing;
@@ -37,6 +59,8 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        print(PCState[0]+" | "+ PCState[1] + " | " + PCState[2] + " | " + PCState[3]);
+        
         if (Input.GetButtonDown("Cancel"))
         {
             if(currentState != GameState.Menu)
@@ -74,7 +98,6 @@ public class GameManager : MonoBehaviour {
     public static void ChangePCState(int gameIndex)
     {
         PCState[gameIndex - 1] = true;
-        LockerDrawerParent.GetComponentsInChildren<Transform>()[gameIndex - 1].gameObject.GetComponent<Renderer>().material.color = Color.green;
         // Play sound
         // Change lock on desk from red to green
     }
