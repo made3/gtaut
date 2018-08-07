@@ -59,7 +59,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        print(PCState[0]+" | "+ PCState[1] + " | " + PCState[2] + " | " + PCState[3]);
         
         if (Input.GetButtonDown("Cancel"))
         {

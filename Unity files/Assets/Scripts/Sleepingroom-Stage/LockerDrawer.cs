@@ -7,7 +7,7 @@ public class LockerDrawer : MonoBehaviour {
     private Transform[] leds;
 
     [SerializeField]
-    private OpenRotation sleepingRoomDoor;
+    private OpenPosition drawer;
 
     private void Start()
     {
@@ -16,24 +16,45 @@ public class LockerDrawer : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        int i = 0;
-        int j = 0;
-        foreach(bool b in GameManager.PCState)
+        if (drawer.isLocked)
         {
-            if (b)
+            int i = 1;
+            int j = 0;
+            foreach (bool b in GameManager.PCState)
             {
-                j++;
-                //leds[i].gameObject.GetComponent<Renderer>().material.color = Color.green;
-                Material mymat = leds[i].gameObject.GetComponent<Renderer>().material;
-                mymat.color = Color.green;
-                mymat.SetColor("_EmissionColor", Color.green);
-
+                if (b)
+                {
+                    j++;
+                    Material mymat = leds[i].gameObject.GetComponent<Renderer>().material;
+                    mymat.color = Color.green;
+                    mymat.SetColor("_EmissionColor", Color.green);
+                }
+                i++;
             }
-            i++;
+
+            if (j == 4)
+            {
+                drawer.isLocked = false;
+            }
         }
-        if(j == 3)
+
+        
+        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))
         {
-            sleepingRoomDoor.isLocked = false;
+            GameManager.PCState[0] = true;
         }
+        if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+        {
+            GameManager.PCState[1] = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
+        {
+            GameManager.PCState[2] = true;
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4))
+        {
+            GameManager.PCState[3] = true;
+        }
+
     }
 }

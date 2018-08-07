@@ -94,7 +94,7 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
 
     public void UpdateSavedValues()
     {
-        bathroomKey.GetComponent<BathroomKey>().bathroomDoorOpenRotation.isLocked = false;
+        bathroomKey.GetComponent<Key>().bathroomDoorOpenRotation.isLocked = false;
         bathroomKey.SetActive(false);
         chair.transform.SetPositionAndRotation(chairPosition.position, chairPosition.rotation);
         player.transform.position = pointInFrontOfPC.position;

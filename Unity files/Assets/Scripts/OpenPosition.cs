@@ -13,6 +13,9 @@ public class OpenPosition : MonoBehaviour, IInteractable
     [SerializeField]
     private bool invertDirection;
 
+    [SerializeField]
+    public bool isLocked;
+
     private enum CurrentAction { open, close }
 
     private CurrentAction currentAction = CurrentAction.close;
@@ -99,37 +102,43 @@ public class OpenPosition : MonoBehaviour, IInteractable
 
     public void OnInteractionPressed()
     {
-        if (currentAction == CurrentAction.open)
+        if (!isLocked)
         {
-            currentAction = CurrentAction.close;
-        }
-        else if (currentAction == CurrentAction.close)
-        {
-
-            // Set random value, which gets subtracted or added everytime the object opens
-
-            if (isRandomRangeActive)
+            if (currentAction == CurrentAction.open)
             {
-                randomVariation = Random.Range(0, maxLength / randomRangeFactor);
+                currentAction = CurrentAction.close;
+            }
+            else if (currentAction == CurrentAction.close)
+            {
 
-                if (Random.value > 0.5f)
+                // Set random value, which gets subtracted or added everytime the object opens
+
+                if (isRandomRangeActive)
                 {
-                    randomVariation = -randomVariation;
+                    randomVariation = Random.Range(0, maxLength / randomRangeFactor);
+
+                    if (Random.value > 0.5f)
+                    {
+                        randomVariation = -randomVariation;
+                    }
+
+                    DetermineMaxPosition();
                 }
 
-                DetermineMaxPosition();
+                currentAction = CurrentAction.open;
             }
 
-            currentAction = CurrentAction.open;
+            if (isIdling) isIdling = !isIdling;
+
         }
+        else
+        {
 
-        if (isIdling) isIdling = !isIdling;
+        }
     }
-
     // Update is called once per frame
     void Update()
     {
-
         if (!isIdling)
         {
             if (currentAction == CurrentAction.open)
