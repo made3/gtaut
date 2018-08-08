@@ -145,6 +145,7 @@ ModelImporter:
     100274: "W\xFCrfel_7_8"
     100276: "W\xFCrfel_7_8_2"
     100278: "W\xFCrfel_7_9"
+    100280: "W\xFCrfel_1_2"
     400000: Boole_1
     400002: //RootNode
     400004: Kugel
@@ -285,12 +286,14 @@ ModelImporter:
     400274: "W\xFCrfel_7_8"
     400276: "W\xFCrfel_7_8_2"
     400278: "W\xFCrfel_7_9"
+    400280: "W\xFCrfel_1_2"
     2100000: computer_buttons
     2100002: computer
     2100004: computer_display
     2100006: tastatur
     2100008: maus
     2100010: kabel
+    2100012: No Name
     2300000: Boole_1
     2300002: Kugel
     2300004: Kugel_1
@@ -424,6 +427,7 @@ ModelImporter:
     2300260: "W\xFCrfel_7_8"
     2300262: "W\xFCrfel_7_8_2"
     2300264: "W\xFCrfel_7_9"
+    2300266: "W\xFCrfel_1_2"
     3300000: Boole_1
     3300002: Kugel
     3300004: Kugel_1
@@ -557,6 +561,7 @@ ModelImporter:
     3300260: "W\xFCrfel_7_8"
     3300262: "W\xFCrfel_7_8_2"
     3300264: "W\xFCrfel_7_9"
+    3300266: "W\xFCrfel_1_2"
     4300000: Kugel_1
     4300002: Kugel
     4300004: Kugel_3
@@ -690,6 +695,7 @@ ModelImporter:
     4300260: maus
     4300262: Sweep_2
     4300264: Sweep_1
+    4300266: "W\xFCrfel_1_2"
   externalObjects:
   - first:
       type: UnityEngine:Material

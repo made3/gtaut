@@ -100,6 +100,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+37a13c5942d65ab0b22133bc01230fb0 Assembly-CSharp.dll:.LockerDrawer
 5692b21bc2d3e296baa120b2d3e3c704 Assembly-CSharp.dll:.Knusper
 3ecea0c2e43f5d97a17c441bfcf59a7d Assembly-CSharp.dll:UnityEngine.PostProcessing.PostProcessingBehaviour
 71778c9b45c50a65b865c5bc42204043 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.NoiseAndScratches
@@ -174,7 +175,7 @@ cac5093fb1baf037bd671ecbc6727828 Assembly-CSharp.dll:UnityStandardAssets.ImageEf
 205965134a5874db410d674ebdf33ba7 Assembly-CSharp.dll:.ExampleWheelController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.CallbackExecutor
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
-14b35a86ec06dd428e3102a75924eb7d Assembly-CSharp.dll:.BathroomKey
+4843db8a5e1c07e30b15cb0e13337208 Assembly-CSharp.dll:.Key
 3bf8a2f90f48205d12b4332a1ee3768a Assembly-CSharp.dll:.Beginning_PlayerMovement
 5a6710934c6314ee50c5691d696b5bfc Assembly-CSharp.dll:.DesktopIconsParent
 9d175e4195e01619d1ef457109c82d26 Assembly-CSharp.dll:.CameraManager
@@ -246,7 +247,7 @@ e3c88dbd73aa55f25d81ded017b92579 Assembly-CSharp.dll:.Player
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.menuChars
 2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.Minimap
 53dbd7baa3c8da2f87828dd70d70dae4 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.DepthOfFieldDeprecated
-b5b5768a2af6de9966ab36c68ffb3f0e Assembly-CSharp.dll:.OpenPosition
+2c0c88e0160fb02ad09740337f38372a Assembly-CSharp.dll:.OpenPosition
 7fc3adfac7efbc0706567dbaca46f637 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.Fisheye
 c11ed1da5fb24e68b7b7a01bc21a8064 Assembly-CSharp.dll:.EvilOven_JetpackEyes
 fbc0155c2b91ded3618b3950b78a5437 Assembly-CSharp.dll:.TutorialManager
@@ -257,4 +258,3 @@ b3432dfe180f02232d7612fb366593d3 Assembly-CSharp.dll:UnityStandardAssets.ImageEf
 3ae0dad0b55a80319e1d57c2dce28da7 Assembly-CSharp.dll:UnityStandardAssets.ImageEffects.Tonemapping
 049d89e4d896eb728bac5266eaaf9931 Assembly-CSharp.dll:.Ofen
 5dbff19cf96c8485e2bedef277335fec Assembly-CSharp.dll:.Goggle
-38c33d6e2de366ae831c077caddd6d7c Assembly-CSharp.dll:.LockerDrawer

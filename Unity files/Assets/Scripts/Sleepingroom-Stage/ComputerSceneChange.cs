@@ -96,7 +96,8 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
     {
         bathroomKey.GetComponent<Key>().bathroomDoorOpenRotation.isLocked = false;
         bathroomKey.SetActive(false);
-        chair.transform.SetPositionAndRotation(chairPosition.position, chairPosition.rotation);
+        //chair.transform.SetPositionAndRotation(chairPosition.position, chairPosition.rotation);
+        chair.transform.position = new Vector3(chairPosition.position.x, chair.transform.position.y, chairPosition.position.z);
         player.transform.position = pointInFrontOfPC.position;
     }
 }
