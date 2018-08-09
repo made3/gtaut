@@ -46,6 +46,11 @@ public class OpenPosition : MonoBehaviour, IInteractable
     [Tooltip("Higher value means less difference")]
     private float randomRangeFactor;
 
+    [SerializeField, Tooltip("Particles to start emitting when object opens")]
+    private ParticleSystem particles;
+
+    private ParticleSystem.EmissionModule emis;
+
     private float randomVariation;
 
     // Use this for initialization
@@ -53,6 +58,11 @@ public class OpenPosition : MonoBehaviour, IInteractable
     {
         startPosition = transform.position;
         DetermineMaxPosition();
+        if(particles != null)
+        {
+            emis = particles.emission;
+            emis.rateOverTime = 0;
+        }
 
         // Layer is not used in code anyway, but might be used somewhen later
         this.gameObject.layer = LayerMask.NameToLayer("Interactable");
@@ -106,13 +116,20 @@ public class OpenPosition : MonoBehaviour, IInteractable
         {
             if (currentAction == CurrentAction.open)
             {
+                if(particles != null)
+                {
+                    emis.rateOverTime = 0;
+                }
                 currentAction = CurrentAction.close;
             }
             else if (currentAction == CurrentAction.close)
             {
 
                 // Set random value, which gets subtracted or added everytime the object opens
-
+                if (particles != null)
+                {
+                    emis.rateOverTime = 8.2f;
+                }
                 if (isRandomRangeActive)
                 {
                     randomVariation = Random.Range(0, maxLength / randomRangeFactor);
