@@ -27,7 +27,7 @@ public class radio : MonoBehaviour {
         _rauschen = audioSources[1];
         _rauschen.volume = 0;
         _song1 = audioSources[0];
-        _song1.volume = 0;
+        //_song1.volume = 0;
         tmpRauschTime = 0;
 
         isOn = false;
