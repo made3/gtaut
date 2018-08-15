@@ -17,8 +17,8 @@ public class MenuHandler : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {/*
-        if (CharacterController.isInMenu)
+    void Update () {
+        if (GameManager.currentState == GameManager.GameState.Menu)
         {
             if (!menuParent.activeSelf)
             {
@@ -39,7 +39,7 @@ public class MenuHandler : MonoBehaviour {
             {
                 crosshair.SetActive(true);
             }
-        }*/
+        }
     }
     
 }

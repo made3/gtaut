@@ -63,25 +63,25 @@ public class GameManager : MonoBehaviour {
         {
             if(currentState != GameState.Menu)
             {
-                menuTransition();
                 currentState = GameState.Menu;
+                MenuTransition(true);
             }
             else
             {
-                menuTransition();
                 currentState = GameState.Playing;
+                MenuTransition(false);
             }
         }
 	}
 
-    public void setCurrentGameState(GameState state)
+    public void SetCurrentGameState(GameState state)
     {
         currentState = state;
     }
 
-    public void menuTransition()
+    public void MenuTransition(bool isOpening)
     {
-        if (currentState == GameState.Menu)
+        if (isOpening)
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;

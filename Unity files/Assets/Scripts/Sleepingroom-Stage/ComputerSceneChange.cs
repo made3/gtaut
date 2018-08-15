@@ -84,7 +84,7 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
         if (!hasReachedPosition)
         {
             hasInteracted = true;
-            GameManager.instance.setCurrentGameState(GameManager.GameState.OnPC);
+            GameManager.instance.SetCurrentGameState(GameManager.GameState.OnPC);
         }
         else
         {

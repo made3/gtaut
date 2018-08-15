@@ -77,7 +77,7 @@ public class StartMenuIcon : MonoBehaviour, IPointerClickHandler, IPointerEnterH
         {
             if(sceneToOpen == "MafiaRoom")
             {
-                GameManager.instance.setCurrentGameState(GameManager.GameState.Playing);
+                GameManager.instance.SetCurrentGameState(GameManager.GameState.Playing);
             }
             SceneManager.LoadScene(sceneToOpen);
         }
