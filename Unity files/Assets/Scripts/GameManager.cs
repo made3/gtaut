@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour {
     public enum GameStage { Bathroom, Sleepingroom, Kitchen}
     public static GameStage currentStage;
 
+    [SerializeField]
+    private bool cheatsActive;
+
     private void Awake()
     {
         if(instance == null)
@@ -72,7 +75,27 @@ public class GameManager : MonoBehaviour {
                 MenuTransition(false);
             }
         }
-	}
+
+        if (cheatsActive)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Keypad1))
+            {
+                GameManager.PCState[0] = true;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Keypad2))
+            {
+                GameManager.PCState[1] = true;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3) || Input.GetKeyDown(KeyCode.Keypad3))
+            {
+                GameManager.PCState[2] = true;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha4) || Input.GetKeyDown(KeyCode.Keypad4))
+            {
+                GameManager.PCState[3] = true;
+            }
+        }
+    }
 
     public void SetCurrentGameState(GameState state)
     {

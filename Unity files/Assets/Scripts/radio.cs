@@ -3,157 +3,107 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class radio : MonoBehaviour {
+public class Radio : MonoBehaviour, IInteractable {
 
-    public string myString;
-    public Text myText1;
-    public float textFadingSpeed;
-    public bool displayInfo;
     public float songFadingSpeed;
     public float rauschenFadingSpeed;
     private AudioSource _rauschen;
     private float tmpRauschTime;
     private AudioSource _song1;
+    [SerializeField]
     private bool isOn;
     private bool isFading;
     private bool startSong;
 
+    private bool justStarted;
+
+    private bool rauschGoUp;
+
+    private IEnumerator rauschCoroutine;
+    private IEnumerator songCoroutine;
 
     // Use this for initialization
     void Start () {
-        myText1.color = Color.clear;
-
+        rauschCoroutine = RauschCoroutine();
+        songCoroutine = SongCoroutine();
         var audioSources = GetComponents<AudioSource>();
         _rauschen = audioSources[1];
         _rauschen.volume = 0;
         _song1 = audioSources[0];
         //_song1.volume = 0;
-        tmpRauschTime = 0;
+        tmpRauschTime = 0;    }
 
-        isOn = false;
-        isFading = false;
-        startSong = false;
-    }
-
-    // Update is called once per frame
-    void Update () {
-
-        FadeText();
-        activateRadio();
-
-    }
-
-    void activateRadio()
+    IEnumerator SongCoroutine()
     {
-        if (displayInfo && !isFading)
+        while (true)
         {
-
-            if (Input.GetKeyDown(KeyCode.E))
+            if (isOn)
             {
-                if (isOn)
-                {
-                    isOn = false;
-                    isFading = true;
-                }
-                else
-                {
-                    isOn = true;
-                    isFading = true;
-                }
-
-            }
-        }
-
-        if (isOn && isFading)
-        {
-            playNoise();
-
-            if (startSong)
-            {
-                if (_song1.volume < 1)
+                if (_song1.volume <= 1)
                 {
                     _song1.volume = _song1.volume + Time.deltaTime * songFadingSpeed;
                 }
                 else
                 {
-                    tmpRauschTime = 0;
-                    startSong = false;
-                    isFading = false;
+                    isOn = false;
+                    StopCoroutine(songCoroutine);
                 }
             }
-        }
-
-        if (!isOn && isFading)
-        {
-            
-            playNoise();
-            
-            if(startSong)
+            else
             {
-                if (_song1.volume > 0)
+                if (_song1.volume >= 0)
                 {
                     _song1.volume = _song1.volume - Time.deltaTime * songFadingSpeed;
                 }
                 else
                 {
-                    tmpRauschTime = 0;
-                    startSong = false;
-                    isFading = false;
+                    isOn = false;
+                    StopCoroutine(songCoroutine);
                 }
             }
+            yield return new WaitForEndOfFrame();
         }
     }
 
-    void playNoise()
+    IEnumerator RauschCoroutine()
     {
-        if (tmpRauschTime < 1)
+        while (isFading)
         {
-            tmpRauschTime += Time.deltaTime;
-            _rauschen.volume = _rauschen.volume + Time.deltaTime * rauschenFadingSpeed;
-            if (_rauschen.volume >= 0.2 && !isOn)
+            if (rauschGoUp)
             {
-                startSong = true;
-            }
-        }
-        else if(tmpRauschTime >= 1)
-        {
-            _rauschen.volume = _rauschen.volume - Time.deltaTime * rauschenFadingSpeed;
-            if(_rauschen.volume <= 0.5 && isOn)
-            {
-                startSong = true;
-            }
-        }
-        
-    }
-
-    void OnMouseOver()
-    {
-        displayInfo = true;
-    }
-
-    void OnMouseExit()
-    {
-        displayInfo = false;
-    }
-
-    void FadeText()
-    {
-        if (displayInfo && !isFading)
-        {
-            if (isOn)
-            {
-                myText1.text = "Press E to turn off";
-                myText1.color = Color.Lerp(myText1.color, Color.white, textFadingSpeed * Time.deltaTime);
+                _rauschen.volume += Time.deltaTime * rauschenFadingSpeed;
+                if (_rauschen.volume >= 1)
+                {
+                    rauschGoUp = false;
+                    justStarted = false;
+                    isOn = !isOn;
+                    if (!justStarted)
+                    {
+                        justStarted = true;
+                        StartCoroutine(songCoroutine);
+                    }
+                }
             }
             else
             {
-                myText1.text = myString;
-                myText1.color = Color.Lerp(myText1.color, Color.white, textFadingSpeed * Time.deltaTime);
+                _rauschen.volume -= Time.deltaTime * rauschenFadingSpeed;
+                if(_rauschen.volume <= 0)
+                {
+                    isFading = false;
+                    StopCoroutine(rauschCoroutine);                    
+                }
             }
+            yield return new WaitForEndOfFrame();
         }
-        else
+    }
+
+    public void OnInteractionPressed()
+    {
+        if (!isFading)
         {
-            myText1.color = Color.Lerp(myText1.color, Color.clear, textFadingSpeed * Time.deltaTime);
+            rauschGoUp = true;
+            isFading = true;
+            StartCoroutine(rauschCoroutine);
         }
     }
 }

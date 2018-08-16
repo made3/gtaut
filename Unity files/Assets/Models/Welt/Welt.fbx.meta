@@ -98,6 +98,21 @@ ModelImporter:
     100180: "W\xFCrfel_3_2"
     100182: "W\xFCrfel_4_2"
     100184: "W\xFCrfel_5_2"
+    100186: Null_29
+    100188: Null_30
+    100190: Null_31
+    100192: Null_32
+    100194: "W\xFCrfel_1_30"
+    100196: "W\xFCrfel_1_31"
+    100198: "W\xFCrfel_1_32"
+    100200: "W\xFCrfel_1_33"
+    100202: "W\xFCrfel_30"
+    100204: "W\xFCrfel_31"
+    100206: "W\xFCrfel_32"
+    100208: "W\xFCrfel_33"
+    100210: Null_33
+    100212: "W\xFCrfel_1_34"
+    100214: "W\xFCrfel_34"
     400000: Untergrund
     400002: //RootNode
     400004: "W\xFCrfel"
@@ -191,6 +206,21 @@ ModelImporter:
     400180: "W\xFCrfel_3_2"
     400182: "W\xFCrfel_4_2"
     400184: "W\xFCrfel_5_2"
+    400186: Null_29
+    400188: Null_30
+    400190: Null_31
+    400192: Null_32
+    400194: "W\xFCrfel_1_30"
+    400196: "W\xFCrfel_1_31"
+    400198: "W\xFCrfel_1_32"
+    400200: "W\xFCrfel_1_33"
+    400202: "W\xFCrfel_30"
+    400204: "W\xFCrfel_31"
+    400206: "W\xFCrfel_32"
+    400208: "W\xFCrfel_33"
+    400210: Null_33
+    400212: "W\xFCrfel_1_34"
+    400214: "W\xFCrfel_34"
     2100000: No Name
     2300000: Untergrund
     2300002: "W\xFCrfel"
@@ -255,6 +285,16 @@ ModelImporter:
     2300120: "W\xFCrfel_3_2"
     2300122: "W\xFCrfel_4_2"
     2300124: "W\xFCrfel_5_2"
+    2300126: "W\xFCrfel_1_30"
+    2300128: "W\xFCrfel_1_31"
+    2300130: "W\xFCrfel_1_32"
+    2300132: "W\xFCrfel_1_33"
+    2300134: "W\xFCrfel_30"
+    2300136: "W\xFCrfel_31"
+    2300138: "W\xFCrfel_32"
+    2300140: "W\xFCrfel_33"
+    2300142: "W\xFCrfel_1_34"
+    2300144: "W\xFCrfel_34"
     3300000: Untergrund
     3300002: "W\xFCrfel"
     3300004: "W\xFCrfel_1"
@@ -318,6 +358,16 @@ ModelImporter:
     3300120: "W\xFCrfel_3_2"
     3300122: "W\xFCrfel_4_2"
     3300124: "W\xFCrfel_5_2"
+    3300126: "W\xFCrfel_1_30"
+    3300128: "W\xFCrfel_1_31"
+    3300130: "W\xFCrfel_1_32"
+    3300132: "W\xFCrfel_1_33"
+    3300134: "W\xFCrfel_30"
+    3300136: "W\xFCrfel_31"
+    3300138: "W\xFCrfel_32"
+    3300140: "W\xFCrfel_33"
+    3300142: "W\xFCrfel_1_34"
+    3300144: "W\xFCrfel_34"
     4300000: "W\xFCrfel_1"
     4300002: "W\xFCrfel"
     4300004: Untergrund
@@ -381,6 +431,16 @@ ModelImporter:
     4300120: "W\xFCrfel_5_2"
     4300122: "W\xFCrfel_1_29"
     4300124: "W\xFCrfel_29"
+    4300126: "W\xFCrfel_1_30"
+    4300128: "W\xFCrfel_30"
+    4300130: "W\xFCrfel_1_31"
+    4300132: "W\xFCrfel_31"
+    4300134: "W\xFCrfel_1_32"
+    4300136: "W\xFCrfel_32"
+    4300138: "W\xFCrfel_1_33"
+    4300140: "W\xFCrfel_33"
+    4300142: "W\xFCrfel_1_34"
+    4300144: "W\xFCrfel_34"
   externalObjects: {}
   materials:
     importMaterials: 1

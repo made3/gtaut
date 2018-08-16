@@ -452,7 +452,7 @@
     <Compile Include="Assets\Scripts\NumberRecognition.cs" />
     <Compile Include="Assets\Scripts\OpenPosition.cs" />
     <Compile Include="Assets\Scripts\OpenRotation.cs" />
-    <Compile Include="Assets\Scripts\radio.cs" />
+    <Compile Include="Assets\Scripts\Radio.cs" />
     <Compile Include="Assets\Scripts\Sleepingroom-Stage\ComputerSceneChange.cs" />
     <Compile Include="Assets\Scripts\Sleepingroom-Stage\LockerDrawer.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
