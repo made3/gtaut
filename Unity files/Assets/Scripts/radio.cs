@@ -7,59 +7,97 @@ public class Radio : MonoBehaviour, IInteractable {
 
     public float songFadingSpeed;
     public float rauschenFadingSpeed;
+
     private AudioSource _rauschen;
-    private float tmpRauschTime;
     private AudioSource _song1;
+    private AudioSource _song2;
+
     [SerializeField]
-    private bool isOn;
+    private int channel;
     private bool isFading;
-    private bool startSong;
 
     private bool justStarted;
-
     private bool rauschGoUp;
 
     private IEnumerator rauschCoroutine;
     private IEnumerator songCoroutine;
 
+    private AudioSource[] audioSources;
+
+    [SerializeField]
+    private AudioClip _song1Hollow;
+
+    [SerializeField]
+    private AudioClip _song2Hollow;
+
     // Use this for initialization
     void Start () {
         rauschCoroutine = RauschCoroutine();
         songCoroutine = SongCoroutine();
-        var audioSources = GetComponents<AudioSource>();
-        _rauschen = audioSources[1];
+        audioSources = GetComponents<AudioSource>();
+
+        _rauschen = audioSources[0];
         _rauschen.volume = 0;
-        _song1 = audioSources[0];
-        //_song1.volume = 0;
-        tmpRauschTime = 0;    }
+        _song1 = audioSources[1];
+        _song2 = audioSources[2];
+    }
+
+    void Update()
+    {
+        // Wenn Türe zu und Player in Bedroom oder Bathroom, dann hollow.
+        // Wenn Türe auf, aber Bathroom Türe zu und Player in Bathroom, dann hollow
+
+        //if (Input.GetKeyDown(KeyCode.U))
+        //{
+        //    float x = _song1.time;
+        //    _song1.clip = _song1Hollow;
+        //    _song1.Play();
+        //    _song1.time = x;
+        //}
+    }
 
     IEnumerator SongCoroutine()
     {
         while (true)
         {
-            if (isOn)
+            switch (channel)
             {
-                if (_song1.volume <= 1)
-                {
-                    _song1.volume = _song1.volume + Time.deltaTime * songFadingSpeed;
-                }
-                else
-                {
-                    isOn = false;
-                    StopCoroutine(songCoroutine);
-                }
-            }
-            else
-            {
-                if (_song1.volume >= 0)
-                {
-                    _song1.volume = _song1.volume - Time.deltaTime * songFadingSpeed;
-                }
-                else
-                {
-                    isOn = false;
-                    StopCoroutine(songCoroutine);
-                }
+                case 0:
+                    if (_song1.volume > 0)
+                    {
+                        _song1.volume -= Time.deltaTime * songFadingSpeed;
+                    }
+                    else if(_song2.volume > 0)
+                    {
+                        _song2.volume -= Time.deltaTime * songFadingSpeed;
+                    }
+                    else
+                    {
+                        StopCoroutine(songCoroutine);
+                    }
+                    break;
+                case 1:
+                    if(_song1.volume < 1)
+                    {
+                        _song1.volume += Time.deltaTime * songFadingSpeed;
+                        _song2.volume -= Time.deltaTime * songFadingSpeed;
+                    }
+                    else
+                    {
+                        StopCoroutine(songCoroutine);
+                    }
+                    break;
+                case 2:
+                    if (_song2.volume < 1)
+                    {
+                        _song2.volume += Time.deltaTime * songFadingSpeed;
+                        _song1.volume -= Time.deltaTime * songFadingSpeed;
+                    }
+                    else
+                    {
+                        StopCoroutine(songCoroutine);
+                    }
+                    break;
             }
             yield return new WaitForEndOfFrame();
         }
@@ -76,7 +114,11 @@ public class Radio : MonoBehaviour, IInteractable {
                 {
                     rauschGoUp = false;
                     justStarted = false;
-                    isOn = !isOn;
+                    channel++;
+                    if(channel >= audioSources.Length)
+                    {
+                        channel = 0;
+                    }
                     if (!justStarted)
                     {
                         justStarted = true;
