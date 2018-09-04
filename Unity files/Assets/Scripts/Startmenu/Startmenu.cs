@@ -6,6 +6,9 @@ public class Startmenu : MonoBehaviour {
 
     private int currentPage;
 
+    // 0 is Start, 1 is Controls, 2 is Credits
+    private int currentSelection;
+
     private Animator anim;
 
 	// Use this for initialization
@@ -16,12 +19,22 @@ public class Startmenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
+
+        if (Input.GetButtonDown("Horizontal"))
+        {
+            print("BLIBLA");
+        }
+
+        if(currentPage == 1)
+        {
+
+        }
+        if (Input.GetButtonDown("Horizontal"))
         {
             if (currentPage > 0) currentPage--;
             anim.SetInteger("currentPage", currentPage);
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        else if (Input.GetAxis("Horizontal") > 0)
         {
             if (currentPage < 3) currentPage++;
             anim.SetInteger("currentPage", currentPage);
