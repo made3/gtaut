@@ -451,6 +451,7 @@
     <Compile Include="Assets\Scripts\Sleepingroom-Stage\ComputerSceneChange.cs" />
     <Compile Include="Assets\Scripts\Sleepingroom-Stage\LockerDrawer.cs" />
     <Compile Include="Assets\Scripts\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Startmenu\Kugelstoßpendel.cs" />
     <Compile Include="Assets\Scripts\Startmenu\Startmenu.cs" />
     <Compile Include="Assets\Scripts\Startmenu\Startmenu_Camera.cs" />
     <Compile Include="Assets\Scripts\TelefonWählscheibe.cs" />

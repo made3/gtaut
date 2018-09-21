@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 2ed7079b04bf853409698813139bce2f
-timeCreated: 1535976923
+timeCreated: 1536077811
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -264,6 +264,21 @@ ModelImporter:
     100512: "W\xFCrfel_9_6"
     100514: "W\xFCrfel_9_7"
     100516: "W\xFCrfel_4_3"
+    100518: Kugel
+    100520: Kugel_2
+    100522: Kugel_3
+    100524: "W\xFCrfel_5_2"
+    100526: "W\xFCrfel_6_4_5"
+    100528: "W\xFCrfel_7_11"
+    100530: "W\xFCrfel_7_12"
+    100532: "W\xFCrfel_8_10"
+    100534: "W\xFCrfel_8_11"
+    100536: "W\xFCrfel_8_12"
+    100538: "W\xFCrfel_8_13"
+    100540: "W\xFCrfel_8_7"
+    100542: "W\xFCrfel_8_8"
+    100544: "W\xFCrfel_8_9"
+    100546: "W\xFCrfel_9_8"
     400000: Boole
     400002: Boole_1
     400004: Klon
@@ -523,6 +538,21 @@ ModelImporter:
     400512: "W\xFCrfel_9_6"
     400514: "W\xFCrfel_9_7"
     400516: "W\xFCrfel_4_3"
+    400518: Kugel
+    400520: Kugel_2
+    400522: Kugel_3
+    400524: "W\xFCrfel_5_2"
+    400526: "W\xFCrfel_6_4_5"
+    400528: "W\xFCrfel_7_11"
+    400530: "W\xFCrfel_7_12"
+    400532: "W\xFCrfel_8_10"
+    400534: "W\xFCrfel_8_11"
+    400536: "W\xFCrfel_8_12"
+    400538: "W\xFCrfel_8_13"
+    400540: "W\xFCrfel_8_7"
+    400542: "W\xFCrfel_8_8"
+    400544: "W\xFCrfel_8_9"
+    400546: "W\xFCrfel_9_8"
     2100000: Buero_braun
     2100002: Buero_schwarz
     2100004: Buero_dunkelgrau
@@ -773,6 +803,21 @@ ModelImporter:
     2300476: "W\xFCrfel_9_6"
     2300478: "W\xFCrfel_9_7"
     2300480: "W\xFCrfel_4_3"
+    2300482: Kugel
+    2300484: Kugel_2
+    2300486: Kugel_3
+    2300488: "W\xFCrfel_5_2"
+    2300490: "W\xFCrfel_6_4_5"
+    2300492: "W\xFCrfel_7_11"
+    2300494: "W\xFCrfel_7_12"
+    2300496: "W\xFCrfel_8_10"
+    2300498: "W\xFCrfel_8_11"
+    2300500: "W\xFCrfel_8_12"
+    2300502: "W\xFCrfel_8_13"
+    2300504: "W\xFCrfel_8_7"
+    2300506: "W\xFCrfel_8_8"
+    2300508: "W\xFCrfel_8_9"
+    2300510: "W\xFCrfel_9_8"
     3300000: "W\xFCrfel"
     3300002: "W\xFCrfel_1"
     3300004: "W\xFCrfel_10"
@@ -1014,6 +1059,21 @@ ModelImporter:
     3300476: "W\xFCrfel_9_6"
     3300478: "W\xFCrfel_9_7"
     3300480: "W\xFCrfel_4_3"
+    3300482: Kugel
+    3300484: Kugel_2
+    3300486: Kugel_3
+    3300488: "W\xFCrfel_5_2"
+    3300490: "W\xFCrfel_6_4_5"
+    3300492: "W\xFCrfel_7_11"
+    3300494: "W\xFCrfel_7_12"
+    3300496: "W\xFCrfel_8_10"
+    3300498: "W\xFCrfel_8_11"
+    3300500: "W\xFCrfel_8_12"
+    3300502: "W\xFCrfel_8_13"
+    3300504: "W\xFCrfel_8_7"
+    3300506: "W\xFCrfel_8_8"
+    3300508: "W\xFCrfel_8_9"
+    3300510: "W\xFCrfel_9_8"
     4300000: "W\xFCrfel_35"
     4300002: "W\xFCrfel_34"
     4300004: "W\xFCrfel_33"
@@ -1255,7 +1315,84 @@ ModelImporter:
     4300476: "W\xFCrfel_1_3"
     4300478: "W\xFCrfel_4_2"
     4300480: "W\xFCrfel_4_3"
-  externalObjects: {}
+    4300482: Kugel
+    4300484: Kugel_2
+    4300486: Kugel_3
+    4300488: "W\xFCrfel_8_7"
+    4300490: "W\xFCrfel_8_8"
+    4300492: "W\xFCrfel_8_9"
+    4300494: "W\xFCrfel_8_10"
+    4300496: "W\xFCrfel_8_11"
+    4300498: "W\xFCrfel_8_12"
+    4300500: "W\xFCrfel_8_13"
+    4300502: "W\xFCrfel_7_11"
+    4300504: "W\xFCrfel_9_8"
+    4300506: "W\xFCrfel_5_2"
+    4300508: "W\xFCrfel_6_4_5"
+    4300510: "W\xFCrfel_7_12"
+    7400000: C4D Animation Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_Waende
+    second: {fileID: 2100000, guid: 8a606b0426206ff4a8de62d310c3431e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_boden
+    second: {fileID: 2100000, guid: 266e3198be82d7247a9f8e546760d2f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_braun
+    second: {fileID: 2100000, guid: ea95013011492e341aed25578cb6d252, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_dunkelbraun
+    second: {fileID: 2100000, guid: df5deb1c7feac7740b2df3cda022d716, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_dunkelgrau
+    second: {fileID: 2100000, guid: ec4c58c19debd584296f0835cc361561, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_glas
+    second: {fileID: 2100000, guid: 691059eeae532ea43961887a546b1384, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_haar
+    second: {fileID: 2100000, guid: 23ca927bcfe62b6499821d3d221387d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_haut
+    second: {fileID: 2100000, guid: f0887d3b53738a24f868c6c27bc83d65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_hellgrau
+    second: {fileID: 2100000, guid: a3ff54f886182654da366525db3aab85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_kleidun
+    second: {fileID: 2100000, guid: 678f9de7ec05cfc41b8b8912a3c3f5f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Buero_schwarz
+    second: {fileID: 2100000, guid: 94bf0fafd8784b945b5c5e3e535319d1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 2b7fdebb89f59b44f933e23ce1b56721, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -1274,14 +1411,42 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: C4D Animation Take
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 450
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -1326,10 +1491,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
