@@ -14,19 +14,15 @@ public class NumberRecognition : MonoBehaviour {
         _animator = GetComponentInChildren<Animator>();
     }
 
-    void OnMouseEnter()
+    public void OnEnter()
     {
         _telefonWählscheibe.currentHoverNumber = Int16.Parse(gameObject.name);
         _animator.SetInteger("whichKringel", UnityEngine.Random.Range(1, 4));
     }
 
-    private void OnMouseExit()
+    public void OnExit()
     {
         _telefonWählscheibe.currentHoverNumber = -1;
         _animator.SetInteger("whichKringel", 0);
     }
-
-    // Update is called once per frame
-    void Update () {
-	}
 }
