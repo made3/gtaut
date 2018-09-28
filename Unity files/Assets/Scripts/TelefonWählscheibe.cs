@@ -11,9 +11,14 @@ public class TelefonWählscheibe : MonoBehaviour, IInteractable {
     public float smoothness;
     public GameObject escToExit;
 
+    [SerializeField]
+    private Transform telefonPosition;
+
     private int dialCounter = 0 ;
+    [SerializeField]
     private int[] correctNumber = {0,1,7,6,6,8,9};
     public int maxNumberLenght;
+    [HideInInspector]
     public int[] dialedNumbers;
     public int currentHoverNumber;
 
@@ -56,8 +61,7 @@ public class TelefonWählscheibe : MonoBehaviour, IInteractable {
             {
                 escToExit.SetActive(true);
             }
-
-            tmpLerpVector = Vector3.Lerp(_character.transform.position, new Vector3(-1.2f, 2.6f, 0.8f), 1f / smoothness);
+            tmpLerpVector = Vector3.Lerp(_character.transform.position, telefonPosition.position, 1f / smoothness);
             _character.transform.position = tmpLerpVector;
 
             if (Input.GetButtonDown("Cancel"))
@@ -79,7 +83,7 @@ public class TelefonWählscheibe : MonoBehaviour, IInteractable {
                         if (arraysAreEqual(dialedNumbers, correctNumber))
                         {
                             Debug.Log("Correct number");
-                            resetDialedNumber();
+                            //resetDialedNumber();
                             dialCounter = 0;
                         }
                         else
