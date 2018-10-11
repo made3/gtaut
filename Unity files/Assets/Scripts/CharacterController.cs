@@ -3,12 +3,14 @@ using System.Collections;
 
 public class CharacterController : MonoBehaviour
 {
-
     public static CharacterController instance = null;
 
     public float speed = 10.0F;
     public float speedRunning;
     public float speedCrouching;
+
+    [SerializeField]
+    private float crouchHeight = 1;
 
     public float crouchSmoothing = 10.0f;
     private Vector3 crouchEndpoint;
@@ -68,7 +70,6 @@ public class CharacterController : MonoBehaviour
 
             checkState();
         }
-
     }
 
 
@@ -80,7 +81,7 @@ public class CharacterController : MonoBehaviour
             {
                 //switcher(inCrouchTransition);
                 inCrouchTransition = true;
-                crouchEndpoint = transform.position;
+                crouchEndpoint = Camera.main.transform.position;
                 crouchTransition();
             }
         }
@@ -115,13 +116,12 @@ public class CharacterController : MonoBehaviour
     {
         if (isCrouching)
         {
-            tmpLerpVariable = Mathf.Lerp(0, (crouchEndpoint + new Vector3(0,1,0)).y, 1f / crouchSmoothing);
+            tmpLerpVariable = 1 / crouchSmoothing;
             Camera.main.transform.position += new Vector3(0, tmpLerpVariable, 0);
 
-            //transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y + 1, 1f / crouchSmoothing), transform.position.z);
-            if (Camera.main.transform.position.y >= (crouchEndpoint + new Vector3(0, 1, 0)).y)
+            if (Camera.main.transform.position.y >= (crouchEndpoint + new Vector3(0, crouchHeight, 0)).y)
             {
-                Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, (crouchEndpoint + new Vector3(0, 1, 0)).y, Camera.main.transform.position.z);
+                Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, (crouchEndpoint + new Vector3(0, crouchHeight, 0)).y, Camera.main.transform.position.z);
                 //switcher(inCrouchTransition);
                 inCrouchTransition = false;
                 isCrouching = false;
@@ -130,12 +130,12 @@ public class CharacterController : MonoBehaviour
         }
         else
         {
-            tmpLerpVariable = Mathf.Lerp(0, (crouchEndpoint - new Vector3(0, 1, 0)).y, 1f / crouchSmoothing);
+            tmpLerpVariable = 1 / crouchSmoothing;
             Camera.main.transform.position -= new Vector3(0, tmpLerpVariable, 0);
-            //transform.position = new Vector3(transform.position.x, Mathf.Lerp(transform.position.y, transform.position.y - 1, 1f / crouchSmoothing), transform.position.z);
-            if (Camera.main.transform.position.y <= (crouchEndpoint - new Vector3(0, 1, 0)).y)
+
+            if (Camera.main.transform.position.y <= (crouchEndpoint - new Vector3(0, crouchHeight, 0)).y)
             {
-                Camera.main.transform.position = new Vector3 (Camera.main.transform.position.x, (crouchEndpoint - new Vector3(0, 1, 0)).y, Camera.main.transform.position.z);
+                Camera.main.transform.position = new Vector3 (Camera.main.transform.position.x, (crouchEndpoint - new Vector3(0, crouchHeight, 0)).y, Camera.main.transform.position.z);
                 //switcher(inCrouchTransition);
                 inCrouchTransition = false;
                 isCrouching = true;
@@ -146,7 +146,6 @@ public class CharacterController : MonoBehaviour
 
     public void switcher(bool toSwitch)
     {
-
         Debug.Log(toSwitch);
         if (toSwitch)
         {

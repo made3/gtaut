@@ -32,6 +32,14 @@ public class Crosshair : MonoBehaviour {
         {
             if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
+                foreach(Renderer r in hit.collider.gameObject.GetComponentsInChildren<Renderer>())
+                {
+                    print(r.material.shader.name);
+                    if(r.material.shader.name == "Outlined/UltimateOutline")
+                    {
+                        r.material.SetFloat("_FirstOutlineWidth", 0.01f);
+                    }
+                }
                 animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
                 if(animStateInfo.normalizedTime < 0)
                 {
