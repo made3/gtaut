@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Highlighting))]
 public class OpenPosition : MonoBehaviour, IInteractable
 {
 

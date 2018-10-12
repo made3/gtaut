@@ -32,13 +32,9 @@ public class Crosshair : MonoBehaviour {
         {
             if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
-                foreach(Renderer r in hit.collider.gameObject.GetComponentsInChildren<Renderer>())
+                if (!hit.collider.gameObject.GetComponent<Highlighting>().isOutlined)
                 {
-                    print(r.material.shader.name);
-                    if(r.material.shader.name == "Outlined/UltimateOutline")
-                    {
-                        r.material.SetFloat("_FirstOutlineWidth", 0.01f);
-                    }
+                    hit.collider.gameObject.GetComponent<Highlighting>().ToggleOutline();
                 }
                 animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
                 if(animStateInfo.normalizedTime < 0)
@@ -68,6 +64,10 @@ public class Crosshair : MonoBehaviour {
                     anim.Play("Crosshair", 0, 1);
                 }
                 anim.SetFloat("speed", -1);
+                if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+                {
+                    lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                }
             }
         }
         else
@@ -78,6 +78,10 @@ public class Crosshair : MonoBehaviour {
                 anim.Play("Crosshair", 0, 1);
             }
             anim.SetFloat("speed", -1);
+            if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+            {
+                lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+            }
         }
     }
 }
