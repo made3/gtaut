@@ -50,46 +50,38 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
 
     // Update is called once per frame
     void Update () {
-        if (hasInteracted)
-        {
-            float chairSpeed = movementSpeedChair * Time.deltaTime;
-            chair.transform.position = Vector3.MoveTowards(chair.transform.position, new Vector3(chairPosition.position.x, chair.transform.position.y, chairPosition.position.z), chairSpeed);
-            float speed = movementSpeedTowardsPC * Time.deltaTime;
-            player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(pointInFrontOfPC.position.x, player.transform.position.y, pointInFrontOfPC.position.z), speed);
-            //player.transform.rotation = Quaternion.RotateTowards(player.transform.rotation, pointInFrontOfPC.rotation, speed);
+        //if (hasInteracted)
+        //{
+        //    float chairSpeed = movementSpeedChair * Time.deltaTime;
+        //    chair.transform.position = Vector3.MoveTowards(chair.transform.position, new Vector3(chairPosition.position.x, chair.transform.position.y, chairPosition.position.z), chairSpeed);
+        //    float speed = movementSpeedTowardsPC * Time.deltaTime;
+        //    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(pointInFrontOfPC.position.x, player.transform.position.y, pointInFrontOfPC.position.z), speed);
+        //    //player.transform.rotation = Quaternion.RotateTowards(player.transform.rotation, pointInFrontOfPC.rotation, speed);
 
 
-            if(Vector3.Distance(player.transform.position, pointInFrontOfPC.position) <= 0.2f)
-            {
-                hasReachedPosition = true;
-                hasInteracted = false;
-            }
-        }
-        if (hasStartedScene)
-        {
-            float fovSpeed = movementSpeedFov * Time.deltaTime;
-            Camera.main.fieldOfView = Mathf.MoveTowards(Camera.main.fieldOfView, endingCameraFOV, fovSpeed);
-            if(Camera.main.fieldOfView - endingCameraFOV <= 0.2f)
-            {
-                Cursor.visible = true;
-                SceneManager.LoadScene("Desktop");
-            }
-        }
+        //    if(Vector3.Distance(player.transform.position, pointInFrontOfPC.position) <= 0.2f)
+        //    {
+        //        hasReachedPosition = true;
+        //        hasInteracted = false;
+        //    }
+        //}
+        //if (hasStartedScene)
+        //{
+        //    float fovSpeed = movementSpeedFov * Time.deltaTime;
+        //    Camera.main.fieldOfView = Mathf.MoveTowards(Camera.main.fieldOfView, endingCameraFOV, fovSpeed);
+        //    if(Camera.main.fieldOfView - endingCameraFOV <= 0.2f)
+        //    {
+        //        Cursor.visible = true;
+        //    }
+        //}
     }
 
     public void OnInteractionPressed()
     {
-        // Move player in front of pc, zoom into the pc display
-        // After that switch scene to Desktop scene
-        if (!hasReachedPosition)
-        {
-            hasInteracted = true;
-            GameManager.instance.SetCurrentGameState(GameManager.GameState.OnPC);
-        }
-        else
-        {
-            hasStartedScene = true;
-        }
+        // Switch scene to Desktop scene
+        Cursor.visible = true;
+        GameManager.instance.SetCurrentGameState(GameManager.GameState.OnPC);
+        SceneManager.LoadScene("Desktop");
     }
 
     public void UpdateSavedValues()

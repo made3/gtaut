@@ -7,8 +7,16 @@ public class Highlighting : MonoBehaviour {
     [SerializeField]
     public float outlineWidth;
 
+    [SerializeField]
+    private Color outlineCol = new Color32(171, 159, 139, 255);
+
     [HideInInspector]
     public bool isOutlined = false;
+
+    [SerializeField]
+    private Shader outlineShader;
+
+    private Shader startShader;
 
     private List<Material> outlineMaterials;
 
@@ -21,10 +29,8 @@ public class Highlighting : MonoBehaviour {
         }
         foreach (Renderer r in GetComponentsInChildren<Renderer>())
         {
-            if (r.material.shader.name == "Outlined/UltimateOutline")
-            {
-                outlineMaterials.Add(r.material);
-            }
+            outlineMaterials.Add(r.material);
+            startShader = r.material.shader;
         }
     }
 
@@ -34,7 +40,12 @@ public class Highlighting : MonoBehaviour {
         {
             foreach (Material m in outlineMaterials)
             {
+                print("Use OutlineShader");
+                m.shader = outlineShader;
+                //m.SetColor("_Color", Color.white);
+                m.SetColor("_FirstOutlineColor", outlineCol);
                 m.SetFloat("_FirstOutlineWidth", outlineWidth);
+                m.SetFloat("_SecondOutlineWidth", 0);
             }
             isOutlined = true;
         }
@@ -42,7 +53,7 @@ public class Highlighting : MonoBehaviour {
         {
             foreach (Material m in outlineMaterials)
             {
-                m.SetFloat("_FirstOutlineWidth", 0);
+                m.shader = startShader;
             }
             isOutlined = false;
         }

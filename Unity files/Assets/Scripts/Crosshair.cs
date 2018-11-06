@@ -64,9 +64,13 @@ public class Crosshair : MonoBehaviour {
                     anim.Play("Crosshair", 0, 1);
                 }
                 anim.SetFloat("speed", -1);
-                if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+
+                if (lastFocusedObject.GetComponent<Highlighting>() != null)
                 {
-                    lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                    if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+                    {
+                        lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                    }
                 }
             }
         }
@@ -78,10 +82,14 @@ public class Crosshair : MonoBehaviour {
                 anim.Play("Crosshair", 0, 1);
             }
             anim.SetFloat("speed", -1);
-            if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+            if(lastFocusedObject.GetComponent<Highlighting>() != null)
             {
-                lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+                {
+                    lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                }
             }
+
         }
     }
 }
