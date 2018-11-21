@@ -10,9 +10,26 @@ public class Startmenu_Camera : MonoBehaviour
     public float sensitivity = 5.0f;
     public float smoothing = 5.0f;
 
+    private Vector3 startPosition;
+
+    private void Start()
+    {
+        startPosition = transform.position;
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(1))
+        {
+            transform.position += transform.forward/6;
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+            transform.position = startPosition;
+
+        }
+
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         mouseLookRaw += md;
         md.x *= sensitivity;

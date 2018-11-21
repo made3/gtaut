@@ -16,6 +16,9 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
     private bool hasStartedScene = false;
 
     [SerializeField]
+    private GameObject loadingScreen;
+
+    [SerializeField]
     private GameObject player;
 
     [SerializeField]
@@ -82,6 +85,7 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
         Cursor.visible = true;
         GameManager.instance.SetCurrentGameState(GameManager.GameState.OnPC);
         SceneManager.LoadScene("Desktop");
+        loadingScreen.SetActive(true);
     }
 
     public void UpdateSavedValues()

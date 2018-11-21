@@ -18,19 +18,35 @@ public class Highlighting : MonoBehaviour {
 
     private Shader startShader;
 
-    private List<Material> outlineMaterials;
+    [SerializeField]
+    private bool takeAllChildRenderer = true;
+
+    [SerializeField]
+    private List<Renderer> outlineRenderer = new List<Renderer>();
+
+    private List<Material> outlineMaterials = new List<Material>();
 
 	// Use this for initialization
 	void Start () {
-        outlineMaterials = new List<Material>();
         if (this.gameObject.layer != LayerMask.NameToLayer("Interactable"))
         {
             this.gameObject.layer = LayerMask.NameToLayer("Interactable");
         }
-        foreach (Renderer r in GetComponentsInChildren<Renderer>())
+        if (takeAllChildRenderer)
         {
-            outlineMaterials.Add(r.material);
-            startShader = r.material.shader;
+            foreach(Renderer r in GetComponentsInChildren<Renderer>())
+            {
+                outlineMaterials.Add(r.material);
+                startShader = r.material.shader;
+            }
+        }
+        else
+        {
+            foreach (Renderer r in outlineRenderer)
+            {
+                outlineMaterials.Add(r.material);
+                startShader = r.material.shader;
+            }
         }
     }
 
@@ -40,7 +56,6 @@ public class Highlighting : MonoBehaviour {
         {
             foreach (Material m in outlineMaterials)
             {
-                print("Use OutlineShader");
                 m.shader = outlineShader;
                 //m.SetColor("_Color", Color.white);
                 m.SetColor("_FirstOutlineColor", outlineCol);

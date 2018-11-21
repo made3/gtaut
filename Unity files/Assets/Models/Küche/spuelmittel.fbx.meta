@@ -3,7 +3,7 @@ guid: 154fd8386cdd17b4f93ac36ba6a3bb5d
 timeCreated: 1490218121
 licenseType: Free
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: Boden
     100002: Lathe
@@ -13,6 +13,7 @@ ModelImporter:
     100010: Lathe_2_2
     100012: //RootNode
     100014: "W\xFCrfel"
+    100016: Ebene
     400000: Boden
     400002: Lathe
     400004: Lathe_1
@@ -21,35 +22,71 @@ ModelImporter:
     400010: Lathe_2_2
     400012: //RootNode
     400014: "W\xFCrfel"
+    400016: Ebene
     2300000: Lathe_1_2
     2300002: Lathe_2
     2300004: Lathe_2_2
+    2300006: Ebene
+    2300008: Lathe
+    2300010: Lathe_1
     3300000: Lathe_1_2
     3300002: Lathe_2
     3300004: Lathe_2_2
+    3300006: Ebene
+    3300008: Lathe
+    3300010: Lathe_1
     4300000: Lathe_1_2
     4300002: Lathe_2
     4300004: Lathe_2_2
+    4300006: Ebene
+    4300008: Lathe_1
+    4300010: Lathe
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat
+    second: {fileID: 2100000, guid: 59acd4d3ef8133c48bcefa345ee95795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.1
+    second: {fileID: 2100000, guid: 7f12ae74b641df64b8e6e4ae09ec8f34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.2
+    second: {fileID: 2100000, guid: 78136dce147c74741885bcd338a1a817, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.3
+    second: {fileID: 2100000, guid: fc1a2c598fb7154458fb2914415a66d7, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -57,13 +94,18 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -73,9 +115,11 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -86,7 +130,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 0
   humanoidOversampling: 1

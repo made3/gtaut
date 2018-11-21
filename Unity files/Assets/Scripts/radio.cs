@@ -30,6 +30,9 @@ public class Radio : MonoBehaviour, IInteractable {
     [SerializeField]
     private AudioClip _song2Hollow;
 
+    [SerializeField]
+    private bool playOnAwake;
+
     // Use this for initialization
     void Start () {
         rauschCoroutine = RauschCoroutine();
@@ -40,6 +43,13 @@ public class Radio : MonoBehaviour, IInteractable {
         _rauschen.volume = 0;
         _song1 = audioSources[1];
         _song2 = audioSources[2];
+        if (playOnAwake)
+        {
+            channel++;
+            StartCoroutine(songCoroutine);
+            //OnInteractionPressed();
+        }
+        //DontDestroyOnLoad(this.gameObject);
     }
 
     void Update()

@@ -32,9 +32,11 @@ public class Crosshair : MonoBehaviour {
         {
             if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
             {
-                if (!hit.collider.gameObject.GetComponent<Highlighting>().isOutlined)
-                {
-                    hit.collider.gameObject.GetComponent<Highlighting>().ToggleOutline();
+                if(hit.collider.gameObject.GetComponent<Highlighting>() != null){
+                    if (!hit.collider.gameObject.GetComponent<Highlighting>().isOutlined)
+                    {
+                        hit.collider.gameObject.GetComponent<Highlighting>().ToggleOutline();
+                    }
                 }
                 animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
                 if(animStateInfo.normalizedTime < 0)

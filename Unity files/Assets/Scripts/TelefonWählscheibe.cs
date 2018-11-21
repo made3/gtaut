@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TelefonWählscheibe : MonoBehaviour {
 
@@ -22,7 +23,7 @@ public class TelefonWählscheibe : MonoBehaviour {
     // Use this for initialization
     void Start () {
         Array.Resize(ref dialedNumbers, maxNumberLenght);
-        resetDialedNumber();
+        //resetDialedNumber();
         currentHoverNumber = -1;
     }
 
@@ -56,7 +57,8 @@ public class TelefonWählscheibe : MonoBehaviour {
                     if (arraysAreEqual(dialedNumbers, correctNumber))
                     {
                         Debug.Log("Correct number");
-                        //resetDialedNumber();
+                        resetDialedNumber();
+                        GetComponent<AudioSource>().Play();
                         dialCounter = 0;
                     }
                     else

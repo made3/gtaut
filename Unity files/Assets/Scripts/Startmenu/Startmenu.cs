@@ -24,6 +24,11 @@ public class Startmenu : MonoBehaviour
 
     private bool swapScene = false;
 
+    private void Awake()
+    {
+        Cursor.visible = false;
+    }
+
     // Use this for initialization
     void Start()
     {
@@ -37,6 +42,7 @@ public class Startmenu : MonoBehaviour
         // Solo-Check because the Loading Screen needs to be active first, then the Scene can start switching. Cant happen in the same frame.
         if (swapScene)
         {
+            Cursor.visible = true;
             SceneManager.LoadScene("MafiaRoom");
         }
 
