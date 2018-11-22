@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.PostProcessing;
 
 public class Startmenu_Camera : MonoBehaviour
 {
@@ -12,9 +13,18 @@ public class Startmenu_Camera : MonoBehaviour
 
     private Vector3 startPosition;
 
+    [SerializeField]
+    private PostProcessingProfile zoomProfile;
+
+    private PostProcessingProfile startProfile;
+
+    [SerializeField]
+    private PostProcessingBehaviour postPro;
+
     private void Start()
     {
-        startPosition = transform.position;
+        startPosition = Camera.main.gameObject.transform.position;
+        startProfile = postPro.profile;
     }
 
     // Update is called once per frame
@@ -22,12 +32,13 @@ public class Startmenu_Camera : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            transform.position += transform.forward/6;
+            Camera.main.gameObject.transform.position += Camera.main.gameObject.transform.forward/6;
+            postPro.profile = zoomProfile;
         }
         if (Input.GetMouseButtonUp(1))
         {
-            transform.position = startPosition;
-
+            Camera.main.gameObject.transform.position = startPosition;
+            postPro.profile = startProfile;
         }
 
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
@@ -44,7 +55,7 @@ public class Startmenu_Camera : MonoBehaviour
         else if(mouseLook.x < -40) mouseLook.x = -40;
 
         if (mouseLook.y > 6) mouseLook.y = 6;
-        else if (mouseLook.y < -45) mouseLook.y = -45;
+        else if (mouseLook.y < -55) mouseLook.y = -55;
 
         transform.localRotation = Quaternion.Euler(-mouseLook.y, mouseLook.x, transform.localRotation.eulerAngles.z);
     }
