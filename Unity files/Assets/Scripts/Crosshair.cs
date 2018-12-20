@@ -58,6 +58,13 @@ public class Crosshair : MonoBehaviour {
                     }
                     if (hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
                     {
+                        if (lastFocusedObject.GetComponent<Highlighting>() != null)
+                        {
+                            if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+                            {
+                                lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                            }
+                        }
                         lastFocusedObject = hit.collider.gameObject;
                     }
                 }
@@ -76,14 +83,21 @@ public class Crosshair : MonoBehaviour {
                         anim.Play("Crosshair", 0, 0);
                     }
                     anim.SetFloat("speed", 1);
-
-                    if (hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
-                    {
-                        lastFocusedObject = hit.collider.gameObject;
-                    }
+                    
                     if (Input.GetButtonDown("Interact"))
                     {
                         holdingObject = true;
+                    }
+                    if (hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
+                    {
+                        if (lastFocusedObject.GetComponent<Highlighting>() != null)
+                        {
+                            if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+                            {
+                                lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                            }
+                        }
+                        lastFocusedObject = hit.collider.gameObject;
                     }
                 }
                 else
