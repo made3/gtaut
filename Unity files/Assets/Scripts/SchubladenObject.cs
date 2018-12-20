@@ -15,7 +15,6 @@ public class SchubladenObject : MonoBehaviour {
     {
         if(other.gameObject.CompareTag("Schublade"))
         {
-            print("Exited");
             transform.SetParent(other.gameObject.transform);
         }
     }
@@ -24,7 +23,6 @@ public class SchubladenObject : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Schublade"))
         {
-            print("Exited");
             transform.SetParent(parent);
         }
     }

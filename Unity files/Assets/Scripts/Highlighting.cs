@@ -26,8 +26,12 @@ public class Highlighting : MonoBehaviour {
 
     private List<Material> outlineMaterials = new List<Material>();
 
-	// Use this for initialization
-	void Start () {
+    // Tried out to use a spotlight as highlight indicator
+
+    //private GameObject lightObject;
+
+    // Use this for initialization
+    void Start () {
         if (this.gameObject.layer != LayerMask.NameToLayer("Interactable"))
         {
             this.gameObject.layer = LayerMask.NameToLayer("Interactable");
@@ -72,5 +76,24 @@ public class Highlighting : MonoBehaviour {
             }
             isOutlined = false;
         }
+
+        // Tried out to use a spotlight as highlight indicator
+
+        //if (!isOutlined)
+        //{
+        //    lightObject = Instantiate(new GameObject(), Camera.main.transform.position, Camera.main.transform.rotation);
+        //    lightObject.transform.LookAt(this.transform);
+        //    lightObject.AddComponent<Light>();
+        //    Light light = lightObject.GetComponent<Light>();
+        //    light.type = LightType.Spot;
+        //    light.intensity = 2;
+
+        //    isOutlined = true;
+        //}
+        //else
+        //{
+        //    Destroy(lightObject);
+        //    isOutlined = false;
+        //}
     }
 }
