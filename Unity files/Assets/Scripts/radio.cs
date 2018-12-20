@@ -38,7 +38,6 @@ public class Radio : MonoBehaviour, IInteractable {
         rauschCoroutine = RauschCoroutine();
         songCoroutine = SongCoroutine();
         audioSources = GetComponents<AudioSource>();
-
         _rauschen = audioSources[0];
         _rauschen.volume = 0;
         _song1 = audioSources[1];

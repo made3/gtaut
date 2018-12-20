@@ -90,7 +90,7 @@ public class ComputerSceneChange : MonoBehaviour, IInteractable {
 
     public void UpdateSavedValues()
     {
-        bathroomKey.GetComponent<Key>().bathroomDoorOpenRotation.isLocked = false;
+        bathroomKey.GetComponent<Key>().doorOpenRotation.isLocked = false;
         bathroomKey.SetActive(false);
         //chair.transform.SetPositionAndRotation(chairPosition.position, chairPosition.rotation);
         chair.transform.position = new Vector3(chairPosition.position.x, chair.transform.position.y, chairPosition.position.z);

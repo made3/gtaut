@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Key : MonoBehaviour, IInteractable {
+public class Key : MonoBehaviour {
 
     [SerializeField]
-    public OpenRotation bathroomDoorOpenRotation;
+    public OpenRotation doorOpenRotation;
 
     [SerializeField]
     private GameManager.GameStage nextStage;
@@ -13,19 +13,17 @@ public class Key : MonoBehaviour, IInteractable {
     [SerializeField]
     private bool playAudioAttachedToDoor = true; 
 
-    private void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        this.gameObject.layer = LayerMask.NameToLayer("Interactable");
-    }
-    
-    public void OnInteractionPressed()
-    {
-        if (playAudioAttachedToDoor)
+        if(other.gameObject.GetInstanceID() == doorOpenRotation.gameObject.GetInstanceID())
         {
-            bathroomDoorOpenRotation.GetComponentInParent<AudioSource>().Play();
+            if (playAudioAttachedToDoor)
+            {
+                doorOpenRotation.GetComponentInParent<AudioSource>().Play();
+            }
+            doorOpenRotation.isLocked = false;
+            gameObject.SetActive(false);
+            GameManager.currentStage = nextStage;
         }
-        bathroomDoorOpenRotation.isLocked = false;
-        gameObject.SetActive(false);
-        GameManager.currentStage = nextStage;
     }
 }

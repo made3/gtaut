@@ -14,6 +14,6 @@ public class ExitButton : MonoBehaviour {
 
     public void RestartGame()
     {
-        SceneManager.LoadScene("Startmenu");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -12,6 +12,8 @@ public class Crosshair : MonoBehaviour {
     [SerializeField]
     private float maxRange;
 
+    private bool holdingObject = false;
+
     private GameObject lastFocusedObject;
 
     private Animator anim;
@@ -28,34 +30,78 @@ public class Crosshair : MonoBehaviour {
         animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
         RaycastHit hit;
 
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, maxRange))
+        if (!holdingObject)
         {
-            if(hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, maxRange))
             {
-                if(hit.collider.gameObject.GetComponent<Highlighting>() != null){
-                    if (!hit.collider.gameObject.GetComponent<Highlighting>().isOutlined)
+                if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+                {
+                    if (hit.collider.gameObject.GetComponent<Highlighting>() != null)
                     {
-                        hit.collider.gameObject.GetComponent<Highlighting>().ToggleOutline();
+                        if (!hit.collider.gameObject.GetComponent<Highlighting>().isOutlined)
+                        {
+                            hit.collider.gameObject.GetComponent<Highlighting>().ToggleOutline();
+                        }
+                    }
+                    animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
+                    if (animStateInfo.normalizedTime < 0)
+                    {
+                        anim.Play("Crosshair", 0, 0);
+                    }
+                    anim.SetFloat("speed", 1);
+                    if (Input.GetButtonDown("Interact"))
+                    {
+                        foreach (IInteractable script in hit.collider.gameObject.GetComponents<IInteractable>())
+                        {
+                            script.OnInteractionPressed();
+                        }
+                    }
+                    if (hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
+                    {
+                        lastFocusedObject = hit.collider.gameObject;
                     }
                 }
-                animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
-                if(animStateInfo.normalizedTime < 0)
+                else if (hit.collider.CompareTag("Pickupable"))
                 {
-                    anim.Play("Crosshair", 0, 0);
-                }
-                anim.SetFloat("speed", 1);
-
-                if (Input.GetButtonDown("Interact"))
-                {
-                    foreach(IInteractable script in hit.collider.gameObject.GetComponents<IInteractable>())
+                    if (hit.collider.gameObject.GetComponent<Highlighting>() != null)
                     {
-                        script.OnInteractionPressed();
+                        if (!hit.collider.gameObject.GetComponent<Highlighting>().isOutlined)
+                        {
+                            hit.collider.gameObject.GetComponent<Highlighting>().ToggleOutline();
+                        }
+                    }
+                    animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
+                    if (animStateInfo.normalizedTime < 0)
+                    {
+                        anim.Play("Crosshair", 0, 0);
+                    }
+                    anim.SetFloat("speed", 1);
+
+                    if (hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
+                    {
+                        lastFocusedObject = hit.collider.gameObject;
+                    }
+                    if (Input.GetButtonDown("Interact"))
+                    {
+                        holdingObject = true;
                     }
                 }
-
-                if(hit.collider.gameObject.GetInstanceID() != lastFocusedObject.GetInstanceID())
+                else
                 {
-                    lastFocusedObject = hit.collider.gameObject;
+                    animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
+                    if (animStateInfo.normalizedTime > 1)
+                    {
+                        anim.Play("Crosshair", 0, 1);
+                    }
+                    anim.SetFloat("speed", -1);
+
+                    if (lastFocusedObject.GetComponent<Highlighting>() != null)
+                    {
+                        if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
+                        {
+                            lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
+                        }
+                    }
                 }
             }
             else
@@ -66,7 +112,6 @@ public class Crosshair : MonoBehaviour {
                     anim.Play("Crosshair", 0, 1);
                 }
                 anim.SetFloat("speed", -1);
-
                 if (lastFocusedObject.GetComponent<Highlighting>() != null)
                 {
                     if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
@@ -74,24 +119,15 @@ public class Crosshair : MonoBehaviour {
                         lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
                     }
                 }
+
             }
         }
         else
         {
-            animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
-            if (animStateInfo.normalizedTime > 1)
+            if (Input.GetButtonDown("Interact"))
             {
-                anim.Play("Crosshair", 0, 1);
+                holdingObject = false;
             }
-            anim.SetFloat("speed", -1);
-            if(lastFocusedObject.GetComponent<Highlighting>() != null)
-            {
-                if (lastFocusedObject.GetComponent<Highlighting>().isOutlined)
-                {
-                    lastFocusedObject.GetComponent<Highlighting>().ToggleOutline();
-                }
-            }
-
         }
     }
 }
