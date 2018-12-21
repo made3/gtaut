@@ -16,10 +16,10 @@ public class DragFolder : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
         screenPoint.z = 1; //distance of the plane from the camera
         offset = Camera.main.ScreenToWorldPoint(screenPoint) - folderToDrag.transform.position;
         offset = new Vector3(offset.x, offset.y, 0);
+        transform.parent.SetAsLastSibling();
     }
     public void OnDrag(PointerEventData eventData)
     {
-
         var screenPoint = (Input.mousePosition);
         screenPoint.z = 1; //distance of the plane from the camera
         folderToDrag.transform.position = Camera.main.ScreenToWorldPoint(screenPoint) - offset;

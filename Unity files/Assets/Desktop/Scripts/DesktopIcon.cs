@@ -71,6 +71,12 @@ public class DesktopIcon : MonoBehaviour, IPointerClickHandler {
             {
                 MinimizeAppToggle();
             }
+
+            // Doubleblick on open App should make the App go in foreground
+            if (isOpen)
+            {
+                appToOpen.transform.SetAsLastSibling();
+            }
         }
         else
         {
@@ -102,6 +108,7 @@ public class DesktopIcon : MonoBehaviour, IPointerClickHandler {
         if (!isScene)
         {
             appToOpen.SetActive(true);
+            appToOpen.transform.SetAsLastSibling();
             if (isMinimized)
             {
                 startBarIconObject = Instantiate(startBarIconPrefab, startBarParent);
