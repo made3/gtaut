@@ -18,8 +18,13 @@ public class MenuManager : MonoBehaviour {
     public UnityEngine.UI.Button level;
     public UnityEngine.UI.Button exit;
 
+    [SerializeField]
+    private GameObject jukebox;
+
     // Use this for initialization
     void Start () {
+        DontDestroyOnLoad(jukebox);
+
         tutorial.onClick.AddListener(onTutorialPressed);
         level.onClick.AddListener(onLevelPressed);
         exit.onClick.AddListener(onExitPressed);
@@ -55,10 +60,15 @@ public class MenuManager : MonoBehaviour {
     private void onExitPressed()
     {
         SceneManager.LoadScene("Desktop");
+        killJukeboxWithFire();
     }
 
     private void changeNextColor()
     {
         nextColor = Random.Range(150, 230);
+    }
+    private void killJukeboxWithFire()
+    {
+        Destroy(jukebox);
     }
 }

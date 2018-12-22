@@ -155,7 +155,7 @@ public class EnemyMovementBasic : MonoBehaviour
         }
         else if (other.CompareTag("Soße"))
         {
-            animator.SetBool("isSwimming", true);
+            //animator.SetBool("isSwimming", true);
         }
         else if (other.CompareTag("PlayerFightKreis"))
         {

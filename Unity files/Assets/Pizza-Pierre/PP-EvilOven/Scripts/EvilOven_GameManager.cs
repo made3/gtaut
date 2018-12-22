@@ -137,11 +137,6 @@ public class EvilOven_GameManager : MonoBehaviour {
                 Lost();
                 break;
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
     }
 
     void Menu()

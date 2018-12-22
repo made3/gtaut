@@ -15,6 +15,8 @@ public class Delivery_GameManager : MonoBehaviour {
     public Text timer;
     public Stopwatch timerStopwatch;
 
+    private GameObject jukebox;
+
     [SerializeField]
     private bool isTutorial;
 
@@ -27,7 +29,9 @@ public class Delivery_GameManager : MonoBehaviour {
         Endbuttons.GetComponentsInChildren<UnityEngine.UI.Button>()[2].onClick.AddListener(onExitPressed);
         Endbuttons.SetActive(false);
         currentState = GameState.playing;
-	}
+        jukebox = GameObject.Find("Jukebox");
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -35,6 +39,7 @@ public class Delivery_GameManager : MonoBehaviour {
         {
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            killJukeboxWithFire();
             SceneManager.LoadScene("Desktop");
         }
         switch (currentState)
@@ -72,10 +77,16 @@ public class Delivery_GameManager : MonoBehaviour {
     private void onMenuPressed()
     {
         SceneManager.LoadScene("PPDelivery");
+        killJukeboxWithFire();
     }
     private void onExitPressed()
     {
         SceneManager.LoadScene("Desktop");
+        killJukeboxWithFire();
     }
 
+    private void killJukeboxWithFire()
+    {
+        Destroy(jukebox);
+    }
 }
