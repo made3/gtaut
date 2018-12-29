@@ -18,4 +18,19 @@ public class Level_Add_Scripts : ScriptableObject
         }
     }
 
+    [MenuItem("Custom/AddLayerToPickupables")]
+    static void AddLayer()
+    {
+
+        GameObject[] allObjects = (GameObject[])Editor.FindObjectsOfType(typeof(GameObject));
+        foreach (GameObject obj in allObjects)
+        {
+            if (obj.CompareTag("Pickupable"))
+            {
+                obj.layer = LayerMask.NameToLayer("Pickupable");
+            }
+        }
+    }
+
+
 }

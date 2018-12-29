@@ -12,8 +12,6 @@ public class DesktopIconsParent : MonoBehaviour, IPointerClickHandler, IDragHand
     [SerializeField]
     private StartMenuButton startMenu;
 
-    private Vector3 startPosition;
-
     public void OnPointerClick(PointerEventData eventData)
     {
         DeactivateIconMarker();
@@ -36,18 +34,18 @@ public class DesktopIconsParent : MonoBehaviour, IPointerClickHandler, IDragHand
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        currentSelection = Instantiate(selectionPrefab, transform.parent);
-        startPosition = Input.mousePosition;
-        currentSelection.transform.position = Input.mousePosition;
+        //currentSelection = Instantiate(selectionPrefab, transform.parent);
+        //currentSelection.transform.localPosition = new Vector3(eventData.pressPosition.x * 1.9f - Screen.width, eventData.pressPosition.y * 1.9f - Screen.height, 0);
+        //currentSelection.transform.localPosition = eventData.pressPosition * 2 - new Vector2(Screen.width, Screen.height);
     }
 
     public void OnDrag(PointerEventData eventData)
     {
-        currentSelection.transform.localScale = (Input.mousePosition - startPosition) / transform.parent.localScale.x;
+        //currentSelection.transform.localScale = (eventData.position - eventData.pressPosition) / transform.parent.localScale.x;
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Destroy(currentSelection);
+        //Destroy(currentSelection);
     }
 }

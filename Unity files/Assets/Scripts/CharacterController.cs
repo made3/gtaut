@@ -65,15 +65,15 @@ public class CharacterController : MonoBehaviour
 
             if (inCrouchTransition)
             {
-                crouchTransition();
+                CrouchTransition();
             }
 
-            checkState();
+            CheckState();
         }
     }
 
 
-    public void checkState()
+    public void CheckState()
     {
         if (Input.GetButtonDown("Crouch"))
         {
@@ -82,7 +82,7 @@ public class CharacterController : MonoBehaviour
                 //switcher(inCrouchTransition);
                 inCrouchTransition = true;
                 crouchEndpoint = Camera.main.transform.position;
-                crouchTransition();
+                CrouchTransition();
             }
         }
 
@@ -90,17 +90,17 @@ public class CharacterController : MonoBehaviour
         {
             //switcher(isRunning);
             isRunning = true;
-            runTransition();
+            RunTransition();
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             //switcher(isRunning);
             isRunning = false;
-            runTransition();
+            RunTransition();
         }
     }
 
-    public void runTransition()
+    public void RunTransition()
     {
         if (isRunning)
         {
@@ -112,7 +112,7 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public void crouchTransition()
+    public void CrouchTransition()
     {
         if (isCrouching)
         {
@@ -144,7 +144,7 @@ public class CharacterController : MonoBehaviour
         }
     }
 
-    public void switcher(bool toSwitch)
+    public void Switcher(bool toSwitch)
     {
         Debug.Log(toSwitch);
         if (toSwitch)

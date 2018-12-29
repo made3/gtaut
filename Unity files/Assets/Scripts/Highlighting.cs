@@ -32,7 +32,7 @@ public class Highlighting : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        if (this.gameObject.layer != LayerMask.NameToLayer("Interactable"))
+        if (this.gameObject.layer != LayerMask.NameToLayer("Interactable") && this.gameObject.layer != LayerMask.NameToLayer("Pickupable"))
         {
             this.gameObject.layer = LayerMask.NameToLayer("Interactable");
         }

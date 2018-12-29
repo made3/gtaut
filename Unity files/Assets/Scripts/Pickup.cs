@@ -6,6 +6,12 @@ public class Pickup : MonoBehaviour {
 
     private bool isHoldingObject = false;
 
+    [SerializeField]
+    private float dragWhenHeld;
+
+    [SerializeField]
+    private float angularDragWhenHeld;
+
     private SpringJoint currentHeldJoint;
 
     private GameObject currentHoldingPoint;
@@ -27,7 +33,10 @@ public class Pickup : MonoBehaviour {
                     currentHoldingPoint.transform.parent = transform;
                     currentHoldingPoint.AddComponent<Rigidbody>().isKinematic = true;
                     currentHoldingPoint.GetComponent<Rigidbody>().useGravity = false;
+
                     currentHeldJoint = hit.collider.gameObject.AddComponent<SpringJoint>();
+                    currentHeldJoint.gameObject.GetComponent<Rigidbody>().drag = dragWhenHeld;
+                    currentHeldJoint.gameObject.GetComponent<Rigidbody>().angularDrag = angularDragWhenHeld;
                     currentHeldJoint.connectedBody = currentHoldingPoint.GetComponent<Rigidbody>();
                     currentHeldJoint.autoConfigureConnectedAnchor = false;
                     currentHeldJoint.connectedAnchor = new Vector3(0, 0, 0);
@@ -45,6 +54,8 @@ public class Pickup : MonoBehaviour {
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                currentHeldJoint.gameObject.GetComponent<Rigidbody>().drag = 0;
+                currentHeldJoint.gameObject.GetComponent<Rigidbody>().angularDrag = 0;
                 Destroy(currentHoldingPoint);
                 Destroy(currentHeldJoint);
                 isHoldingObject = false;
