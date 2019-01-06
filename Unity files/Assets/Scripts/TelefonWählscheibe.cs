@@ -20,6 +20,10 @@ public class TelefonWählscheibe : MonoBehaviour {
 
     private NumberRecognition latestHoveredNumber;
 
+    private bool correctNumberEntered = false;
+    [SerializeField]
+    private GameObject doorToOpen;
+
     // Use this for initialization
     void Start () {
         Array.Resize(ref dialedNumbers, maxNumberLenght);
@@ -36,13 +40,31 @@ public class TelefonWählscheibe : MonoBehaviour {
         {
             if (hit.collider.CompareTag("TelefonTaste"))
             {
-                latestHoveredNumber = hit.collider.GetComponent<NumberRecognition>();
-                latestHoveredNumber.OnEnter();
+                if(latestHoveredNumber == null)
+                {
+                    latestHoveredNumber = hit.collider.GetComponent<NumberRecognition>();
+                    latestHoveredNumber.OnEnter();
+                }
+                else if(hit.collider.GetComponent<NumberRecognition>().GetInstanceID() != latestHoveredNumber.GetInstanceID())
+                {
+                    latestHoveredNumber.OnExit();
+                    latestHoveredNumber = hit.collider.GetComponent<NumberRecognition>();
+                    latestHoveredNumber.OnEnter();
+                }
+                else if(hit.collider.GetComponent<NumberRecognition>().GetInstanceID() == latestHoveredNumber.GetInstanceID())
+                {
+                    latestHoveredNumber = hit.collider.GetComponent<NumberRecognition>();
+                    latestHoveredNumber.OnEnter();
+                }
             }
             else if(latestHoveredNumber != null)
             {
                 latestHoveredNumber.OnExit();
             }
+        }
+        else
+        {
+            latestHoveredNumber.OnExit();
         }
 
         if (Input.GetButtonDown("Interact"))
@@ -56,10 +78,15 @@ public class TelefonWählscheibe : MonoBehaviour {
                 {
                     if (arraysAreEqual(dialedNumbers, correctNumber))
                     {
-                        Debug.Log("Correct number");
-                        resetDialedNumber();
-                        GetComponent<AudioSource>().Play();
-                        dialCounter = 0;
+                        if (!correctNumberEntered)
+                        {
+                            Debug.Log("Correct number");
+                            resetDialedNumber();
+                            GetComponent<AudioSource>().Play();
+
+                            correctNumberEntered = true;
+                            dialCounter = 0;
+                        }
                     }
                     else
                     {
@@ -81,7 +108,12 @@ public class TelefonWählscheibe : MonoBehaviour {
                 }
             }
         }
-        
+        if (!GetComponent<AudioSource>().isPlaying && correctNumberEntered)
+        {
+            doorToOpen.GetComponent<AudioSource>().Play();
+            doorToOpen.GetComponentInChildren<OpenRotation>().isLocked = false;
+        }
+
     }
 
     private void resetDialedNumber()

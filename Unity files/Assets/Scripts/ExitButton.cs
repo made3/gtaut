@@ -9,6 +9,7 @@ public class ExitButton : MonoBehaviour {
 
     public void ExitGame()
     {
+        print("EXIT BUTTON PRESSED");
         Application.Quit();
     }
 

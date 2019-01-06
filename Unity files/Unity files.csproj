@@ -447,6 +447,7 @@
     <Compile Include="Assets\Scripts\Startmenu\Startmenu.cs" />
     <Compile Include="Assets\Scripts\Startmenu\Startmenu_Camera.cs" />
     <Compile Include="Assets\Scripts\TelefonWählscheibe.cs" />
+    <Compile Include="Assets\Scripts\TreppenhausEnding.cs" />
     <Compile Include="Assets\Scripts\uhr.cs" />
   </ItemGroup>
   <ItemGroup>
