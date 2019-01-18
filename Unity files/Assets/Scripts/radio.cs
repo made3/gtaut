@@ -67,10 +67,12 @@ public class Radio : MonoBehaviour, IInteractable {
         if (isHollow) _song1.clip = _song1Clear;
         else _song1.clip = _song1Hollow;
          _song1.time = tmpTime;
+        _song1.Play();
 
         if (isHollow) _song2.clip = _song2Clear;
         else _song2.clip = _song2Hollow;
         _song2.time = tmpTime;
+        _song2.Play();
         
         isHollow = !isHollow;
     }
