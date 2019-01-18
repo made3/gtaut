@@ -25,10 +25,15 @@ public class Radio : MonoBehaviour, IInteractable {
     private AudioSource[] audioSources;
 
     [SerializeField]
+    private AudioClip _song1Clear;
     private AudioClip _song1Hollow;
 
     [SerializeField]
+    private AudioClip _song2Clear;
     private AudioClip _song2Hollow;
+
+    [HideInInspector]
+    public bool isHollow = true;
 
     [SerializeField]
     private bool playOnAwake;
@@ -42,6 +47,10 @@ public class Radio : MonoBehaviour, IInteractable {
         _rauschen.volume = 0;
         _song1 = audioSources[1];
         _song2 = audioSources[2];
+
+        _song1Hollow = _song1.clip;
+        _song2Hollow = _song2.clip;
+
         if (playOnAwake)
         {
             channel++;
@@ -50,19 +59,20 @@ public class Radio : MonoBehaviour, IInteractable {
         }
         //DontDestroyOnLoad(this.gameObject);
     }
-
-    void Update()
+    
+    public void SwapSoundFiles()
     {
-        // Wenn Türe zu und Player in Bedroom oder Bathroom, dann hollow.
-        // Wenn Türe auf, aber Bathroom Türe zu und Player in Bathroom, dann hollow
+        float tmpTime = _song1.time;
 
-        //if (Input.GetKeyDown(KeyCode.U))
-        //{
-        //    float x = _song1.time;
-        //    _song1.clip = _song1Hollow;
-        //    _song1.Play();
-        //    _song1.time = x;
-        //}
+        if (isHollow) _song1.clip = _song1Clear;
+        else _song1.clip = _song1Hollow;
+         _song1.time = tmpTime;
+
+        if (isHollow) _song2.clip = _song2Clear;
+        else _song2.clip = _song2Hollow;
+        _song2.time = tmpTime;
+        
+        isHollow = !isHollow;
     }
 
     IEnumerator SongCoroutine()

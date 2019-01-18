@@ -14,6 +14,8 @@ public class OpenRotation : MonoBehaviour, IInteractable
 
     private CurrentAction currentAction = CurrentAction.close;
 
+    public bool isClosed = true;
+
     private bool isIdling = true;
 
     [SerializeField]
@@ -112,6 +114,7 @@ public class OpenRotation : MonoBehaviour, IInteractable
                     }
                 }*/
                 currentAction = CurrentAction.open;
+                isClosed = false;
             }
 
             if (isIdling) isIdling = !isIdling;
@@ -152,6 +155,7 @@ public class OpenRotation : MonoBehaviour, IInteractable
             else if(currentLerpTime < 0)
             {
                 currentLerpTime = 0;
+                isClosed = true;
                 isIdling = !isIdling;
             }
         }
